@@ -19,7 +19,7 @@ antes de entrar em contato conosco verifique se sua dúvida já não foi respond
 please <a href="#">submit your games here</a>. Thank you! /
 por favor <a href="#">enviem seus jogos aqui</a>. Obrigado!
 </div>
-<form accept-charset="UTF-8" action="#" class="new_contact" id="new_contact" method="post">
+<form accept-charset="UTF-8" action="#" class="new_contact" id="new_contact" method="post" netlify>
 <dl class='form'>
 <div class='name'>
 <dt><label for="contact_name">Seu nome</label></dt>
@@ -45,10 +45,12 @@ por favor <a href="#">enviem seus jogos aqui</a>. Obrigado!
 </div>
 </div>
 </body>
-  <script src="helpform.js"></script>
-  <script>
+<div id='js_includes'>
+<script src="helpform.js"></script>
+<script>
   //<![CDATA[
     new Contact()
   //]]>
 </script>
+</div>
 </html>
