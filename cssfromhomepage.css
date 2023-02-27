@@ -89,6 +89,9 @@ font-family: 'Trebuchet MS';
 h3 a:hover {
 color: #555555;
 }
+h3 a:focus {
+color: #555555;
+}
 a {
 color: #e10000;
 }
