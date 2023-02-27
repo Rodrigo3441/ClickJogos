@@ -20,6 +20,8 @@ font-size: 15px; color: #4a4a4a; text-align: right;
 }
 h3 {
 font-size: 13px; color: #e10000; font-family: arial;
+font-family: 'Trebuchet MS';
+  src: url('trebuc.ttf') format('truetype');
 }
 h4 {
 font-size: 14px; color: #ffffff; font-family: arial;
@@ -81,6 +83,8 @@ button {
 }
 h5 {
 font-family: arial; color: #555555; font-size: 15px;
+font-family: 'Trebuchet MS';
+  src: url('trebuc.ttf') format('truetype');
 }
 h3 a:hover {
 color: #555555;
