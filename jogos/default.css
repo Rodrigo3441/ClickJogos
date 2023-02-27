@@ -7,6 +7,8 @@ body {
 }
   h1 {
   color: #e10000; font-size: 18px;
+  font-family: 'Trebuchet MS';
+  src: url('../trebuc.ttf') format('truetype');
 }
 audio:not([controls]) {
   display: none;
@@ -17,9 +19,13 @@ border-color: #cccccc;
 }
 h2 {
 font-size: 15px; color: #4a4a4a; text-align: right;
+font-family: 'Trebuchet MS';
+  src: url('../trebuc.ttf') format('truetype');
 }
 h3 {
 font-size: 13px; color: #e10000; font-family: arial;
+font-family: 'Trebuchet MS';
+  src: url('../trebuc.ttf') format('truetype');
 }
 h4 {
 font-size: 14px; color: #ffffff; font-family: arial;
