@@ -94,6 +94,9 @@ button {
 .imggames {
 border: 1px solid #cccccc; padding:3px;
 }
+.imggames:hover {
+border-color:#848484;
+}
 .descrition {
 	line-height: 18px;
 }
