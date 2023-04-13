@@ -102,6 +102,9 @@ color: #e10000;
 .imggames {
 border: 1px solid #cccccc; padding:3px;
 }
+.imggames:hover {
+border-color:#848484;
+}
 .direita {
 text-align: right;
 }
