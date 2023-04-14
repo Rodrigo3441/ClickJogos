@@ -106,3 +106,15 @@ border-color:#848484;
 .all {
 	width: 100%;
 }
+a {
+color: #e10000;
+}
+a:hover {
+color: #a10000;
+}
+a:focus {
+color: #a10000;
+}
+p {
+	line-height: 1.73;
+}
