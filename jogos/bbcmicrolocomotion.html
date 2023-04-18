@@ -10,14 +10,7 @@
 <body>
 
 <!-- ruffle script (removed)-->
-<script src="https://bbc.godbolt.org/jsbeeb/jsbeeb-1.1.2.js"></script>
-<script>
-    var canvas = document.getElementById("canvas");
-    var romPath = canvas.getAttribute("data-rom");
-    var jsbeeb = new JSBeeb(canvas);
-    jsbeeb.attachROM(romPath);
-    jsbeeb.start();
-</script>
+
 
 <!-- inicio do cabeçário-->
 <!-- uol navbar part-->
@@ -167,7 +160,7 @@ os vários outros <b><u>jogos do Mario</u></b>! 2,1 MB<br>
 <!-- game on page part-->
 <div class="centro">
 <div style="margin-top:2px;margin-bottom:5px;height:620px;border-width:1px;border-style:solid;border-color:#cccccc;">
-<canvas id="canvas" width="800" height="600" style="margin-top:10px;" data-rom="games/bbcmicrolocomotion.ssd"></canvas>
+<iframe src="https://clickjogos.netlify.app/jogos/jsbeeb/?disc1=https://clickjogos.netlify.app/jogos/games/bbcmicrolocomotion.ssd" width="800" height="600" style="margin-top:10px;"></iframe>
 
 </div>
 </div>
