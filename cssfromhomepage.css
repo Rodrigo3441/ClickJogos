@@ -153,3 +153,6 @@ p {
 .next {
   margin-left: 10px;
 }
+#anterior:hover, #proximo:hover {
+  cursor: pointer;
+}
