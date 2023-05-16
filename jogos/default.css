@@ -3,7 +3,7 @@
   src: url('../LucidaGrande.ttf') format('truetype');
 }
 body {
-  font-family: 'Lucida grande'; font-size: 11px; color: #4a4a4a; background:url(../pageelements/fundo.gif) repeat;
+  font-family: 'Lucida grande'; font-size: 11px; color: #c2c2c2; background:url(../pageelements/fundo.gif) repeat;
 }
   h1 {
   color: #e10000; font-size: 18px;
@@ -23,7 +23,7 @@ font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
 h3 {
-font-size: 13px; color: #e10000; font-family: arial;
+font-size: 13px; color: #f04821; font-family: arial;
 font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
