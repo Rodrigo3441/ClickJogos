@@ -6,11 +6,13 @@
 <link href="bootstrap(gamepages).css" rel="stylesheet" type="text/css" media="all">
 <link href="cssfromhomepage.css" rel="stylesheet">
 <link rel="icon" href="pageelements/cjlogo.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
-<!--Slidercontext script-->
+<!--Scriptzone-->
 <script src="slidercontext.js"></script>
+<script src="musicplayer.js"></script>
 
 <!-- inicio do cabeçário-->
 <!-- uol navbar part-->
@@ -168,7 +170,18 @@
 </div>
 
 <!-- coluna dos jogos em destaque-->
-<div style="flex-basis: 88%;padding:5px;">
+<div style="flex-basis: 88%;padding-left:5px;">
+<!--reprodutor de audio-->
+<div class="audio-player">
+    <audio loop id="myAudio" src="thetower.mp3"></audio>
+    <button class="play-pause-btn" onclick="togglePlay()">
+      <i id="playIcon" class="fa fa-play"></i>
+      <span id="playText">Tocar</span>
+    </button>
+    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+  </div>
+  
+  <!--inicio do conteúdo-->
 <table style="border-bottom:1px solid #787878;width:100%;background-color:#252525;height:34px;">
 <tr><td style="padding-left:8px;">
 <h5><b><img alt="" src="pageelements/playicon.png"> &nbsp;Jogos em Destaque</b></h5></td><td class="direita" style="padding-right:8px;"><a href="#"><img alt="" src="pageelements/+popular.png"></a></td>
@@ -492,8 +505,6 @@ aguardando dados...<img alt="" src="pageelements/loading.gif">
 </div>
 </div>
 </div>
-
-
 <!--rodapé-->
 <hr>
 <table style="width:100%">
