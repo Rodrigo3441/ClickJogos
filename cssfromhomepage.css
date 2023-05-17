@@ -171,7 +171,7 @@ p {
     }
 
     .audio-player .play-pause-btn {
-      background-color: #007bff;
+      background-color: #f66901;
       color: #fff;
       border: none;
       padding: 8px 12px;
@@ -181,7 +181,7 @@ p {
     }
 
     .audio-player .play-pause-btn:hover {
-      background-color: #0056b3;
+      background-color: #cf5702;
     }
 
     .audio-player .play-pause-btn i {
@@ -205,7 +205,7 @@ p {
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background-color: #007bff;
+      background-color: #f66901;
       cursor: pointer;
     }
 
@@ -213,6 +213,6 @@ p {
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      background-color: #007bff;
+      background-color: #f66901;
       cursor: pointer;
     }
