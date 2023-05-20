@@ -9,8 +9,9 @@
 </head>
 <body>
 
-<!-- ruffle script-->
+<!-- scripts part-->
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<script src="randomgames.js"></script>
 
 <!-- inicio do cabeçário-->
 <!-- uol navbar part-->
@@ -27,7 +28,17 @@
 <td class="uolnavbarspace"><a href="https://www.bol.uol.com.br/entretenimento/" class="cinza"><h4><b>Entretenimento</b></h4></a></td>
 <td class="uolnavbarspace"><a href="https://estilo.uol.com.br/index-tc.htm" class="cinza"><h4><b>Estilo</b></h4></a></td>
 <td class="uolnavbarspace"><a href="https://shopping.uol.com.br/" class="cinza"><h4><b>Shopping</b></h4></a></td>
-<td class="uolnavbarspace"><input type="text" placeholder="pesquisar no uol" style="width:136px; height:19px;"><button style="height:23px;">BUSCAR</button></td>
+
+<!--célula da barra de pesquisa do google-->
+<td class="uolnavbarspace">
+
+<div class="input-with-image inline-form">
+<form action="https://www.google.com/search" method="get">
+<input type="text" name="q" placeholder="pesquisar no google" style="width:113px; height:19px;"><img alt="" src="../pageelements/google.png" class="image-icon" width="16" height="16"><button type="submit" style="height:23px;">BUSCAR</button>
+</form>
+</div>
+
+</td>
 </tr>
 </table>
 </div>
@@ -43,9 +54,9 @@
 <tr>
 <td>
 <img alt="" src="../pageelements/wallcj.png"><a href="../jogos.html"><img alt="" src="../pageelements/cjlogo1.png" style="margin-top: 20px; margin-bottom: 21px;"></a></td>
-<td><div class="searchb" style="vertical-align: middle;">Buscar jogos e categorias:<br><input type="text" style="width:212px; height:19px; font-size: 14px; padding: 9px;"><img alt="" src="../pageelements/wallsearch.png"><a href="#"><img alt="" src="../pageelements/searchbutton.png" onmouseover="this.src='../pageelements/searchbuttonover.png'" onmouseout="this.src='../pageelements/searchbutton.png'" onclick="this.src='../pageelements/searchbuttonpressed.png'"></a></div></td>
+<td><div class="searchb" style="vertical-align: middle;">Buscar jogos e categorias:<br><input type="text" style="width:212px; height:19px; font-size: 14px; padding: 9px;"><img alt="" src="../pageelements/wallsearch.png"><a href="#"><img alt="" src="../pageelements/searchbutton.png" onmouseover="this.src='../pageelements/searchbuttonover.png'" onmouseout="this.src='../pageelements/searchbutton.png'" onmousedown="this.src='../pageelements/searchbuttonpressed.png'" onmouseup="this.src='../pageelements/searchbutton.png'"></a></div></td>
 <td><a href="#"><img alt="" src="../pageelements/avatar.png" style="border: 3px;"></a></td>
-<td><div class="searchb">Olá! <b>Cadastre-se </b>ou <b>Login</b><br><a href="#"><img alt="" src="../pageelements/myfavorites.png" style="margin-top:3px;"></a></div></td>
+<td><div class="searchb">Olá! Seja bem-vindo<b> User3758!</b><br><a href="#"><img alt="" src="../pageelements/myfavorites.png" style="margin-top:3px;"></a></div></td>
 </tr>
 </table>
 
@@ -62,17 +73,17 @@
 
 <table style="width:100%; text-align: left;">
 <tr>
-<td><img alt="" src="../pageelements/wallhome.png"><a href="../JOGOS.html"><img alt="" src="../pageelements/home.png" title="Página Inicial"></a></td>
-<td><a href="../JOGOS.html" title="Top Jogos" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Top Jogos</b></a></td>
-<td><a href="../JOGOS.html" title="Ação e Aventura" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Ação e Aventura</b></a></td>
-<td><a href="../JOGOS.html" title="Carros" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Carros</b></a></td>
-<td><a href="../JOGOS.html" title="Esportes" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Esportes</b></a></td>
-<td><a href="../JOGOS.html" title="Futebol" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Futebol</b></a></td>
-<td><a href="../JOGOS.html" title="Puzzle" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Puzzle</b></a></td>
-<td><a href="../JOGOS.html" title="Tiro" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Tiro</b></a></td>
-<td><a href="../JOGOS.html" title="Jogos de Meninas" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Jogos de Meninas</b></a></td>
-<td><a href="../JOGOS.html" title="Download de Jogos" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Download de Jogos</b></a></td>
-<td><a href="#" title="Jogo Aleatório"><img alt="" src="../pageelements/random.png"></a></td>
+<td><img alt="" src="../pageelements/wallhome.png"><a href="../jogos.html"><img alt="" src="../pageelements/home.png" title="Página Inicial"></a></td>
+<td><a href="#" title="Top Jogos" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Top Jogos</b></a></td>
+<td><a href="#" title="Ação e Aventura" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Ação e Aventura</b></a></td>
+<td><a href="#" title="Carros" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Carros</b></a></td>
+<td><a href="#" title="Esportes" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Esportes</b></a></td>
+<td><a href="#" title="Futebol" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Futebol</b></a></td>
+<td><a href="#" title="Puzzle" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Puzzle</b></a></td>
+<td><a href="#" title="Tiro" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Tiro</b></a></td>
+<td><a href="#" title="Jogos de Meninas" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Jogos de Meninas</b></a></td>
+<td><a href="#" title="Download de Jogos" class="orangebar"><b><img alt="" src="../pageelements/navbarsign.png">Download de Jogos</b></a></td>
+<td><img onclick="abrirSiteAleatorio()" style="cursor: pointer;" alt="" src="../pageelements/random.png"></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 </tr>
 </table>
@@ -82,7 +93,7 @@
 <!-- fim do cabeçário-->
 
 <!-- page body-->
-<div style="width:1000px;margin: 0 auto;padding:10px;height:auto;background-color:#f9f9f9;">
+<div class="bodybackgroundconfig">
 <table style="width:100%">
 <tr>
 <td>
@@ -92,7 +103,7 @@
 </td>
 <td class="direita">
 <h2>
-<b>Jogos Online » <a href="../jogos.html" style="color:#4a4a4a">Jogos Antigos</a></b>
+<b>Jogos Online » <a href="../jogos.html" style="color:#c2c2c2; text-decoration: none;">Página Principal</a></b>
 </h2>
 </td>
 </tr>
@@ -103,13 +114,11 @@
 
 <!-- game info-->
 <div style="display: flex;">
-  <div style="width: 50%;">Estacione o veículo em diversas vagas com trajetos diferentes ou ainda crie o seu próprio
-circuito, tomando cuidado para não bater ou encostar em qualquer obstáculo no meio do
-caminho. 1,4 MB<br>
+  <div style="width: 50%;">Estacione o veículo em diversas vagas com trajetos diferentes ou ainda crie o seu próprio circuito, tomando cuidado para não bater ou encostar em qualquer obstáculo no meio do caminho. 1,4 MB<br>
   <img src="../pageelements/livre.png" alt=""> &nbsp;Livre para todos os públicos<br>
   <table class="all">
   <tr>
-  <td class="half"><a href="https://twitter.com/intent/tweet?hashtags=nostalgia&text=Jogando%20Na%20Recria%C3%A7%C3%A3o%20Do%20clickjogos!&tw_p=tweetbutton&url=http%3A%2F%2Fclickjogos.uol.com.br%2F"><img src="../pageelements/tweet.png" alt=""></a></td>
+  <td class="half"><a href="https://twitter.com/intent/tweet?hashtags=nostalgia&text=Jogando%20Na%20Recria%C3%A7%C3%A3o%20Do%20clickjogos!&tw_p=tweetbutton&url=http%3A%2F%2Fclickjogos.netlify.app%2F"><img src="../pageelements/tweet.png" alt=""></a></td>
   <td class="half"><a href="http://www.facebook.com/sharer/sharer.php?u=http://clickjogos.com.br/"><img alt="" src="../pageelements/share.png" onmouseover="this.src='../pageelements/share1.png'" onmouseout="this.src='../pageelements/share.png'"></a></td>
   </tr>
   </table>
@@ -118,7 +127,7 @@ caminho. 1,4 MB<br>
   <!--controles do jogo (como jogar)-->
 <div style="width: 48%;">
 <h3><b>Como jogar:</b></h3>
-<img alt="" src="../pageelements/keys.png"> &nbsp;controlam o veículo<br>
+<img alt="" src="../pageelements/keys.png"> &nbsp;controlam o veículo
 </div>
 </div>
 <br>
@@ -133,22 +142,22 @@ caminho. 1,4 MB<br>
 <table style="width:98%; margin: 0 auto;">
 <tr>
 <td>
-<a href="#" style="color:#e10000; font-family: arial; font-size:12px; text-decoration: none;"><b>Meus Favoritos:</b></a> &nbsp;
-<a href="#" style="color:#4a4a4a"><img alt="" src="../pageelements/favorite.png" style="margin-bottom:4px;"> &nbsp;adicionar</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" style="color:#f04821; font-family: arial; font-size:12px; text-decoration: none;"><b>Meus Favoritos:</b></a> &nbsp;
+<a href="#" style="color:#c2c2c2"><img alt="" src="../pageelements/favorite.png" style="margin-bottom:4px;"> &nbsp;adicionar</a> &nbsp;&nbsp;&nbsp;&nbsp;
 
-<a href="#" style="color:#e10000; font-family: arial; font-size:12px; text-decoration: none;"><b>Avaliação:</b></a> &nbsp;
-<a href="#" style="color:#4a4a4a; text-decoration: none;"><img alt="" src="../pageelements/verygood.png" style="margin-bottom:3px;"> muito bom!</a> &nbsp;&nbsp;
-<a href="#" style="color:#4a4a4a; text-decoration: none;"><img alt="" src="../pageelements/good.png" style="margin-bottom:3px;"> bom</a> &nbsp;&nbsp;
-<a href="#" style="color:#4a4a4a; text-decoration: none;"><img alt="" src="../pageelements/+-.png" style="margin-bottom:3px;"> + ou -</a> &nbsp;&nbsp;
-<a href="#" style="color:#4a4a4a; text-decoration: none;"><img alt="" src="../pageelements/bad.png" style="margin-bottom:3px;"> péssimo</a> &nbsp;&nbsp;&nbsp;</td>
+<a href="#" style="color:#f04821; font-family: arial; font-size:12px; text-decoration: none;"><b>Avaliação:</b></a> &nbsp;
+<a href="#" style="color:#c2c2c2; text-decoration: none;"><img alt="" src="../pageelements/verygood.png" style="margin-bottom:3px;"> muito bom!</a> &nbsp;&nbsp;
+<a href="#" style="color:#c2c2c2; text-decoration: none;"><img alt="" src="../pageelements/good.png" style="margin-bottom:3px;"> bom</a> &nbsp;&nbsp;
+<a href="#" style="color:#c2c2c2; text-decoration: none;"><img alt="" src="../pageelements/+-.png" style="margin-bottom:3px;"> + ou -</a> &nbsp;&nbsp;
+<a href="#" style="color:#c2c2c2; text-decoration: none;"><img alt="" src="../pageelements/bad.png" style="margin-bottom:3px;"> péssimo</a> &nbsp;&nbsp;&nbsp;</td>
 
-<td class="direita"><a id="fullscreen-btn" style="color:#666666; font-family:arial; font-size:13px; text-decoration:none; cursor: pointer;"><img alt="" src="../pageelements/fullscreenbutton.png" style="margin-bottom: 4px;"><b> &nbsp;tela cheia</b></a> &nbsp;
+<td class="direita"><a id="fullscreen-btn" style="color:#a3a3a3; font-family:arial; font-size:13px; text-decoration:none; cursor: pointer;"><img alt="" src="../pageelements/fullscreenbutton.png" style="margin-bottom: 4px;"><b> &nbsp;tela cheia</b></a> &nbsp;
 
-<a class="zoom-btn" id="reset-zoom" style="color:#666666; text-decoration: none; cursor: pointer;"><img alt="" src="../pageelements/restore.png" style="margin-bottom:3px;"> &nbsp;restaurar</a>
+<a class="zoom-btn" id="reset-zoom" style="color:#a3a3a3; text-decoration: none; cursor: pointer;"><img alt="" src="../pageelements/restore.png" style="margin-bottom:3px;"> &nbsp;restaurar</a>
  &nbsp;
-<a class="zoom-btn" id="zoom-out" style="color:#666666; text-decoration: none; cursor: pointer;"><img alt="" src="../pageelements/zoomout.png" style="margin-bottom:3px;"> &nbsp;menor</a>
+<a class="zoom-btn" id="zoom-out" style="color:#a3a3a3; text-decoration: none; cursor: pointer;"><img alt="" src="../pageelements/zoomout.png" style="margin-bottom:3px;"> &nbsp;menor</a>
  &nbsp;
-<a class="zoom-btn" id="zoom-in" style="color:#666666; text-decoration: none; cursor: pointer;"><img alt="" src="../pageelements/zoomin.png" style="margin-bottom:3px;"> &nbsp;maior</a></td>
+<a class="zoom-btn" id="zoom-in" style="color:#a3a3a3; text-decoration: none; cursor: pointer;"><img alt="" src="../pageelements/zoomin.png" style="margin-bottom:3px;"> &nbsp;maior</a></td>
 </tr>
 </table>
 
@@ -157,7 +166,7 @@ caminho. 1,4 MB<br>
 
 <!-- game on page part-->
 <div class="centro">
-<div style="margin-top:2px;margin-bottom:5px;height:620px;border-width:1px;border-style:solid;border-color:#cccccc;">
+<div class="windowgamepart">
 <object id="flash-object" width="800" height="600" data="games/parkinglot2.swf" style="margin-top:10px;"></object></div>
 </div>
 
@@ -177,15 +186,15 @@ caminho. 1,4 MB<br>
 <table style="margin-top:6px;" class="centro all">
 <tr>
 
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td></tr>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td></tr>
 <tr>
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
-<td><a href="error" style="color:#e10000; text-decoration: none;"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
+<td><a href="error" class="error"><img alt="" class="imggames" src="../pageelements/fail.png"><br><h3><b>[...]</b></h3></a><p class="descrition">Não foi possível<br>processar dados das<br>respostas</p></td>
 </tr>
 </table>
 </div></div>
