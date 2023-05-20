@@ -145,3 +145,8 @@ p {
   .inline-form form {
     display: inline;
   }
+  /*game fullscree*/
+  #myElement {
+            width: 100%;
+            height: 100%;
+        }

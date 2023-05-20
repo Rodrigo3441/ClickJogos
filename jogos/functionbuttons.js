@@ -43,31 +43,35 @@ document.getElementById("reset-zoom").addEventListener("click", function(){
     document.getElementById("reset-zoom").classList.add("disabled");
 });
 
-var obj = document.getElementById("my-object");
+ function toggleFullScreen() {
+            var elem = document.getElementById("myElement");
 
-  function toggleFullscreen() {
-    if (!document.fullscreenElement) {
-      if (obj.requestFullscreen) {
-        obj.requestFullscreen();
-      } else if (obj.mozRequestFullScreen) { // Para navegadores Firefox
-        obj.mozRequestFullScreen();
-      } else if (obj.webkitRequestFullscreen) { // Para navegadores Chrome, Safari e Opera
-        obj.webkitRequestFullscreen();
-      } else if (obj.msRequestFullscreen) { // Para navegadores Microsoft Edge
-        obj.msRequestFullscreen();
-      }
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.mozCancelFullScreen) { // Para navegadores Firefox
-        document.mozCancelFullScreen();
-      } else if (document.webkitExitFullscreen) { // Para navegadores Chrome, Safari e Opera
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) { // Para navegadores Microsoft Edge
-        document.msExitFullscreen();
-      }
-    }
-  }
+            if (elem.requestFullscreen) {
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                } else {
+                    elem.requestFullscreen();
+                }
+            } else if (elem.mozRequestFullScreen) { // Firefox
+                if (document.mozFullScreenElement) {
+                    document.mozCancelFullScreen();
+                } else {
+                    elem.mozRequestFullScreen();
+                }
+            } else if (elem.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                if (document.webkitFullscreenElement) {
+                    document.webkitExitFullscreen();
+                } else {
+                    elem.webkitRequestFullscreen();
+                }
+            } else if (elem.msRequestFullscreen) { // IE/Edge
+                if (document.msFullscreenElement) {
+                    document.msExitFullscreen();
+                } else {
+                    elem.msRequestFullscreen();
+                }
+            }
+        }
 setTimeout(function() {
         document.getElementById("loadingimg").src = "../pageelements/error.gif";
         document.getElementById("loadingtxt").innerHTML = "Falha ao carregar dados";
@@ -76,7 +80,6 @@ setTimeout(function() {
         document.getElementById("loadingimg1").src = "../pageelements/error.gif";
         document.getElementById("loadingtxt1").innerHTML = "Falha ao carregar dados";
       }, 10000); // 10 segundos em milissegundos
-	  
 	  
 	  
 	  
