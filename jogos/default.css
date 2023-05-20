@@ -6,7 +6,7 @@ body {
   font-family: 'Lucida grande'; font-size: 11px; color: #c2c2c2; background:url(../pageelements/fundo.gif) repeat;
 }
   h1 {
-  color: #e10000; font-size: 18px;
+  color: #f04821; font-size: 18px;
   font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
@@ -15,10 +15,10 @@ audio:not([controls]) {
 }
 
 hr {
-border-color: #cccccc;
+border-color: #787878;
 }
 h2 {
-font-size: 15px; color: #4a4a4a; text-align: right;
+font-size: 15px; color: #c2c2c2; text-align: right;
 font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
@@ -70,14 +70,14 @@ button {
 .orangebar:focus {
 		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
 		}
-		.cinza2 {
-	color: #4a4a4a; text-decoration: none;
+.cinza2 {
+	color: #c2c2c2; text-decoration: none;
 	}
 .cinza2:hover {
-	color: #4a4a4a;
+	color: #c2c2c2;
 	}
 .cinza2:focus {
-	color: #4a4a4a;
+	color: #c2c2c2;
 	}
 	.disabled {
     pointer-events: none;
@@ -92,10 +92,10 @@ button {
 	text-align: right;
 }
 .imggames {
-border: 1px solid #cccccc; padding:3px;
+border: 1px solid #787878; padding:3px;
 }
 .imggames:hover {
-border-color:#848484;
+border-color:#ff9c00;
 }
 .descrition {
 	line-height: 18px;
@@ -110,11 +110,38 @@ a {
 color: #e10000;
 }
 a:hover {
-color: #a10000;
+color: #f04821;
 }
 a:focus {
-color: #a10000;
+color: #f04821;
 }
 p {
 	line-height: 1.73;
 }
+.bodybackgroundconfig {
+	width:1000px;margin: 0 auto;padding:10px;height:auto;background-color:#121212;
+}
+.windowgamepart {
+	margin-top:2px;margin-bottom:5px;height:620px;border-width:1px;border-style:solid;border-color:#787878;
+}
+.error {
+	color:#f04821; text-decoration: none;
+}
+/*css do input da barra de pesquisa do google*/
+.input-with-image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-with-image input {
+    padding-left: 25px; /* espaço para a imagem */
+  }
+
+  .input-with-image .image-icon {
+    position: absolute;
+    top: 4px; /* ajuste a posição verticalmente conforme necessário */
+    left: 4px; /* ajuste a posição horizontalmente conforme necessário */
+  }
+  .inline-form form {
+    display: inline;
+  }
