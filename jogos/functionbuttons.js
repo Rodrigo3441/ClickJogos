@@ -43,16 +43,31 @@ document.getElementById("reset-zoom").addEventListener("click", function(){
     document.getElementById("reset-zoom").classList.add("disabled");
 });
 
-var fullscreenBtn = document.getElementById("fullscreen-btn");
-fullscreenBtn.addEventListener("click", toggleFullscreen);
-function toggleFullscreen() {
-  var doc = document.documentElement;
-  if (!document.fullscreenElement) {
-    doc.requestFullscreen();
-  } else {
-    document.exitFullscreen();
+var obj = document.getElementById("my-object");
+
+  function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+      if (obj.requestFullscreen) {
+        obj.requestFullscreen();
+      } else if (obj.mozRequestFullScreen) { // Para navegadores Firefox
+        obj.mozRequestFullScreen();
+      } else if (obj.webkitRequestFullscreen) { // Para navegadores Chrome, Safari e Opera
+        obj.webkitRequestFullscreen();
+      } else if (obj.msRequestFullscreen) { // Para navegadores Microsoft Edge
+        obj.msRequestFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) { // Para navegadores Firefox
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) { // Para navegadores Chrome, Safari e Opera
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) { // Para navegadores Microsoft Edge
+        document.msExitFullscreen();
+      }
+    }
   }
-}
 setTimeout(function() {
         document.getElementById("loadingimg").src = "../pageelements/error.gif";
         document.getElementById("loadingtxt").innerHTML = "Falha ao carregar dados";
@@ -61,3 +76,9 @@ setTimeout(function() {
         document.getElementById("loadingimg1").src = "../pageelements/error.gif";
         document.getElementById("loadingtxt1").innerHTML = "Falha ao carregar dados";
       }, 10000); // 10 segundos em milissegundos
+	  
+	  
+	  
+	  
+	  
+	  
