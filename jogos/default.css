@@ -115,6 +115,17 @@ color: #c2c2c2;
 a:focus {
 color: #c2c2c2;
 }
+/*para descrições*/
+.avisovermelho {
+	color: #f04821;
+	font-family: arial;
+	font-size: 12px;
+}
+.avisocinza {
+	color: #c2c2c2;
+	font-family: arial;
+	font-size: 12px;
+}
 p {
 	line-height: 1.73;
 }
