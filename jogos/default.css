@@ -157,6 +157,6 @@ p {
     display: inline;
   }
   ruffle-player, ruffle-embed, ruffle-object {
-            --preloader-background: #121212;
-            --logo-display: block;
+            --preloader-background: url('../pageelements/ruffleloadingscreen.png');
+            --logo-display: none;
         }
