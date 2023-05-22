@@ -160,5 +160,6 @@ p {
             --preloader-background: #121212;
             --logo-display: none;
 			backgroundcolor: #121212;
-			forceScale: true;
+			forceScale: false;
+			scale: "noborder";
         }
