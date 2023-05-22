@@ -158,8 +158,5 @@ p {
   }
   ruffle-player, ruffle-embed, ruffle-object {
             --preloader-background: #121212;
-            --logo-display: none;
-			backgroundcolor: #121212;
-			forceScale: false;
-			scale: noborder;
+            --logo-display: block;
         }
