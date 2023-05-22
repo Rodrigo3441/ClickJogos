@@ -161,5 +161,5 @@ p {
             --logo-display: none;
 			backgroundcolor: #121212;
 			forceScale: false;
-			scale: "noborder";
+			scale: noborder;
         }
