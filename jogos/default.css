@@ -156,3 +156,9 @@ p {
   .inline-form form {
     display: inline;
   }
+  ruffle-player, ruffle-embed, ruffle-object {
+            --preloader-background: #121212;
+            --logo-display: none;
+			--backgroundcolor: #121212
+			--forceScale: true;
+        }
