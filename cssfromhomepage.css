@@ -216,3 +216,15 @@ p {
       background-color: #f66901;
       cursor: pointer;
     }
+/*barra do internet explorer*/
+.textblack {
+	color: #000000;
+	font-family: arial regular;
+	font-size: 13px;
+}
+#internetexplorer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
