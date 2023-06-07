@@ -160,3 +160,6 @@ p {
             --preloader-background: #121212;
             --logo-display: block;
         }
+		.smallline {
+			line-height: 1.3;
+		}
