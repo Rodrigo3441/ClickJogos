@@ -3,7 +3,7 @@
   src: url('../LucidaGrande.ttf') format('truetype');
 }
 body {
-  font-family: 'Lucida grande'; font-size: 11px; color: #c2c2c2; background:url(../pageelements/fundo.gif) repeat;
+  font-family: 'Lucida grande'; font-size: 11px; color: #c2c2c2; background-color: #000000;
 }
   h1 {
   color: #f04821; font-size: 18px;
