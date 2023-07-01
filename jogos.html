@@ -7,24 +7,6 @@
 <link href="cssfromhomepage.css" rel="stylesheet">
 <link rel="icon" href="pageelements/cjlogo.jpg">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-<script>
-    // Verifica se há suporte para o armazenamento local
-    if (typeof(Storage) !== "undefined") {
-        // Obtém a última página acessada pelo usuário, se existir
-        var lastPage = localStorage.getItem("lastPage");
-        
-        // Atualiza a barra de histórico
-        if (lastPage) {
-            document.getElementById("historico").innerHTML = "Última página acessada: " + lastPage;
-        }
-        
-        // Armazena a página atual no armazenamento local
-        localStorage.setItem("lastPage", window.location.href);
-    }
-</script>
-
-
 </head>
 <body>
 
@@ -631,7 +613,6 @@ aguardando dados...<img alt="" src="pageelements/loading.gif">
 </div>
 </div>
 </div>
-<div id="historico"></div>
 
 
 <!--parte da barra do internet explorer, não mecher aqui-->
