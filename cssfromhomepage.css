@@ -228,3 +228,21 @@ p {
     left: 50%;
     transform: translateX(-50%);
   }
+  /*css do input da barra de pesquisa do google*/
+.input-with-image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-with-image input {
+    padding-left: 25px; /* espaço para a imagem */
+  }
+
+  .input-with-image .image-icon {
+    position: absolute;
+    top: 4px; /* ajuste a posição verticalmente conforme necessário */
+    left: 4px; /* ajuste a posição horizontalmente conforme necessário */
+  }
+  .inline-form form {
+    display: inline;
+  }
