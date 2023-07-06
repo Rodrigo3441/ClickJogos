@@ -11,7 +11,7 @@ function abrirSiteAleatorio() {
 	"jogos/colorphysics.html",
 	"jogos/crashbandicoot.html",
 	"jogos/cuboyquest2.html",
-	"jogos/cutthehope.html",
+	"jogos/cuttherope.html",
 	"jogos/deepsleep.html",
 	"jogos/discobowling.html",
 	"jogos/ducklife4.html",
