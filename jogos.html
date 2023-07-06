@@ -173,25 +173,7 @@
 <!-- coluna dos jogos em destaque-->
 <div style="flex-basis: 88%;padding-left:5px;">
 
-<!--reprodutor de audio-->
-<div style="display: flex; height:54px;">
-<div style="flex-basis: 40%">
-<div class="audio-player">
-    <audio loop id="myAudio" src="thetower.mp3"></audio>
-    <button class="play-pause-btn" onclick="togglePlay()">
-      <i id="playIcon" class="fa fa-play"></i>
-      <span id="playText">Tocar</span>
-    </button>
-    <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
-  </div>
-  </div>
-  <div style="flex-basis: 15%">
-<!-- clock widget start -->
-<script> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href","https://s.bookcdn.com//css/cl/bw-cl-m200x.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file); </script> <div id="tw_10_222155499"><div style="width:200px; height:67px; margin: 0 auto;"><a href="https://ibooked.com.br/time/sao-paulo-18266">São Paulo</a><br></div></div> <script> function setWidgetData_222155499(data){ if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_'+params.widget_type+'_'+params.widget_id); if(objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_222155499 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=585;type=10;id=222155499;scode=50762;city_id=18266;wlangid=8;mode=0;details=1;background=ffffff;border_color=ffffff;color=333333;add_background=ff6f00;add_color=12525e;head_color=ffffff;border=1;transparent=0"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript); </script>
-<!-- clock widget end -->
 
-</div>
-</div>
   
   <!--inicio do conteúdo-->
 <table style="border-bottom:1px solid #787878;width:100%;background-color:#252525;height:34px;">
