@@ -13,3 +13,15 @@ function exibirImagem(elemento) {
     imagemSelecionada.appendChild(imagem);
   }, 3000); // Aguarda 3 segundos (3000 milissegundos) antes de exibir a imagem real
 }
+
+//mostrar link quebrado
+function exibirTexto() {
+    var linhaDeTexto = document.getElementById("linhaDeTexto");
+    linhaDeTexto.style.display = "block";
+    linhaDeTexto.addEventListener("click", alterarTexto);
+}
+
+function alterarTexto() {
+    this.innerHTML = "Obrigado!";
+}
+

@@ -23,9 +23,8 @@ font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
 h3 {
-font-size: 14px; color: #f04821; font-family: arial;
-font-family: 'Trebuchet MS';
-  src: url('../trebuc.ttf') format('truetype');
+font-size: 12px; color: #f04821; font-family: arial;
+font-family: verdana;
 }
 h4 {
 font-size: 14px; color: #ffffff; font-family: arial;
@@ -170,12 +169,11 @@ p {
 	color: #ff9c00; font-size: 11px;
 }
 h5 {
-	color: #f04821; font-size: 13px;
-  font-family: 'Trebuchet MS';
-  src: url('../trebuc.ttf') format('truetype');
+	color: #f04821; font-size: 11px;
+  font-family: verdana;
 }
 .verde {
-	color: green; font-family: arial; font-size: 13px;
+	color: green; font-family: verdana; font-size: 11.5px;
 }
 .normaltxt {
 	font-family: 'Lucida grande'; font-size: 11px; color: #c2c2c2;
@@ -185,3 +183,29 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+strong {
+	font-family:Verdana; color:#c2c2c2;font-size:11px;
+}
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container img {
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .container hr {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+ .laranja {
+	 color: #ff6600; font-family: verdana; 
+ }
