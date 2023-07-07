@@ -246,3 +246,11 @@ p {
   .inline-form form {
     display: inline;
   }
+  
+  .categorydiv hr {
+        border: none; /* Remove a borda padrão do <hr> */
+        border-top: 1px solid #787878; /* Adicione uma borda personalizada com a altura desejada */
+        margin: 0; /* Remove a margem padrão do <hr> */
+        padding: 0; /* Remove o preenchimento padrão do <hr> */
+    }
+	
