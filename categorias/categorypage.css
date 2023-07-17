@@ -239,7 +239,7 @@ a.botaooff:active span {
 .more span {
   display: inline-block;
   vertical-align: middle;
-  background: url(pagination/images.png) no-repeat 3px -5279px transparent;
+  background: url(../pageelements/images.png) no-repeat 3px -5279px transparent;
   border-right: 1px solid #303030;
   height: 24px;
   width: 24px;
