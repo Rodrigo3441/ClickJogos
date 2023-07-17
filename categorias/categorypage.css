@@ -212,3 +212,53 @@ a.botaooff:active span {
   position: relative;
   top: 1px;
 }
+
+/*more button*/
+
+.more {
+  border-radius: 2px;
+  font-family: Trebuchet MS;
+  border-style: solid;
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom right, #151515, #010101);
+  border: 1px solid #303030;
+  float: left;
+  margin: 3px 6px 0 0;
+  font-size: 12px;
+}
+
+.more a {
+  color: #aaa;
+  font-size: 12.4px;
+  padding: 5px 4px 5px 8px;
+  text-decoration: none !important;
+}
+
+.more span {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(pagination/images.png) no-repeat 3px -5279px transparent;
+  border-right: 1px solid #303030;
+  height: 24px;
+  width: 24px;
+}
+
+.more:hover {
+  background: #080808;
+}
+
+.more:hover a {
+  color: #ccc;
+}
+
+.more:active,
+.more.selected {
+  background-image: linear-gradient(to bottom right, #252525, #070707);
+}
+
+.more:active a,
+.more.selected a {
+  color: #999;
+}
