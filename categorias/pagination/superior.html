@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Superior</title>
+    <script>
+        function alternarDescricao() {
+            var frameInferior = parent.frames['frameInferior'];
+            var descricaoFrame = frameInferior.document.getElementById('descricao');
+            if (descricaoFrame.style.display === 'none' || descricaoFrame.style.display === '') {
+                descricaoFrame.style.display = 'block';
+            } else {
+                descricaoFrame.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Página Superior</h1>
+    <button onclick="alternarDescricao()">Mostrar/Esconder Descrição</button>
+</body>
+</html>
