@@ -6,10 +6,10 @@ function toggleDescricao() {
       if (descricao.style.display === "none") {
         descricao.style.display = "block";
         botao.classList.add("ativo");
-        imagemBotao.src = "embedpagegame/sobre3.png";
+        imagemBotao.src = "../sobre3.png";
       } else {
         descricao.style.display = "none";
         botao.classList.remove("ativo");
-        imagemBotao.src = "embedpagegame/sobre1.png";
+        imagemBotao.src = "../sobre1.png";
       }
     }
