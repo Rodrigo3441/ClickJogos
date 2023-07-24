@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pokémon Showdown</title>
+<link href="../../../bootstrap(gamepages).css" rel="stylesheet" type="text/css" media="all">
+<link href="../../default.css" rel="stylesheet" type="text/css">
+<link href="../../cssfromembedpages.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../pageelements/cjlogo.jpg">
+</head>
+<body>
+<!--script da descrição que abre e fecha-->
+<script src="../../descriptionembedpages.js"></script>
+
+<!--inicio da barra de cima-->
+<div style="background-image:url(../background.png); background-repeat:repeat-x;width:auto;">
+<div class="centro">
+<div style="margin:0 auto;display: flex; height: 42px; width: 1000px;">
+
+<!--imagem logo clickjogos-->
+<div style="flex: 48px"><a target="_top" href="../../../jogos.html"><img alt="" src="../minilogo.png"></a></div>
+
+<!--título do jogo-->
+<div style="flex: 150px; padding: 5px;"><h1><b>Pokémon Show...</b></h1></div>
+
+<!--adicionar aos favoritos-->
+<div style="flex: 110px; padding: 5px;"><a href="#"><img alt="" src="../adicionar.png"></a></div>
+
+<!--espaçador-->
+<div style="flex: 12px;"><img alt="" src="../espacador.png"></div>
+
+<!--avaliação-->
+<div class="centro">
+<div style="flex: 120px;"><table height="20px;"><tr><td><span class="textbranco"><b>&nbsp; Avaliação:</b></span></td><td></td><td><span class="textocinzatitulo">Erro. &nbsp;</span></td></tr></table><a formaction="" href="">Tentar de novo!</a></div></div>
+
+<!--espaçador-->
+<div style="flex: 12px;"><img alt="" src="../espacador.png"></div>
+
+<!--botão da descrição-->
+<div style="flex: 130px; padding-top: 5px;"><div class="botao" onclick="toggleDescricao()" id="botaoDescricao">
+    <img src="../sobre1.png" alt="Botão" id="imagemBotao" />
+  </div></div>
+
+<!--espaçador-->
+<div style="flex: 12px;"><img alt="" src="../espacador.png"></div>
+
+<!--compartilhe-->
+<div style="flex: 360px; padding-top: 8px;"><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://clickjogos.com.br/"><img alt="" src="../../../pageelements/share.png" onmouseover="this.src='../../../pageelements/share1.png'" onmouseout="this.src='../../../pageelements/share.png'"></a>
+</div>
+
+<!--botão fechar-->
+<div style="flex: 38px; padding-top: 8px;"><a target="_top" href="https://play.pokemonshowdown.com/" title="Fechar"><img alt="" src="../close.png"></a></div>
+</div>
+</div>
+</div>
+
+<!--Descrição do Jogo-->
+<div id="descricao"></div>
+
+  </html>
