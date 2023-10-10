@@ -8,73 +8,15 @@
 <link href="buttonstyle.css" rel="stylesheet">
 <link href="bootstrap(gamepages).css" rel="stylesheet" type="text/css" media="all">
 <link href="cssfromhomepage.css" rel="stylesheet">
-
-
-<style>
-body {
-background-color: #000000;
-color: #ffffff;
-font-family: 'Lucida grande';
-border: 0;
-padding: 0;
-margin: 0;
-font-size: 12px;
-}
-.headertop {
-width: 100%;
-}
-.principal {
-width: 1000px;
-margin: 0 auto;
-height: auto;
-background-color: #121212;
-padding: 10px 10px 0 10px;
-border-radius: 20px 20px 0px 0px;
-border: 1px solid #ffffff;
-background: linear-gradient(to bottom, #000000, #333333);
-}
-.centro {
-text-align: center;
-}
-a.categorybt {
-  display: inline-block;
-  padding: 3px 9px 3px 9px;
-  border: 1px solid #ffffff;
-  border-width:1px 1px 0 1px;
-  background: linear-gradient(to bottom, #454545 50%, #202020 50%);
-  color: #ffffff;
-  font-family: arial black;
-  font-size: 10px;
-  text-decoration: none;
-  border-radius: 5px 5px 0 0;
-  height: 17px;
-  line-height: 17px;
-}
-a.categorybt:hover {
-  background: linear-gradient(to bottom, #5d5d5d 50%, #2d2d2d 50%);
-  color: #ffffff;
-  text-decoration: none;
-}
-.secondcol {
-margin:0 auto;
-width:800px;
-height:auto;
-background-color:#121212;
-padding:10px;
-border-radius: 20px 20px 20px 20px;
-border: 1px solid #ffffff;
-}
-.redtext {
-color: #ff0000;
-}
-hr.dashed {
-        border-top: 2px dashed #787878;
-    }	
-</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<link href="csshomepage.css" rel="stylesheet">
 </head>
 <body>
 <!--Scriptzone-->
 <script src="slidercontext.js"></script>
+<script src="musicplayer.js"></script>
+
+
 
 
 <!-- uol navbar part-->
@@ -111,8 +53,8 @@ hr.dashed {
 
 <!--começo do cabeçário-->
 <div class="principal">
-<div class="centro">seja bem vindo à recriação do click jogos!<br></div>
-<img style="margin-top: 20px; margin-left:40px;" alt="error" src="oldimages/clickjogoslogo.png"><br><br><br>
+<div class="centro">Seja bem vindo à recriação do click jogos!<br></div>
+<img style="margin-top: 20px; margin-left:40px;" title="Click Jogos - Versão do Rodrigo" alt="error" src="oldimages/clickjogoslogo.png"><br><br><br>
 
 <div class="centro">
 <img style="margin-right:30px;" alt="error" src="oldimages/acesseagora.png">
@@ -122,13 +64,13 @@ hr.dashed {
 
 <!--Parte das categorias-->
 <div class="centro">
-<a href="categorias/topjogos.html" title="Top Jogos" class="categorybt">TOP JOGOS</a>
-<a href="categorias/jogos-de-acao-e-aventura.html" title="Ação e Aventura" class="categorybt">AÇÃO E AVENTURA</a>
-<a href="categorias/jogos-de-carros.html" title="Carros" class="categorybt">CARROS</a>
-<a href="categoras/jogos-de-esporte.html" title="Esporte" class="categorybt">ESPORTE</a>
-<a href="categorias/jogos-de-futebol.html" title="Futebol" class="categorybt">FUTEBOL</a>
-<a href="categorias/jogos-de-puzzle;html" title="Puzzle" class="categorybt">PUZZLE</a>
-<a href="categorias/jogos-de-tiro.html" title="Tiro" class="categorybt">TIRO</a>
+<a href="categorias/topjogos.html" title="Top Jogos" class="categorybt"><b>TOP JOGOS</b></a>
+<a href="categorias/jogos-de-acao-e-aventura.html" title="Ação e Aventura" class="categorybt"><b>AÇÃO E AVENTURA</b></a>
+<a href="categorias/jogos-de-carros.html" title="Carros" class="categorybt"><b>CARROS</b></a>
+<a href="categoras/jogos-de-esporte.html" title="Esporte" class="categorybt"><b>ESPORTE</b></a>
+<a href="categorias/jogos-de-futebol.html" title="Futebol" class="categorybt"><b>FUTEBOL</b></a>
+<a href="categorias/jogos-de-puzzle;html" title="Puzzle" class="categorybt"><b>PUZZLE</b></a>
+<a href="categorias/jogos-de-tiro.html" title="Tiro" class="categorybt"><b>TIRO</b></a>
 </div>
 </div><br>
 
@@ -149,27 +91,10 @@ Seja bem vindo ao meu site! Aqui nessa página em específico você pode encontr
 <hr>
 <!--parte do slide-->
 <div class="slider">
-  <div class="slider-content" id="slide1" style="background-image: url(oldimages/lucariomega.png);background-position: center; background-repeat: no-repeat;">
-
-<div style="display: flex;">
-<div style="flex-basis: 40%;">
+  <div class="slider-content" id="slide1">
 Sou apenas uma pessoa que busca o melhor que a vida pode oferecer, sempre procuro
 levar tudo que quero fazer em minha vida a sério. Nunca desisto até ter terminado.<br><br>
-<div class="centro">
-<img alt="error" width="140px" src="oldimages/riolu.png">
-</div>
-</div>
-<div style="flex-basis: 20%;">
-<!--Essa fica vazia, pra ficar dividido ao meio-->
-</div>
-<div style="flex-basis: 40%;">
-Aqui nesse slide você pode conferir os motivos que me motivaram a fazer a recriação do clickjogos
-<div class="centro">
-<img alt="error" width="150px" src="oldimages/lucariosprite2.png">
-</div>
-</div>
-</div>
-
+Aqui nesse slide você pode conferir os motivos que me motivaram a fazer a recriação do clickjogos.
 <!--não apagar ou copiar essa </div>-->
 </div>
 
@@ -222,23 +147,67 @@ Mas eu não vou desistir, mesmo que isso demore anos, eu irei terminar esse proj
 
 
 <div class="centro">
-<h3><span>Progresso de Desenvolvimento do Site</span></h3>
-<p>Aqui você pode consultar o atual progresso de desenvolvimento da recriação do Click Jogos! (nota: dados podem estar desatualizados! Última atualização dos dados: <span class="redtext">06/10/2023</span>)</p><br>
+<h3>Progresso de Desenvolvimento do Site</h3>
+<p>Aqui você pode consultar o atual progresso de desenvolvimento da recriação do Click Jogos! (nota: dados podem estar desatualizados! Última atualização: <span class="redtext">06/10/2023</span>)</p><br>
 <p>Páginas em Geral<progress value="6" max="100"></progress> &nbsp;7%</p>
 <p>Página Principal<progress value="80" max="100"></progress> &nbsp;80%</p>
 <p>Jogos Inseridos<progress value="1" max="100"></progress> &nbsp;< 1%</p>
 <p>Restauração do estilo do Site<progress value="100" max="100"></progress> &nbsp;100%</p>
 <p>Implantação do Modo Escuro<progress value="95" max="100"></progress> &nbsp;95%</p>
-<br>
-Continua abaixo
+
 </div>
 </div>
 <div style="flex-basis:19%"><a title="Seja bem vindo?" href="https://kromercoin.netlify.app/"><img alt="error" src="oldimages/banner1.jpg"></a></div>
 </div>
-</div><br>
-<marquee scroll-behavior="smooth" scrollAmount="20;">
-<img src="oldimages/metrolink.png"></marquee>
-<br>
+</div>
+
+
+<div style="width:820px;display:flex;margin:0 auto;padding:10px;margin-top:10px;">
+
+<!--Reprodutor de música-->
+<div class="threecol" style="flex-basis: 60%;padding:10px;margin-right:10px;">
+
+<!--reprodutor de audio-->
+<marquee behavior="scroll" direction="left" id="currentTrackName">Atualmente tocando:</marquee>
+
+<div class="audio-player">
+  <audio id="myAudio" ></audio>
+  <div class="controls">
+    <button class="prev-btn" onclick="prevTrack()">&#9664;</button>
+	<button class="play-pause-btn" onclick="togglePlay()">
+      <i id="playIcon" class="fa fa-pause"></i>
+      <span id="playText">Pausado</span>
+    </button>
+    <button class="next-btn" onclick="nextTrack()">&#9654;</button>
+	<input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+  </div>  
+
+</div>
+
+<div class="progress-bar">
+  <div class="progress-bar-filled"></div>
+</div>
+ 
+
+
+
+
+  
+</div>
+
+<!--Perfil-->
+<div class="threecol" style="flex-basis: 40%;padding:10px;margin-left:10px;">
+<div class="centro"><h3>Sobre Mim</h3>
+<img alt="error" width="150px;" style="border: 1px solid #ffff00; padding: 7px;" src="oldimages/profile.png"><br><br></div>
+<h3>Nome:</h3>Rodrigo de Souza Galvão
+<h3>Nascimento:</h3>06/12/2006
+<h3>Perfil no Github:</h3><a href="https://github.com/Oozaru341" style="color:#1dbcf1;text-decoration:none;" title="Rodrigo">https://github.com/Oozaru341</a>
+<h3>Canal do Youtube:</h3><a href="https://www.youtube.com/@rodrigozone" style="color:#1dbcf1;text-decoration:none;" title="Rodrigo Zone">https://www.youtube.com/@rodrigozone</a>
+<h3>Escolaridade:</h3>Atualmente no 2º Ano do Ensino Médio
+<h3>Pretensões para o futuro:</h3>Pretendo me formar em Ciência da Computação
+<h3>Habilidades:</h3>Atualmente tenho habilidades em World, Excel, Powerpoint, Adobe Photoshop e Adobe Illustrator.<br>Também tenho habilidades em <span class="redtext">HTML e CSS.</a>
+</div>
+</div>
 
 
 
