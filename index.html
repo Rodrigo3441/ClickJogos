@@ -1,98 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="keywords" content="click jogos antigo,click jogos antigo recriação, click jogos recriação, jogos retrô, jogos clássicos, jogos vintage, jogos antigos, click jogos">
 <meta name="description" content="A recriação do Click Jogos no estilo de 2013! confira os melhores jogos da época porém restaurados à um estilo novo de página, totalmente renovado e testado!">
 <title>Jogos Online Grátis - Jogue no Click Jogos</title>
-<link href="static.css" media="screen" rel="stylesheet" type="text/css">
-<link href="buttonstyle.css" media="screen" rel="stylesheet">
-<link href="progressbarstyle.css" media="screen" rel="stylesheet">
-<link rel="icon" href="pageelements/cjlogo.jpg">
-<style>
-body {
-background:url('pageelements/darkwallpaper.jpg');
- background-repeat: no-repeat;
-            background-size: cover;
-}
-.centro {
-text-align: center;
-}
-</style>
+<link href="buttonstyle.css" rel="stylesheet">
+<link href="bootstrap(gamepages).css" rel="stylesheet" type="text/css" media="all">
+<link href="cssfromhomepage.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<link href="cssindexpage.css" rel="stylesheet">
+<link href="musicplayer.css" rel="stylesheet">
 </head>
 <body>
-<audio autoplay hidden>
-   <source src="winxp.mp3" type="audio/mpeg">
-  </audio>
-<div style="background-image:url(pageelements/orangebarhelp.png); background-repeat:repeat-x;width:auto;">
-<div id='content'><table style="width:100%">
+<!--Scriptzone-->
+<script src="slidercontext.js"></script>
+<script src="musicplayer.js"></script>
+
+
+
+
+<!-- uol navbar part-->
+<div style="background-color:#353535;">
+<div style="width:1020px;margin: 0 auto;padding:0px;height:30px;background-color:#353535;">
+<table id="uolnavbar">
 <tr>
-<td>
-<h1>
-<b>Agradecimentos especiais &nbsp;&nbsp;&nbsp;&nbsp;</b>
-</h1>
+<td class="uolnavbarspace"><a href="https://www.uol.com.br/"><img alt="error" src="pageelements/uollogo.gif"></a></td>
+<td class="uolnavbarspace"><a href="https://sobreuol.noticias.uol.com.br/fale-com-uol/" class="cinza"><h6>Assine 0800 703 3000</h6></a></td>
+<td class="uolnavbarspace"><h6><a href="https://sac.uol.com.br/#/" class="cinza" style="font-size:12px;">SAC</a></h6></td>
+<td class="uolnavbarspace"><a href="https://batepapo.uol.com.br/?gclid=Cj0KCQiAn4SeBhCwARIsANeF9DJtgr3ZgrAlsoOWgtJB5sw9pn5ikvPvsE8mHQY8GFp35C6aT9ZrULAaAkmgEALw_wcB" class="cinza"><h4><b>Bate-papo</b></h4></a></td>
+<td class="uolnavbarspace"><a href="https://conta.uol.com.br/login?t=uol_webmail&env=visitante&dest=https://mail.uol.com.br/login/check_session" class="cinza"><h4><b>E-mail</b></h4></a></td>
+<td class="uolnavbarspace"><a href="https://noticias.uol.com.br/" class="cinza"><h4><b>Notícias</b></h4></a></td>
+<td class="uolnavbarspace"><a href="https://www.uol.com.br/esporte/" class="cinza"><h4><b>Esporte</b></h4></a></td>
+<td class="uolnavbarspace"><a href="https://www.bol.uol.com.br/entretenimento/" class="cinza"><h4><b>Entretenimento</b></h4></a></td>
+<td class="uolnavbarspace"><a href="https://estilo.uol.com.br/index-tc.htm" class="cinza"><h4><b>Estilo</b></h4></a></td>
+<td class="uolnavbarspace"><a href="https://shopping.uol.com.br/" class="cinza"><h4><b>Shopping</b></h4></a></td>
+
+<!--célula da barra de pesquisa do google-->
+<td class="uolnavbarspace">
+
+<div class="input-with-image inline-form">
+<form action="https://www.google.com/search" method="get">
+<input type="text" name="q" placeholder="pesquisar no google" style="width:113px; height:19px;"><img alt="error" src="pageelements/google.png" class="image-icon" width="16" height="16"><button type="submit" style="height:23px;">BUSCAR</button>
+</form>
+</div>
+
 </td>
 </tr>
-</table></div>
-
-
-<div id='help'>
-<div class='help'>
-<h3>
-<button onclick="window.location.href='jogos.html'" class="entrar2">Entrar no site agora!</button><br><br>
-<span>Sobre mim (Rodrigo) [Vulgo Oozaru]</span>
-</h3>
-<p>
-Olá pessoal! creio que quem estiver lendo isso é porquê se interessou em minha recriação do Click Jogos, então vou explicar algumas coisas aqui.
-</p>
+</table>
 </div>
-<div class='help'>
-<h3>
-<span>O que me motivou a fazer essa recriação?</span>
-</h3>
-<p>
-Bom, a título de curiosidade, quando eu era mais novo, eu amava ficar jogando no Click Jogos Antigo, lembro como se fosse ontem, eu chegava em casa e já ia pro computador para jogar no site, na época o Click Jogos era muito melhor do que é hoje. então, para matar a saudade e a nostálgia, eu decidi recriar o site exatamente como era na época. Claro, muitas coisas não vão dar para restaurar, mas a aparência e as coisas principais foram possíveis sim de se restaurar.
-</p>
 </div>
-<div class='help'>
-<h3>
-<span>Um pequeno aviso</span>
-</h3>
-<p>
-Nas páginas dos jogos, tem um pequeno bug nos botões de aumentar e dimínuir o tamanho da tela. Como eu deixei o padrão de largura das página em uma largura de 1000px (pixels), em partícular nas páginas de jogos eu coloquei um botão de zoom, para melhorar a visualização dos jogos. Porém por alguma causa, o botão aumenta o tamanho da tela dos jogos, mas não aumenta sua área de clique, isso deixa tudo bugado no jogo, então, meu conselho é, use esse botão apenas em jogos que você precisa apenas do teclado para jogar.
-</p>
+<br>
+
+<!--começo do cabeçário-->
+<div class="principal">
+<div class="centro">Seja bem vindo à recriação do click jogos!<br></div>
+<img style="margin-top: 20px; margin-left:40px;" title="Click Jogos - Versão do Rodrigo" alt="error" src="oldimages/clickjogoslogo.png"><br><br><br>
+
+<div class="centro">
+<img style="margin-right:30px;" alt="error" src="oldimages/acesseagora.png">
+<button onclick="window.location.href='jogos.html'" class="entrar2">Entrar no<br>site agora!</button>
+<img  style="margin-left:30px;" alt="error" src="oldimages/acesseagora2.png">
+</div><br>
+
+<!--Parte das categorias-->
+<div class="centro">
+<a href="categorias/topjogos.html" title="Top Jogos" class="categorybt"><b>TOP JOGOS</b></a>
+<a href="categorias/jogos-de-acao-e-aventura.html" title="Ação e Aventura" class="categorybt"><b>AÇÃO E AVENTURA</b></a>
+<a href="categorias/jogos-de-carros.html" title="Carros" class="categorybt"><b>CARROS</b></a>
+<a href="categoras/jogos-de-esporte.html" title="Esporte" class="categorybt"><b>ESPORTE</b></a>
+<a href="categorias/jogos-de-futebol.html" title="Futebol" class="categorybt"><b>FUTEBOL</b></a>
+<a href="categorias/jogos-de-puzzle;html" title="Puzzle" class="categorybt"><b>PUZZLE</b></a>
+<a href="categorias/jogos-de-tiro.html" title="Tiro" class="categorybt"><b>TIRO</b></a>
 </div>
-<div class='help'>
-<h3>
-<span>Se você ainda tiver alguma dúvida</span>
-</h3>
-<p>
-Basta me mandar uma mensagem por meio <a href="contato.html" class="contact">deste formulário</a> aqui e falar sua dúvida.
+</div><br>
 
-</p>
+<!--começo segunda parte-->
+<div class="secondcol">
+<!--divisão geral-->
+<div style="display:flex;">
+<div style="flex-basis:81%">
+
+<!--div dentro da div-->
+<div style="display:flex;">
+<div style="flex-basis:81%">Olá! Aqui quem fala é o <span class="redtext"> Rodrigo</span>! Para ser exato, meu nome completo é <span class="redtext">Rodrigo de Souza Galvão</span>. Beba H<sub>2</sub>O! Você vai precisar, pois esse site irá te deixar bem animado.<br><br>
+Seja bem vindo ao meu site! Aqui nessa página em específico você pode encontrar tudo sobre mim, aqui é minha biografia.
 </div>
-</div><br><br>
-<div id='help'>
-<div class='help'>
-
-<h3><span>Progresso de Desenvolvimento do Site</span></h3>
-<p>Aqui você pode consultar o atual progresso de desenvolvimento do site (nota, dados podem estar exagerados!)</p><br>
-<p>Páginas em Geral<progress id="progress-bar" value="6" max="100"></progress> &nbsp;7%</p>
-<p>Página Principal<progress id="progress-bar" value="100" max="100"></progress> &nbsp;100%</p>
-<p>Jogos Inseridos<progress id="progress-bar" value="4" max="100"></progress> &nbsp;4%</p>
-<p>Restauração do estilo do Site<progress id="progress-bar" value="100" max="100"></progress> &nbsp;100%</p>
-<p>Implantação do Modo Escuro<progress id="progress-bar" value="95" max="100"></progress> &nbsp;95%</p>
-
+<div style="flex-basis:19%"><img title="Esse sou eu! Sou muito fã do Lucario" width="80px" alt="error" src="oldimages/lucariosprite.png">
 </div></div><br>
-<a href="https://www.microsoft.com/pt-br/download/internet-explorer.aspx"><img alt="" src="pageelements/ie.gif" style="margin-top:8px;"></a> &nbsp;
-<a href="https://winxp.vercel.app/"><img alt="" src="pageelements/winxp.gif" style="margin-top:8px;"></a> &nbsp;
-<a href="https://www.youtube.com/@RodrigoZone/videos"><img alt="" src="pageelements/world.gif" style="margin-top:8px;"></a> &nbsp;
-<br><div class="centro">
-<span class="white">Site no ar desde: 01/10/2023</span>
-</div></div>
+
+<hr>
+<!--parte do slide-->
+<div class="slider">
+  <div class="slider-content" id="slide1">
+Sou apenas uma pessoa que busca o melhor que a vida pode oferecer, sempre procuro
+levar tudo que quero fazer em minha vida a sério. Nunca desisto até ter terminado.<br><br>
+Aqui nesse slide você pode conferir os motivos que me motivaram a fazer a recriação do clickjogos.
+<!--não apagar ou copiar essa </div>-->
+</div>
+
+
+<!--Segundo Slide-->
+<div class="slider-content" id="slide2">
+Bom, para começo de conversa, eu preciso dizer quais foram os motivos e as coisas que me motivaram a fazer essa recriação do Click Jogos.<br><br>
+
+Um dos principais motivos foi quando eu conheci o site chamado <a title="Wayback Machine" href="https://archive.org/web/">Wayback Machine</a>, esse aqui:<br><br>
+<div class="centro">
+<a title="Wayback Machine" href="https://archive.org/web/"><img alt="error" width="200px;" src="oldimages/waybackmachine.png"></a>
+</div><br>
+Pode-se dizer que esse site é o "salvador da internet", pois com ele é possível ver como era qualquer site no passado! E isso é algo incrível, porque é muito bom você poder acessar e ver como era a internet de antigamente.
+
+
+</div>
+
+<!--Terceiro slide-->
+<div class="slider-content" id="slide3">
+E a outra coisa que foi a verdadeira motivação para mim fazer esse trabalho gigantesco de recriar o Click Jogos foi a criação do <a title="Ruffle" href="https://ruffle.rs/">Script Ruffle</a>, esse aqui:<br>
+<div class="centro">
+<a href="https://ruffle.rs/" title="Ruffle"><img width="180px" alt="error" src="oldimages/ruffle.png"></a>
+</div><br>
+Esse Script, eu nem sei com quais palavras eu posso definir ele. O que esse Script faz é simplesmente incrível. Uma grande parte dos jogos da Internet de antigamente eram feitos na base do Adobe Flash Player. <img alt="error" title="Adobe Flash Player" width="20px;" src="oldimages/flashplayer.png"><br><br>
+Só que infelizmente a <span class="redtext">Adobe</span> decretou a morte do Flash player no dia <span class="redtext">12/01/2021</span>, e desde então a internet nunca mais foi a mesma coisa, pois muitos sites mudaram.<br><br>
+
+E aí que entra o Ruffle, pois ele é uma recriação que usa o código do Adobe Flash Player para fazer os jogos rodarem, ou seja, é o Flash Player em forma de extensão! (Não exatamente, mas você entendeu).
+</div>
+
+<!--Quarto slide-->
+<div class="slider-content" id="slide4">
+E com tudo isso, esse é meu objeto, recriar o Click Jogos inteiro no estilo de 2013, um desafio a longo prazo que está longe de ser terminado.<br>
+Mas eu não vou desistir, mesmo que isso demore anos, eu irei terminar esse projeto. <img width="20px;" alt="error" src="pageelements/cjlogo.jpg">
+<div class="centro">
+<img title="Eu trabalhando no Computador" alt="error" src="oldimages/prazoentrega.gif">
+</div>
+</div>
+
+
+</div>
+<hr>
+<!--botões do slide-->
+<div class="centro">
+
+<img alt="" src="pageelements/anterior.png" onmousedown="this.src='pageelements/anteriorclicado.png'" onmouseup="this.src='pageelements/anterior.png'" onmouseover="this.src='pageelements/anterioremcima.png'" onmouseout="this.src='pageelements/anterior.png'" onclick="anterior()" id="anterior" style="margin-top:11px; margin-right:400px;">
+
+<img alt="" src="pageelements/proximo.png" onmousedown="this.src='pageelements/proximoclicado.png'" onmouseup="this.src='pageelements/proximo.png'" onmouseover="this.src='pageelements/proximoemcima.png'" onmouseout="this.src='pageelements/proximo.png'" onclick="proximo()" id="proximo" style="margin-top:11px;">
+
+</div>
+
+
+<div class="centro">
+<h3>Progresso de Desenvolvimento do Site</h3>
+<p>Aqui você pode consultar o atual progresso de desenvolvimento da recriação do Click Jogos! (nota: dados podem estar desatualizados! Última atualização: <span class="redtext">06/10/2023</span>)</p><br>
+<p>Páginas em Geral<progress value="6" max="100"></progress> &nbsp;7%</p>
+<p>Página Principal<progress value="80" max="100"></progress> &nbsp;80%</p>
+<p>Jogos Inseridos<progress value="1" max="100"></progress> &nbsp;< 1%</p>
+<p>Restauração do estilo do Site<progress value="100" max="100"></progress> &nbsp;100%</p>
+<p>Implantação do Modo Escuro<progress value="95" max="100"></progress> &nbsp;95%</p>
+
+</div>
+</div>
+<div style="flex-basis:19%">
+<span class="adtext">PATROCINADOR</span>
+<a title="Seja bem vindo?" href="https://kromercoin.netlify.app/"><img alt="error" src="oldimages/banner1.jpg"></a></div>
+</div>
+</div>
+
+
+<div style="width:820px;display:flex;margin:0 auto;padding:10px;">
+
+<!--Reprodutor de música-->
+<div class="threecol" style="flex-basis: 60%;padding:10px;margin-right:10px;">
+
+<!--reprodutor de audio-->
+<marquee behavior="scroll" direction="left" id="currentTrackName">Atualmente tocando:</marquee>
+
+<div class="progress-bar">
+  <div class="progress-bar-filled"></div>
+</div>
+<div class="time-display">
+  <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+</div>
+<br><br>
+<div class="audio-player">
+  <audio id="myAudio" ></audio>
+  <div class="controls">
+    <button style="margin-left:100px;" class="prev-btn" onclick="prevTrack()">&#9664;</button>
+	<button class="play-pause-btn" onclick="togglePlay()">
+      <i id="playIcon" class="fa fa-pause"></i>
+      <span id="playText">Pausado</span>
+    </button>
+    <button class="next-btn" onclick="nextTrack()">&#9654;</button>
+	<input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+  </div>  
+
+</div><br>
+<!--conteúdo abaixo do player-->
+Quis fazer esse player com algumas músicas que eu curto ouvir/escutar. Fique à vontade para usar esse modelo/template de Player de música com a finalidade que você quiser! basta ver a parte dele no código HTML, e os códigos CSS e JavaScript. Apenas peço para que deixe os créditos para mim.<br>
+<div class="centro"><a href="musicplayer.css" style="text-decoration:none;">CSS do Player</a><br><a href="musicplayer.js" style="text-decoration:none;">JavaScript do Player</a></div><br><br>
+<hr class="dashed"><br>
+
+<img alt="error" src="oldimages/minisaul.gif" style="float:left;margin:2px;">Caso você queira, poderá contribuir com este site doando um pequeno valor que partir de você, mas fica a seu critério, claro.<br><br>
+<div class="centro">
+Aceitamos todos esses tipos de cartões.
+<img alt="error" src="oldimages/donate1.gif"><br><br>
+<hr class="dashed">
+</div>
+<a href="central-anunciante.html" title="Central do Anúnciante"><img alt="error" src="oldimages/ca-skin.png" style="float:right;margin-top:8px;"></a>Por favor, não clique nos Banners do site se não tiver interesse!<br>
+<div style="text-align:right;">
+<img alt="error" src="oldimages/sign.png"></div>
+</div>
+
+<!--Perfil-->
+<div class="threecol" style="flex-basis: 40%;padding:10px;">
+<div class="centro"><h3>Sobre Mim</h3>
+<img alt="error" width="150px;" style="border: 1px solid #ffff00; padding: 7px;" src="oldimages/profile.png"><br><br></div>
+<h3>Nome:</h3>Rodrigo de Souza Galvão
+<h3>Nascimento:</h3>06/12/2006
+<h3>Perfil no Github:</h3><a href="https://github.com/Oozaru341" style="color:#1dbcf1;text-decoration:none;" title="Rodrigo">https://github.com/Oozaru341</a>
+<h3>Canal do Youtube:</h3><a href="https://www.youtube.com/@rodrigozone" style="color:#1dbcf1;text-decoration:none;" title="Rodrigo Zone">https://www.youtube.com/@rodrigozone</a>
+<h3>Escolaridade:</h3>Atualmente no 2º Ano do Ensino Médio
+<h3>Pretensões para o futuro:</h3>Pretendo me formar em Ciência da Computação
+<h3>Habilidades:</h3>Atualmente tenho habilidades em World, Excel, Powerpoint, Adobe Photoshop e Adobe Illustrator.<br>Também tenho habilidades em <span class="redtext">HTML e CSS.</a>
+</div>
+</div>
+
+<!--última parte-->
+<div class="finalcol">
+Em breve...
+</div>
+
+
+
+
 
 
 
 </body>
-
 </html>

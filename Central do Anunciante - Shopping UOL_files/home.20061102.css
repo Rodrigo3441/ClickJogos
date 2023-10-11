@@ -1,0 +1,1119 @@
+* {
+	margin: 0px;
+}
+
+body {
+	background: #fff;
+	color: #000;
+	font: x-small verdana, arial, sans-serif;
+	min-width: 76em;
+	_overflow: hidden;
+	padding: 1em;
+	_width: expression( document.documentElement.clientWidth < 800 ? "76em": "auto" );
+	_padding-right: expression( document.documentElement.clientWidth < 800 ? "0px": "1em" );
+}
+
+/* Ajuste do tamanho da fonte \*/
+* html body {
+	font-size: 1.25ex;
+}
+/* IE/Mac */
+
+a:link,
+a:visited {
+	color: #025ec7;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover,
+a:active {
+	color: #025ec7;
+	text-decoration: underline;
+}
+
+a img {
+	border-width: 0px;
+}
+
+#tudo,
+#conteudo {
+	clear: both;
+	font-size: 1em;
+	width: 100%;
+}
+
+#tudo {
+	position: relative;
+}
+
+#conteudo {
+	padding-bottom: 20px;
+}
+
+#sem-breadcrumb #conteudo {
+	padding-top: 1em;
+}
+
+.contextos {
+	left: -500em;
+	position: absolute;
+}
+
+caption.contextos,
+legend.contextos {
+	display: none;
+}
+
+/* INI: easy clearing */
+
+#tudo:after,
+#conteudo:after,
+#topo:after,
+#navegacao form:after,
+#todos-deptos:after,
+#deptos-nav:after,
+#breadcrumb:after,
+#saudacao:after,
+#rodape:after,
+#conteudo-home:after,
+#principal:after,
+#decorA-home:after,
+#rodape-home:after,
+#lojista:after,
+#produto-destaque .titulo-home:after,
+#buscados-home:after,
+#porque-cadastrar:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0px;
+	visibility: hidden;
+}
+
+/* FIM: easy clearing */
+
+/* INI: barra UOL */
+
+#tudo #barrauol,
+#tudo #barrauol1 {
+	background: #0a3b6c url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/uol10anosbg.gif ) repeat-x 0px 0px;
+	width: auto;
+}
+
+#tudo #barrauol select,
+#tudo #barrauol1 select {
+	width: auto;
+}
+
+#tudo .buol a {
+	color: #fff;
+}
+
+#tudo .buol form {
+	line-height: 1;
+}
+
+/* FIM: barra UOL */
+
+/* INI: barras */
+
+h2.deptos {
+	background: transparent no-repeat 5px 1px;
+	font: 700 1.6em arial, sans-serif;
+	line-height: 2;
+	padding-left: 42px;
+}
+
+h2.produtos {
+	font: 700 1.6em arial, sans-serif;
+	padding: 0px 0px 3px;
+	width: 100%;
+}
+
+h2.produtos span {
+	color: #999;
+	font: normal 0.688em arial, sans-serif;
+	padding: 0px 0.5em;
+}
+
+h2.lojas {
+	font: 1.6em arial, sans-serif;
+	height: 1.875em;
+	margin-bottom: 0.4375em;
+	margin-left: 0.625em;
+	width: 7.5em;
+}
+
+h2.lojas img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+h3.tituloA {
+	background: #6f7983;
+	color: #fff;
+	font: 1.2em arial, sans-serif;
+	line-height: 2.1;
+	padding: 0px 8px;
+	text-transform: uppercase;
+}
+
+h3.tituloB {
+	background: #e5e4e2;
+	font: 1.2em arial, sans-serif;
+	line-height: 2.1;
+	padding: 0px 8px;
+	text-transform: uppercase;
+}
+
+h3.tituloC {
+	font: 700 1.6em arial, sans-serif;
+	line-height: 1.5;
+	padding: 0px 10px;
+}
+
+h3.tituloD {
+	background: #d46a1e;
+	color: #fff;
+	font: 1.2em arial, sans-serif;
+	line-height: 2.1;
+	padding: 0px 8px;
+	text-transform: uppercase;
+}
+
+h3.tituloE {
+	background: #fbd963 url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/decor-fundo-tituloE.gif ) repeat-x 0px 0px;
+	color: #9e2720;
+	font: 1.3em arial, sans-serif;
+	line-height: 1.7;
+	padding: 0px 8px;
+	text-transform: uppercase;
+}
+
+/* FIM: barras */
+
+/* INI: botões */
+
+a.botao-comparar {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/comparar-precos.gif ) no-repeat 0px 0px;
+	display: block;
+	height: 22px;
+	position: relative;
+	width: 119px;
+}
+
+a.botao-comparar:hover {
+	background-position: 0px -22px;
+}
+
+/* FIM: botões */
+
+/* INI: topo */
+
+#topo {
+	background: #016d95 url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/fundo-gradiente-topo.gif ) repeat-x 0px 0px;
+	clear: both;
+	font-size: 1em;
+	margin-top: 1px;
+	padding: 0px;
+	position: relative;
+	width: 100%;
+}
+
+#topo h1 {
+	float: left;
+	font-size: 1em;
+}
+
+#topo h1 img {
+	display: block;
+	height: 8em;
+	width: 25.9em;
+}
+
+#topo em#slogan {
+	color: #fff;
+	font: 1.2em arial, sans-serif;
+	left: 18em;
+	position: absolute;
+	top: 2.7em;
+}
+
+#topo #robo {
+	display: none;
+	height: 12.6em;
+	left: 0px;
+	position: absolute;
+	width: 10.1em;
+}
+
+#topo img {
+	height: 100%;
+	width: 100%;
+}
+
+#topo #robo a {
+	display: block;
+	height: 5em;
+	left: 0px;
+	position: absolute;
+	text-decoration: none;
+	top: 0px;
+	width: 11em;
+}
+
+/* FIM: topo */
+
+/* INI: navegação */
+
+#navegacao {
+	background: #016d95;
+	clear: both;
+	font-size: 1em;
+	width: 100%;
+}
+
+#borda-secoes {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/borda-abas.gif ) repeat-x 0px 3.2em;
+	height: 3.2em;
+	_overflow: hidden;
+	padding-bottom: 1px;
+}
+
+#secoes {
+	_display: inline;
+	float: left;
+	height: 3.3em;
+	list-style-type: none;
+	/*margin-left: 6.55em;*/
+	padding: 0px;
+	text-align: center;
+}
+
+#secoes li {
+	float: left;
+	padding: 0px;
+}
+
+#secoes .aba-1,
+#secoes .aba-2,
+#secoes .aba-3,
+#secoes .aba-4,
+#secoes .aba-5,
+#secoes .aba-6,
+#secoes .aba-7,
+#secoes .aba-extra,
+#secoes .aba-todos {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-final-direita.gif ) no-repeat 100% 0px;
+}
+
+#secoes .decor-ie {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-final-esquerda.gif ) no-repeat 0px 0px;
+}
+
+#secoes a.aba {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-final-direita.gif ) no-repeat 100% 0px;
+	color: #fff;
+	display: block;
+	font-weight: 700;
+	line-height: 3.2;
+	text-transform: uppercase;
+}
+
+#secoes a.aba strong {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-final-esquerda.gif ) no-repeat 0px 0px;
+	display: block;
+	padding: 0px 9px;
+}
+
+#secoes a.aba:hover {
+	background-position: 100% -100px;
+}
+
+#secoes a.aba:hover strong {
+	background-position: 0px -100px;
+}
+
+#secoes .aba-todos a.aba strong,
+#secoes .duas-linhas a.aba strong {
+	line-height: 1.1;
+	padding: 0.5em 10px;
+}
+
+.nav-1 #secoes .aba-1 {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-atual-direita.gif ) no-repeat 100% 0px;
+	padding-bottom: 1px;
+}
+
+.nav-1 #secoes .aba-1 p.decor-ie {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-atual-esquerda.gif ) no-repeat 0px 0px;
+}
+
+.nav-1 #secoes .aba-1 a.aba {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-atual-direita.gif ) no-repeat 100% 0px;
+	color: #9f2b2b;
+	/*cursor: default;
+	text-decoration: none;*/
+}
+
+.nav-1 #secoes .aba-1 a.aba strong {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/abas-atual-esquerda.gif ) no-repeat 0px 0px;
+}
+
+#secoes .aba-natal,
+#secoes .aba-saldao {
+	position: relative;
+}
+
+#secoes .aba-natal a.aba,
+#secoes .aba-saldao a.aba {
+	color: #ffeb00;
+}
+
+* html #secoes .aba-natal a.aba:hover,
+* html #secoes .aba-saldao a.aba:hover {
+	height: 3.2em;
+	overflow: visible;
+	/*width: 7.7em;*/
+	width: 8em;
+	
+}
+.aba-saldao a.aba,.aba-saldao a.aba:hover {
+	/*width: 10em !important;*/
+}
+#decor1-aba-natal {
+	background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/icone-arvore-natal.gif ) no-repeat 0px 0px;
+	height: 23px;
+	position: absolute;
+	width: 21px;
+	top: 0.5em;
+	left: 0.5em;
+}
+#decor1-aba-saldao {
+	background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/saldao/icone-moedas.gif ) no-repeat 0px 0px;
+	height: 23px;
+	position: absolute;
+	width: 21px;
+	
+	top: 0.5em;
+	left: 0.5em;
+}
+#decor1-aba-vaulas {
+	background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/vaulas/icoaba_lapis.gif ) no-repeat 6px 1px;
+	height: 23px;
+	position: absolute;
+	width: 21px;
+	top: 0.5em;
+	left: 0.5em;
+}
+#decor1-aba-pascoa {
+	background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/pascoa/ico_ovo.gif ) no-repeat 6px 1px;
+	height: 23px;
+	position: absolute;
+	width: 21px;
+	top: 0.7em;
+	left: 0.5em;
+}
+#secoes .aba-natal a.aba strong,
+#secoes .aba-saldao a.aba strong {
+	padding-left: 30px;
+}
+
+#navegacao form {
+	background: #ec9c01 url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/fundo-busca-nav.gif ) repeat-x 0px 0px;
+	border: 0.1em solid #ec9301;
+	border-top-width: 0px;
+	clear: both;
+	padding: 1.2em 1em 1em 15.5em;
+	_padding-top: 1em;
+}
+
+#navegacao form fieldset {
+	border-width: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+#navegacao form .titulo {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/seta-compare-nova.gif ) no-repeat 0px 0px;
+	font-size: 1em;
+	height: 4.2em;
+	left: 0px;
+	margin: -1.2em 0px 0px -15em;
+	_margin-top: -1em;
+	overflow: hidden;
+	padding: 0px;
+	position: absolute;
+	width: 14.5em;
+}
+
+#navegacao form .botoes {
+	font: 700 1.2em arial, sans-serif;
+}
+
+#navegacao form .combos {
+	display: none;
+	font: 1.1em arial, sans-serif;
+	position: relative;
+	top: -1px;
+}
+
+#navegacao form .radios {
+	color: #711d03;
+	font: 0.917em arial, sans-serif;
+	padding: 0px 4px 0px 16px;
+	_position: relative;
+	_top: -2px;
+}
+
+#navegacao form .radios input {
+	margin: 5px 0px 0px -16px;
+	position: absolute;
+}
+
+#navegacao form .radios em {
+	font: normal 1.2em arial;
+}
+
+.nav-1 #form-padrao,
+.nav-todos #form-padrao {
+	display: block;
+}
+
+#form-padrao {
+	display: none;
+}
+
+#form-padrao .texto {
+	font: 1.2em arial, sans-serif;
+	/* width: 24em; */
+	width: 86%;
+}
+
+/* FIM: navegação */
+
+/* INI: saudação */
+
+#saudacao {
+	background: #fef7cd;
+	_height: 1%;
+	margin-top: 1px;
+	min-height: 0px;
+	padding: 0.3em 1em;
+}
+
+#saudacao em {
+	font: normal 1.1em arial, sans-serif;
+}
+
+#saudacao .favoritos {
+	color: #025ec7;
+	float: right;
+	font: normal 1.1em verdana, sans-serif;
+}
+
+/* FIM: saudação */
+
+/* INI: caixa flutuante de departamentos */
+
+/* Comportamento dinâmico para navegadores atualizados */
+.aba-todos:hover #posiciona-deptos {
+	display: block;
+}
+
+#posiciona-deptos {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/todos-sombra-y.gif ) repeat-y 100% 0px;
+	display: none;
+	margin: 0px 0px 0px -47.5em;
+	position: absolute;
+	z-index: 777;
+	width: 60em;
+}
+
+#todos-deptos {
+	background: #fff;
+	border: 2px solid #c80d09;
+	left: -3px;
+	padding: 1em 0.8em 0px;
+	position: relative;
+	text-align: left;
+	top: -3px;
+	width: 58em;
+}
+
+#deptos-nav {
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+
+#todos-deptos ul.lista-deptos {
+	float: left;
+	list-style-type: none;
+	padding: 0px 0px 1.8em 1em;
+	width: 18em;
+}
+
+#todos-deptos ul.lista-deptos li a {
+	display: block;
+	font: 1.1em arial, sans-serif;
+	margin-bottom: 0.6em;
+	width: 16.5em;
+}
+
+#todos-deptos .nome {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/robo-todos-produtos.gif ) no-repeat 100% 0px;
+	float: right;
+	height: 5.6em;
+	margin-top: -2.3em;
+	width: 13.3em;
+}
+
+#posiciona-deptos #todos-sombra-x {
+	background: #fff url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/todos-sombra-x.gif ) repeat-x 0px 0px;
+	clear: both;
+	height: 3px;
+	left: 0px;
+	margin-top: -3px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+/* FIM: caixa flutuante de departamentos */
+
+/* INI: rodapé */
+
+#rodape {
+	clear: both;
+	font: 1em arial, sans-serif;
+	_height: 1%;
+	padding: 10px 0px 0px;
+}
+
+#rodape #aviso-uso {
+	padding: 7px 0px;
+	text-align: center;
+}
+
+#rodape .link-regras {
+	background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/ico-regras-uso.gif ) no-repeat 0px 0px;
+	padding-left: 15px;
+}
+
+#rodape #copyright {
+	width: auto;
+}
+
+/* FIM: rodapé */
+
+/* INI: estrutura posicional da home */
+
+#conteudo-home {
+	/*background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/faux-column-menu-home.gif ) no-repeat 0px 100%;*/
+	padding-top: 15px;
+	position: relative;
+	width: 100%;
+}
+
+#principal {
+	float: right;
+	width: 68%;
+	/* AJUSTE ESPECIAL
+	padding-bottom: 7em; */
+}
+
+#decorA-home {
+	/*background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/decor-home-oe.gif ) no-repeat 100% 100%;*/
+	width: 100%;
+}
+
+#produto-destaque {
+	margin-right: 16.1em;
+}
+
+#ofertas-home {
+	border: 0.1em solid #d3d7da;
+	clear: both;
+	float: right;
+	width: 15.1em;
+}
+
+#nav-menu-home {
+	background: #f6f7f9;
+	border: 0.1em solid #91a1b1;
+	float: left;
+	padding: 1em 1em 0px;
+	width: 28%;
+}
+
+#rodape-home {
+	padding-top: 20px;
+	width: 100%;
+}
+
+/* FIM: estrutura posicional da home */
+
+/* INI: caixa de produtos em destaque */
+
+#produto-destaque .titulo-home {
+	background: #f1ac51;
+	border: 1px solid #d3d7da;
+	border-width: 1px 0px;
+	font-size: 1em;
+	height: 2.7em;
+	_overflow: hidden;
+}
+
+#produto-destaque .titulo-home strong {
+	display: block;
+	font: 700 1.6em arial, sans-serif;
+	line-height: 1.7;
+	margin-left: 7px;
+	width: 9.8em;
+}
+
+#produto-destaque .titulo-home strong a {
+	color: #000;
+}
+
+#produto-destaque .titulo-home strong em {
+	font: normal 0.689em arial, sans-serif;
+}
+
+#produto-destaque form.comparar {
+	position: relative;
+}
+
+#produto-destaque form.comparar input {
+	font: 700 1.2em arial, sans-serif;
+	height: 1.9em;
+	_margin-right: 17em;
+	padding: 0px;
+	position: absolute;
+	right: 0px;
+	top: -2.15em;
+	width: 15em;
+}
+
+#produto-destaque .bloco-produto {
+	border-bottom: 0.1em solid #e4e4e4;
+	_height: 15.5em;
+	margin-bottom: 3.5em;
+	min-height: 15.5em;
+	padding: 0px 0px 3.3em 17em;
+}
+
+#produto-destaque div.primeiro {
+	margin-top: 4.9em;
+}
+
+#produto-destaque div.ultimo {
+	border-bottom-width: 0px;
+	margin-bottom: 2.3em;
+	padding-bottom: 2.4em;
+	_margin-bottom: 3.9em;
+	_margin-bottom: 1.9em;
+	_padding-bottom: 2em;
+}
+
+#produto-destaque .bloco-produto p.imagem {
+	_display: inline;
+	float: left;
+	height: 15em;
+	margin-left: -16em;
+	width: 15em;
+}
+
+#produto-destaque .bloco-produto p.imagem img {
+	height: 100%;
+	width: 100%;
+}
+
+#produto-destaque .bloco-produto h4 {
+	font: 700 1.4em arial, sans-serif;
+	padding-bottom: 5px;
+}
+
+#produto-destaque .bloco-produto .avalie {
+	float: left;
+	margin-bottom: 10px;
+}
+
+#produto-destaque .bloco-produto .avalie dd.nota {
+	margin-right: 40px;
+}
+
+#produto-destaque .bloco-produto .preco,
+#produto-destaque .bloco-produto .textos {
+	font: 1.1em arial, sans-serif;
+}
+
+#produto-destaque .bloco-produto .preco strong {
+	font-size: 1.18em;
+}
+
+#produto-destaque .bloco-produto .comparar {
+	margin: 5px 0px 3px;
+}
+
+/* FIM: caixa de produtos em destaque */
+
+/* INI: caixa vertical de ofertas */
+
+#ofertas-home dl {
+	border-bottom: 0.1em solid #e4e4e4;
+	margin: 0px auto;
+	padding: 15px 5px 8px;
+	width: 12.5em;
+}
+
+#ofertas-home dl.primeiro {
+	margin-top: 6px;
+}
+
+#ofertas-home dl.ultimo {
+	margin-bottom: 4px;
+}
+
+#ofertas-home dl dd.imagem img {
+	display: block;
+	height: 10em;
+	margin: 0px auto;
+	width: 10em;
+}
+
+#ofertas-home dl dt {
+	font: 700 1.2em arial, sans-serif;
+}
+
+#ofertas-home dl dd.preco,
+#ofertas-home dl dd.loja {
+	font: 1.1em arial, sans-serif;
+	margin: 2px 0px;
+}
+
+#ofertas-home .mais {
+	background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/seta-azul-home.gif ) no-repeat 100% 3px;
+	font: 1em arial, sans-serif;
+	margin: 0px 10px;
+	padding: 0px 10px 5px 0px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+/* FIM: caixa vertical de ofertas */
+
+/* INI: caixa de mais buscados */
+
+#buscados-home {
+	border-bottom: 1px solid #d16b21;
+	clear: both;
+	margin-bottom: 5px;
+	padding: 20px 0px 5px;
+	width: 100%;
+}
+
+#buscados-home h3 {
+	margin-bottom: 5px;
+}
+
+#buscados-home dl {
+	border-top: 1px solid #cdc8c4;
+	float: left;
+	font-size: 1em;
+}
+
+#buscados-home dl.impar {
+	border-right: 1px solid #cdc8c4;
+	padding: 1em 2% 1em 16%;
+	width: 25.1em;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 32%;
+}
+
+#buscados-home dl.par {
+	padding: 1em 2% 1em 16%;
+	width: 26em;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 31%;
+}
+
+#buscados-home dl.primeiro {
+	border-top-width: 0px;
+}
+
+#buscados-home dl dd.imagem {
+	_display: inline;
+	float: left;
+	height: 7em;
+	margin-left: -48%;
+	_margin-left: -14.5%;
+	width: 7em;
+}
+
+#buscados-home dl dd.imagem img {
+	height: 100%;
+	width: 100%;
+}
+
+#buscados-home dl dt {
+	font: 700 1.3em arial, sans-serif;
+}
+
+/* FIM: caixa de mais buscados */
+
+/* INI: caixa "porque se cadastrar" */
+
+#porque-cadastrar {
+	_height: 1%;
+	margin: 0px 10px;
+}
+
+#porque-cadastrar h4 {
+	color: #9d281f;
+	font: 700 1.3em arial, sans-serif;
+	margin-bottom: 3px;
+}
+
+#porque-cadastrar div.col-esquerda{
+	color: #4d5e72;
+	float: left;
+	padding-right: 1em;
+	width: 24.1em;
+}
+
+#porque-cadastrar div.col-direita {
+	color: #4d5e72;
+	float: right;
+	padding-left: 1em;
+	width: 24em;
+}
+
+#porque-cadastrar div.col-esquerda p,
+#porque-cadastrar div.col-direita p {
+	font: 1.2em arial, sans-serif;
+	margin-top: 12px;
+}
+
+/* FIM: caixa "porque se cadastrar" */
+
+/* INI: menu de navegação principal */
+
+#nav-menu-home dl {
+	clear: both;
+	padding-bottom: 14px;
+}
+
+#nav-menu-home dl dt {
+	font: 700 1.3em arial, sans-serif;
+}
+
+#nav-menu-home dl dd {
+	display: inline;
+	font: 1.1em arial, sans-serif;
+	padding: 0px;
+}
+
+/* FIM: menu de navegação principal */
+
+/* INI: bloco de serviços e boletim */
+
+#bloco-servicos {
+	_height: 1%;
+	margin-top: 15px;
+}
+
+#bloco-servicos .col-a,
+#bloco-servicos .col-b {
+	float: left;
+	padding: 0px 0.2em 0px 0.7em;
+	width: 45%;
+}
+
+#bloco-servicos .col-b {
+	padding: 0px 0px 0px 0.4em;
+	width: 50%;
+}
+
+#bloco-servicos h4 {
+	color: #9e2720;
+	font: 700 1.3em arial, sans-serif;
+	height: 1.5em;
+}
+
+#bloco-servicos p.textos {
+	font: 1.2em arial, sans-serif;
+}
+
+#bloco-servicos p.fale {
+	padding-top: 0.5em;
+}
+
+#bloco-servicos p.fale a {
+	background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/pg-faleconosco.gif ) no-repeat 0px 0px;
+	font: 1.1em arial, sans-serif;
+	padding-left: 18px;
+	text-transform: uppercase;
+}
+
+#bloco-servicos #boletim {
+	padding-top: 2em;
+}
+
+#bloco-servicos #boletim label {
+	color: #4c5e72;
+	display: block;
+	font: 1.1em arial, sans-serif;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+}
+
+#bloco-servicos #boletim .campos {
+	border: 0.1em solid #a5acb2;
+	font: 1em arial, sans-serif;
+	padding: 2px 0px;
+	width: 80%;
+}
+
+#bloco-servicos #boletim .botoes {
+	background: #4c5e72;
+	border: 0.1em outset #899fb7;
+	color: #fff;
+	font: 700 1em arial, sans-serif;
+	padding: 1px 0px;
+	width: 2.5em;
+}
+
+#bloco-servicos .ultimo-boletim {
+	font: 1.1em arial, sans-serif;
+	padding-top: 0.5em;
+}
+
+/* FIM: bloco de serviços e boletim */
+
+/* INI: caixa com opções para o lojista */
+
+#principal #lojista {
+	margin-top: 2em;
+}
+
+#lojista {
+	border: 0.1em solid #fbdb72;
+	float: right;
+	_height: 7.1em;
+	min-height: 7.8em;
+	_padding-bottom: 0.7em;
+	width: 100%;
+}
+
+#lojista ul {
+	float: left;
+	list-style-type: none;
+	padding: 8px 0px 0px;
+	width: 49%;
+}
+
+#lojista ul li {
+	float: left;
+	padding: 0px 0px 8px 1em;
+	width: 24em;
+}
+
+#lojista ul li.ultimo {
+	padding-bottom: 0px;
+}
+
+#lojista ul li a {
+	background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/ca2/seta-vermelha.gif ) no-repeat 0px 4px;
+	display: block;
+	font: 1.2em arial, sans-serif;
+	padding-left: 8px;
+	width: 20em;
+}
+
+/* FIM: caixa com opções para o lojista */
+
+/* INI: botão "anuncie" */
+
+#anuncie {
+	float: left;
+	height: 8em;
+	width: 22.8em;
+}
+
+#anuncie img {
+	height: 100%;
+	width: 100%;
+}
+
+/* FIM: botão "anuncie" */
+
+/* INI: publicidade */
+
+#banner-468x60 {
+	/*background: transparent url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/pub_v_60.gif ) no-repeat 100% 0px;*/
+	padding-right: 9px;
+	position: absolute;
+	right: 0.5em;
+	_right: 0.4em;
+	top: 3.6em;
+	width: 468px;
+}
+
+#area-patrocinador {
+	float: right;
+	_height: 5.4em;
+	min-height: 5.4em;
+	width: 15.3em;
+}
+
+#area-patrocinador strong {
+	/*background: url( https://web.archive.org/web/20130425000959im_/https://simg.uol.com.br/patrocinador_p.gif ) no-repeat;*/
+	display: block;
+	height: 7px;
+	margin: 0px auto 1px;
+	width: 12em;
+}
+
+#patrocinador {
+	height: 3.5em;
+	position: absolute;
+	right: 1.8em;
+	_right: 1.9em;
+	top: 2.3em;
+	width: 12em;
+}
+
+#patrocinador img {
+	height: 100%;
+	width: 100%;
+}
+
+/* FIM: publicidade */
+/*
+     FILE ARCHIVED ON 00:09:59 Apr 25, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:18:51 Oct 11, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 68.848
+  exclusion.robots: 0.142
+  exclusion.robots.policy: 0.13
+  cdx.remote: 0.09
+  esindex: 0.011
+  LoadShardBlock: 30.921 (3)
+  PetaboxLoader3.datanode: 107.505 (5)
+  load_resource: 262.308 (2)
+  PetaboxLoader3.resolve: 102.682 (2)
+*/

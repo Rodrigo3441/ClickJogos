@@ -5,12 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
   var currentIndex = 0;
   var isPlaying = false; // Variável para controlar o estado de reprodução
   var progressBarFilled = document.querySelector(".progress-bar-filled");
+  var currentTimeDisplay = document.getElementById("currentTime");
+var durationDisplay = document.getElementById("duration");
     
 
   var tracks = [
-    "winxp.mp3",
-    "thetower.mp3",
+    "yel-rose.wav",
+    "wildwood.wav",
+	"jambali.mp3",
     "window_of_the_soul.mp3",
+	
     // Adicione mais músicas à lista
   ];
 
@@ -70,12 +74,28 @@ document.addEventListener("DOMContentLoaded", function() {
   window.prevTrack = prevTrack;
   window.nextTrack = nextTrack;
   
-  audio.addEventListener("timeupdate", function() {
+audio.addEventListener("timeupdate", function() {
   var currentTime = audio.currentTime;
   var duration = audio.duration;
   var progressPercentage = (currentTime / duration) * 100;
   progressBarFilled.style.width = progressPercentage + "%";
+
+  // Formatando o tempo atual e a duração em minutos e segundos
+  var formattedCurrentTime = formatTime(currentTime);
+  var formattedDuration = formatTime(duration);
+
+  // Atualizando os elementos de texto
+  currentTimeDisplay.textContent = formattedCurrentTime;
+  durationDisplay.textContent = formattedDuration;
 });
+
+// Função para formatar o tempo em minutos e segundos
+function formatTime(time) {
+  var minutes = Math.floor(time / 60);
+  var seconds = Math.floor(time % 60);
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+  return minutes + ":" + seconds;
+}
 });
 
 

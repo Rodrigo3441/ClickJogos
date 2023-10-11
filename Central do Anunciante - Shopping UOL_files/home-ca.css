@@ -1,0 +1,584 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+*{ 
+	font-family: arial,sans-serif;
+	margin:0;
+	padding:0
+}
+acronym{ cursor:default }
+div#tudo{
+	width:980px!important;
+	margin:0 auto;
+	height:auto;
+}
+h1,h2,h3{ cursor:default }
+h1{
+	display:block;
+	height:125px;
+	cursor:pointer;
+	text-indent:-5000px;
+	font:1px arial;
+	background: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/img-ca.gif) no-repeat 0 27px;
+	border-bottom:1px solid #5296BB;
+	margin-bottom:20px;
+}
+h2{
+	clear: both;
+	font:normal 18px arial;
+	color:#FB8D1C;
+}
+h3{
+	font:bold 15px arial;
+	color:#FB8D1C;
+}
+#baseContent{ height:430px;}
+#esqVideo,
+#logon{ 
+	float:right;
+	height:auto;
+}
+#esqVideo{ 
+	width:680px; 
+	float:left;
+}
+#esqVideo ol{ 
+	display:block;
+	background: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/passos2.gif) no-repeat 23px 0;
+	height:359px;
+	margin-top:20px
+}
+#esqVideo ol li{ 
+	list-style:none;
+	font:bold 15px arial;
+	padding:25px 0 50px;
+	margin:0 0 0 305px;
+	color:#717982;
+	cursor:default;
+} 
+#logon{ width:260px; }
+#logon h2{ margin:10px 0; }
+#logon p{
+	font:12px arial;
+	padding:0 6px 4px;
+	*padding:0 4px 4px;
+	cursor:default;
+}
+input#pj{ margin-left:32px }
+#btContent{
+	border:1px solid #C0C7CF;
+	background:#FFF;
+}
+#btContent div{
+	background:#FB8D1C;
+	margin:3px;
+	padding:13px 0
+}
+#btCadastro{ 
+	cursor:pointer;
+	font:bold 18px arial;
+	padding:3px 8px;
+	margin:0 auto
+}
+#btContent p { text-align:center /* for ie 8 */ }
+
+/* MINHA CONTA */
+#mConta{
+	border:1px solid #C2C6D1;
+	padding:15px 0 20px 6px;
+}
+#mConta p{
+	color:#FFF;
+}
+
+#mConta p.messages{
+	display: none;
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 0;
+}
+#mConta p.messages span{
+	background: #FFF url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/alert.gif) no-repeat 10px 0;
+	color: red;
+	display: block;
+	font-size: 11px;
+	line-height: 15px;
+	padding-left: 30px;
+}
+#mConta p label{
+	color:#000;
+}
+#mConta ul li{
+	background: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/arrow.gif) no-repeat 1px 4px;
+	padding-left:8px;
+	font:11px arial;
+	list-style:none;
+}
+#mConta #ok{
+	cursor:pointer;
+	position:relative;
+	top:6px;
+	*top:3px;
+}
+#mConta label{
+	font:16px arial;
+}
+#mConta input.text{
+	border:1px solid #C2C6D1;
+	padding:3px;
+	width:105px;
+}
+#mConta ul{
+	margin:10px 0 0 53px
+}
+
+#logged {
+	margin-bottom: 15px;
+}
+
+#logged p.text {
+	color: #000;
+	padding: 10px 6px;
+}
+
+#logged h3 {
+	padding:0 6px 4px;
+}
+
+/* duvidas */
+#duvidas{
+	background:#F0F0F0;
+	padding:10px;
+	margin-top:20px;
+}
+#duvidas p{ padding:5px 0 0; color:#6A6A6A }
+
+
+/* Saiba Mais */
+#learn-more {
+	margin: 10px 0 30px;
+}
+
+#learn-more-content {
+	border: 1px solid #C0C7CF;
+	float: right;
+	height: 460px;
+	margin-left: -1px;
+	position: relative;
+	width: 764px;
+	z-index: 1;
+}
+
+#learn-more-content .show {
+	display: block;
+}
+
+#learn-more-content .hide {
+	display: none;
+}
+
+#menu {
+	border-left: 1px solid #C0C7CF;
+	border-top: 1px solid #C0C7CF;
+	float:left;
+	display:block;
+	position: absolute;
+	z-index: 2;
+	width:214px;
+}
+#menu li{
+	list-style:none;
+}
+#menu li a {
+	display:block;
+	font:12px arial;
+	border-style:solid;
+	border-color:#D5D6D8;
+	border-width:0 1px 1px 0;
+	background:#F3F4F8 url(https://web.archive.org/web/20130424230418im_/http://shopp.img.uol.com.br/v2006/home/new/dept-arrow.gif) no-repeat scroll 197px 50%;
+	outline: none;
+	padding:7px 0 7px 12px;
+	width:201px;
+}
+#menu li a:hover { 
+	background-color: #F9F9FB;
+	font-weight: bold!important;
+	text-decoration: none;
+}
+
+#menu li a.current {
+	background: #FFF;
+	border-right: 1px solid #FFF;
+	font-weight: bold;
+}
+
+#cont1{float:left}
+
+
+/*
+	DEPOIMENTOS
+*/
+#testimonials .dep {
+	clear:both;
+	margin-top: 50px;
+	padding: 20px;
+	display:none;
+}
+
+#testimonials .quote {
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	clear: both;
+	display: block;
+	padding: 15px 0;
+	position: relative;
+	text-align: justify;
+}
+
+
+#testimonials .quote img {
+	border: 1px solid #CCC;
+	display: block;
+	left: 50%;
+	margin-left: -75px;
+	position: absolute;
+	top: -50px;
+	width: 145px;
+}
+
+#testimonials .q-open,
+#testimonials .q-close {
+	background: #FFF url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/img-ca.gif) no-repeat 0 0;
+	display: block;
+	height: 22px;
+	width: 29px;
+}
+
+#testimonials .q-open {
+	background-position: -85px -102px;
+}
+
+#testimonials .q-close {
+	background-position: -85px -128px;
+	float: right;
+}
+
+#testimonials .author {
+	color: #666;
+	clear: both;
+	display: block;
+	font-size: 13px;
+	padding-left: 15px;
+}
+
+#testimonials .author strong {
+	display: block;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+#testimonials cite {
+	color: #717982;
+	display: block;
+	font-size: 13px;
+	font-style: normal;
+	line-height: 15px;
+	margin: 15px 0;
+	padding: 0 15px;
+}
+
+#dep-pag #dep-prev{
+	background:url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/img-ca.gif) no-repeat -70px -160px;
+}
+#dep-pag #dep-next{
+	background:url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/img-ca.gif) no-repeat -103px -160px;
+}
+#dep-pag {
+	left: 50%;
+	list-style: none;
+	margin: -44px 0 0 -175px;
+	position: absolute;
+	top: 100%;
+	width: 355px;
+}
+
+#dep-pag li {
+	float: left;
+	margin: 0 5px;
+}
+
+#dep-pag li a {
+	background: #FFF url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/img-ca.gif) no-repeat -125px -95px;
+	display: block;
+	height: 33px;
+	outline: none;
+	overflow: hidden;
+	text-indent: -9000px;
+	width: 33px;
+}
+
+#dep-pag li a.current {
+	background-position: -125px -127px;
+}
+
+/* mais informações */
+#maisInfo{
+	padding:12px 0;
+	/* text-align:center */
+}
+#maisInfo a{
+	margin:0 20px;
+}
+
+/* Parceiros */
+#parceiros {
+	height:50px;
+	margin:15px 0;
+	overflow: hidden;
+	width: 980px;
+}
+
+#parceiros .prev {
+	float: left;
+}
+
+#parceiros .next {
+	float: right;
+}
+
+#parceiros .prev a,
+#parceiros .next a {
+	background: #FFF url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/img-ca.gif) no-repeat 0 0;
+	display: block;
+	height: 50px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 35px;
+}
+
+#parceiros .prev a {
+	background-position: 0 -98px;
+}
+
+#parceiros .prev a:hover {
+	background-position: 0 -148px;
+}
+
+#parceiros .next a {
+	background-position: -35px -98px;
+}
+
+#parceiros .next a:hover {
+	background-position: -35px -148px;
+}
+
+#parceiros ul {
+	width: 1820px;
+}
+
+#parceiros ul li {
+	list-style: none;
+	padding: 2px;
+	margin: 0 15px 2px;
+	float: left;
+	border: 1px solid #EEEEEE
+}
+
+#par-lista {
+	float: left;
+	overflow: hidden;
+	width: 910px;
+}
+
+
+
+#banner {
+	margin:20px 0;
+	position:relative;
+	text-align:center;
+	width:100%;
+	z-index:0;
+}
+
+/* advantages */
+
+#advantages{
+	height:445px;
+	overflow:hidden;
+	background: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/vantagens.gif) no-repeat bottom right;
+}
+#advantages ul{
+	font:13px arial;
+	margin:20px;
+	width:500px;
+	list-style:none;
+}
+#advantages ul li{
+	padding:5px 0 5px 15px;
+	background: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/arrow.gif) no-repeat 5px 10px;
+}
+
+/* Partners */
+
+div#partners p{
+	font:13px arial;
+	text-align:center;
+	padding:28px 45px;
+}
+div#partners img{
+	margin:15px 0 0 20px
+}
+
+
+/* FAQ */
+#faq{
+	background: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/faq.gif) no-repeat bottom right;
+	height:445px;
+	overflow:hidden;
+}
+#faq p{
+	font:13px arial;
+	padding:28px 45px;
+}
+
+/* WalkThought */
+
+#walkthrough{
+	font:13px arial;
+}
+#walkthrough h3{
+	font:normal 25px arial;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+#walkthrough p{
+	padding:5px 40px 15px 0;
+}
+#walkthrough #stepBt{
+	width:700px;
+	border-bottom:1px solid #D5D6D8;
+	height:36px;
+	margin:0 auto;
+}
+#walkthrough #stepBt ol{
+	list-style:none;
+	width:125px;
+	_width:165px;
+	display:block;
+	float:right;
+}
+#walkthrough #stepBt ol li{ float:left }
+#walkthrough #stepBt a{
+	display:block;
+	width:29px;
+	height:36px;
+	overflow:hidden;
+	text-indent:-5000px;
+	outline:none;
+	float:left;
+	margin:0 6px;
+	background-image: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/img-ca.gif);
+}
+#step1,
+#step2,
+#step3{
+	height:250px;
+	display:none;
+	margin-top:80px
+}
+#step1{ display:block }
+#stepBt a#stepBt1{ background-position: -170px 100px }
+	a.stepBt1{ background-position: -170px 64px!important }
+	
+#stepBt a#stepBt2{ background-position: -200px 100px }
+	a.stepBt2{ background-position: -200px 64px!important }
+	
+#stepBt a#stepBt3{ background-position: -230px 100px }
+	a.stepBt3{ background-position: -230px 64px!important }
+
+#stepImg1,
+#stepImg2,
+#stepImg3{
+	float:left;
+	height:211px;
+	width:274px;
+	background: url(https://web.archive.org/web/20130424230418im_/http://ca.shopping.uol.com.br/img/passo-a-passo.gif) no-repeat;
+	margin:0 30px;
+}
+#stepImg1{
+	background-position: 0 0;
+}
+#stepImg2{
+	background-position: -274px -208px;
+}
+#stepImg3{
+	background-position: -274px -418px;
+}
+
+/* INI: ERRO */
+
+#erro{
+	font:13px arial;
+	margin-top:40px;
+	background:url(https://web.archive.org/web/20130424230418im_/https://simg.uol.com.br/nocache/anunciantes/alerta.gif) no-repeat 0 5px;
+	padding-left:60px
+}
+#erro p{
+	padding:10px 0;
+}
+#erro p strong{
+	color:red;
+	font:normal 20px arial;
+}
+#erro p span{
+	font-weight:bold
+}
+
+/* END: ERRO */
+
+
+
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 23:04:18 Apr 24, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:18:51 Oct 11, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 80.404
+  exclusion.robots: 0.099
+  exclusion.robots.policy: 0.086
+  cdx.remote: 0.078
+  esindex: 0.011
+  LoadShardBlock: 47.719 (3)
+  PetaboxLoader3.datanode: 86.086 (5)
+  load_resource: 154.388 (2)
+  PetaboxLoader3.resolve: 75.987 (2)
+*/

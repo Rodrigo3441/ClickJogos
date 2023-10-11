@@ -1,0 +1,164 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+var numBar = '2';
+var colorBar2 = '#316300';
+var colorBar1 = '#649d31';
+
+var help = new Object(); 
+help.start = function()
+{
+    $( ".ajuda" ).mouseover( help.display );
+    $( "body, .ajuda .fechar" ).mouseout( help.hide );
+};
+help.display = function( event )
+{
+event.stopPropagation();
+event.preventDefault();
+    oTrigger = $( ( window.event ) ? window.event.srcElement : event.target );
+    if( oTrigger.is( "p") == false )
+    {
+        oTrigger = oTrigger.ancestors( "p" ).eq( 0 );
+    }
+    $( "var", oTrigger ).each(
+        function()
+        {
+            this.style.display = "block";
+        }
+    );
+    if( event.preventDefault )
+    {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    else
+    {
+        window.event.returnValue = false;
+        window.event.cancelBubble = true;
+    }
+};
+help.hide = function( event )
+{
+    $( "var" ).each(
+        function()
+        {
+            this.style.display = "none";
+        }
+    );
+    oTrigger = $( ( window.event ) ? window.event.srcElement : event.target );
+    if( $( oTrigger).is( ".fechar" ) )
+    {
+        if( event.preventDefault )
+        {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        else
+        {
+            window.event.returnValue = false;
+            window.event.cancelBubble = true;
+        }
+    }
+};
+$( help.start )
+        
+    /* start: Randomização dos banners de parceiros */
+    
+// basta adicionar o nome do parceiro e incluir a imagem em http://shopp.img.uol.com.br/v2006/st/logos/
+var Parceiros= [
+    'revistaadega',
+    'clickjogos',
+    'belasmensagens',
+    'blogadao',
+    'virgula',
+    'charges',
+    'hsw',
+    'bemzen',
+    'natelinha',
+    'bestcars',
+    'folha',
+    'bol',
+    'mundocanibal',
+    'jcconcursos',
+    'levelupgames',
+    'guiadecompra',
+    'nowdigital',
+    'canalexecutivo'
+    ];
+
+var numParceiros = Parceiros.length;
+var escolhaNum1 = Math.floor(Math.random()*numParceiros);
+for(escolhaNum2 = Math.floor(Math.random()*numParceiros);escolhaNum1 == escolhaNum2;escolhaNum2 = Math.floor(Math.random()*numParceiros)) {var escolhaNum2 = escolhaNum2;}
+for(escolhaNum3 = Math.floor(Math.random()*numParceiros);escolhaNum1 == escolhaNum3 || escolhaNum2 == escolhaNum3;escolhaNum3 = Math.floor(Math.random()*numParceiros)) {var escolhaNum3 = escolhaNum3;} 
+for(escolhaNum4 = Math.floor(Math.random()*numParceiros);escolhaNum1 == escolhaNum4 || escolhaNum2 == escolhaNum4 || escolhaNum3 == escolhaNum4;escolhaNum4 = Math.floor(Math.random()*numParceiros)) {var escolhaNum4 = escolhaNum4;}
+
+var imgNum1 = ' <li class="first"><a href="https://web.archive.org/web/20130424235931/http://click.uol.com.br/?rf=shopping_ca_home&u=http://'+Parceiros[escolhaNum1]+'.shopping.uol.com.br" target="_blank"><img src="https://web.archive.org/web/20130424235931/http://shopp.img.uol.com.br/v2006/st/logos/'+Parceiros[escolhaNum1]+'.gif" alt="" border="0" \/><\/a><\/li> ';
+var imgNum2 = ' <li><a href="https://web.archive.org/web/20130424235931/http://click.uol.com.br/?rf=shopping_ca_home&u=http://'+Parceiros[escolhaNum2]+'.shopping.uol.com.br" target="_blank"><img src="https://web.archive.org/web/20130424235931/http://shopp.img.uol.com.br/v2006/st/logos/'+Parceiros[escolhaNum2]+'.gif" alt="" border="0" \/><\/a><\/li> ';
+var imgNum3 = ' <li><a href="https://web.archive.org/web/20130424235931/http://click.uol.com.br/?rf=shopping_ca_home&u=http://'+Parceiros[escolhaNum3]+'.shopping.uol.com.br" target="_blank"><img src="https://web.archive.org/web/20130424235931/http://shopp.img.uol.com.br/v2006/st/logos/'+Parceiros[escolhaNum3]+'.gif" alt="" border="0" \/><\/a><\/li> ';
+var imgNum4 = ' <li><a href="https://web.archive.org/web/20130424235931/http://click.uol.com.br/?rf=shopping_ca_home&u=http://'+Parceiros[escolhaNum4]+'.shopping.uol.com.br" target="_blank"><img src="https://web.archive.org/web/20130424235931/http://shopp.img.uol.com.br/v2006/st/logos/'+Parceiros[escolhaNum4]+'.gif" alt="" border="0" \/><\/a><\/li> ';
+
+$(function(){
+    $('ul#banners').html(imgNum1+' '+imgNum2+' '+imgNum3+' '+imgNum4);
+    $('ul#banners').find('img').attr({ onmouseover: "this.style.border='1px solid #FDD84B';", onmouseout: "this.style.border='1px solid #eee';" });
+    $('div#tudo').css({ width: "auto" });
+});
+
+/* end: Randomização dos banners de parceiros */
+
+$(function(){
+    $('div.logbox').css({ display: "none" });
+    $('div.entrar').css({ height: "147px" });
+    $('a#open').click( function() {
+        $('div.entrar').css({ height: "227px" });
+        $('div.logbox').css({ display: "block" });
+        $('input#email')[0].focus();
+    } );
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*
+     FILE ARCHIVED ON 23:59:31 Apr 24, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:18:51 Oct 11, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 130.089
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.06
+  cdx.remote: 0.056
+  esindex: 0.009
+  LoadShardBlock: 84.876 (3)
+  PetaboxLoader3.datanode: 215.239 (5)
+  load_resource: 277.823 (2)
+  PetaboxLoader3.resolve: 96.004 (2)
+*/

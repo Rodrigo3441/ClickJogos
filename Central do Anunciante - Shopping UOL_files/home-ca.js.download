@@ -1,0 +1,344 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+$(function(){
+
+	/* INI: VALIDA STATUS ACESSO */
+	
+		var statusHash = location.hash.replace('#','');
+		
+		if( statusHash == '100' ){
+		
+			s100 = [];
+			s100.push('<div id="erro">');
+			s100.push('<p><strong>Atenção: Número de tentativas excedido</strong></p>');
+			s100.push('<p>Foi excedido o número de tentativas de acesso vindas do seu endereço de IP.</p>');
+			s100.push('<p>Estas tentativas foram registradas para a segurança dos usuários do UOL.</p>');
+			s100.push('<p>O UOL pode usar estas informações para localizar e tomar todas as medidas legais cabíveis, para resguardar a privacidade de seus usuários.</p>');
+			s100.push('</div>');
+			
+			$( '#esqVideo' ).html( s100.join('') );
+			
+		}
+		
+		if( statusHash == '200' ){
+			
+			s200 = [];
+			s200.push('<div id="erro">');
+			s200.push('<p><strong>Atenção: Verifique seu usuário e senha.</strong></p>');
+			s200.push('<p>Cuidado com as teclas "Caps Lock" e "Shift", pois o UOL diferencia letras maiúsculas e minúsculas.</p>');
+			s200.push('</div>');
+			
+			$( '#esqVideo' ).html( s200.join('') );
+			
+		}
+		
+		if( statusHash == '300' ){
+			
+			s300 = [];
+			s300.push('<div id="erro">');
+			s300.push('<p><strong>Atenção: conta bloqueada</strong></p>');
+			s300.push('<p>Esta conta expirou.<br />');
+			s300.push('Entre em contato com a <a href="https://web.archive.org/web/20130425002628/http://shopping.uol.com.br/s/anunciantes/fale-conosco-anunciante.html"><span>Central do Anunciante</span></a>, para maiores esclarecimentos.</p>');
+			s300.push('</div>');
+			
+			$( '#esqVideo' ).html( s300.join('') );
+			
+		}
+		
+		if( statusHash == '400' ){
+			
+			s400 = [];
+			s400.push('<div id="erro">');
+			s400.push('<p><strong>Atenção: conta bloqueada</strong></p>');
+			s400.push('<p>Esta conta está em processo de expiração.<br />');
+			s400.push('Entre em contato com a <a href="https://web.archive.org/web/20130425002628/http://shopping.uol.com.br/s/anunciantes/fale-conosco-anunciante.html"><span>Central do Anunciante</span></a>, para maiores esclarecimentos.</p>');
+			s400.push('</div>');
+			
+			$( '#esqVideo' ).html( s400.join('') );
+			
+		}
+		
+		if( statusHash == '500' ){
+			
+			s500 = [];
+			s500.push('<div id="erro">');
+			s500.push('<p><strong>Atenção: conta bloqueada</strong></p>');
+			s500.push('<p>Esta conta está bloqueada.<br />');
+			s500.push('Entre em contato com a <a href="https://web.archive.org/web/20130425002628/http://shopping.uol.com.br/s/anunciantes/fale-conosco-anunciante.html"><span>Central do Anunciante</span></a>, para maiores esclarecimentos.</p>');
+			s500.push('</div>');
+			
+			$( '#esqVideo' ).html( s500.join('') );
+			
+		}
+	
+	/* END: VALIDA STATUS ACESSO */
+
+    $( 'h1' ).click(function(){
+        window.location = "https://web.archive.org/web/20130425002628/http://ca.shopping.uol.com.br";
+    })
+    
+    $('#email').focus();
+    
+    $('input#pj').click(function(){
+        $('#pf').attr('checked',''); urlCadastro('pj');
+    })
+    
+    $('input#pf').click(function(){
+        $('#pj').attr('checked',''); urlCadastro('pf');
+    })
+    
+	$( '#open' ).click( function( e ) {
+		e.stopPropagation(); e.preventDefault();
+		
+		var
+			form = $( '#form-login' );
+		
+		if( form.is( ':hidden' ) ) {
+			form.show();
+		} else {
+			form.hide();
+		}
+	} );
+	
+    function urlCadastro(tipo){
+    
+        $('form#cadastro').attr('action','https://web.archive.org/web/20130425002628/https://cadastro.uol.com.br/indexb.html?skin=shopping/visitor/' + tipo + '&amp;promochild=PROMOVSSHOP');
+        $('#linkCadastro').attr('href','https://web.archive.org/web/20130425002628/https://cadastro.uol.com.br/indexb.html?skin=shopping/visitor/' + tipo + '&amp;promochild=PROMOVSSHOP');
+    
+    }
+	
+    $( '#dp1' ).show();
+	$('#dep-pag li a').click( function( e ) {
+		
+		e.preventDefault();
+		
+        if( $( this ).attr('class') == 'nav'){
+            
+            var act = $('#dep-pag li a.current').parents('li');
+            
+            if( $( this ).attr('id') == 'dep-prev'){
+                
+                if(act.prev('li').find('a').attr('class') == 'nav')
+                return
+                
+                act.prev('li').find('a').click()
+                
+            }else{
+                
+                if(act.next('li').find('a').attr('class') == 'nav')
+                return
+                
+                act.next('li').find('a').click()
+            }
+            
+        }else{
+        
+            if( $( this ).hasClass( 'current' ) ){
+                return;
+            }
+            $( '#testimonials a.current' ).removeClass( 'current' );
+            $( this ).addClass( 'current' );
+            
+            $( '.dep' ).hide();
+            
+            $( $( this ).attr( "href" ) ).show();
+        }
+        
+    } );
+	
+	$( '#menu li a' ).click( function( e ) {
+		
+		e.preventDefault();
+        
+        link = $(this).attr('href');
+        
+        if(link.match(/http:\/\/*/) == "http://"){
+            window.open(link);
+        }else{
+		
+            if( $( this ).hasClass( 'current' ) )
+                return;
+            
+            var tipId = $( this ).attr( 'href' );
+            
+            $( '#menu li a' ).removeClass( 'current' );
+            $( this ).addClass( 'current' );
+            
+            $( '#learn-more-content .tip' ).hide().addClass( 'hide' );
+            $( tipId ).fadeIn( 'fast' ).removeClass( 'hide' );
+		}
+	} );
+    
+    
+    
+    $( '#stepBt a' ).click( function( e ){ e.preventDefault() } );
+    
+    $( '#stepBt a' ).mouseover( function( e ){
+        
+        var
+            active = $( this ).attr('href'),
+            activeImg = active.replace('step','stepImg'),
+            posImg;
+			
+		switch( active ) {
+			case "#step2":
+				posImg = -208;
+			break;
+			
+			case "#step3":
+				posImg = -418;
+			break;
+			
+			default:
+				posImg = 0;
+			break;
+		}
+		
+        $( '#stepBt a' ).removeClass();
+        
+        $( this ).addClass(active.replace("#step","stepBt"));
+        
+        $( '.stepBlock' ).hide();
+        $( active ).show();
+		
+        $( activeImg ).css( "background-position" , "-274px " + posImg + "px" ).animate( 
+            { "background-position": "-1px " + posImg + "px" }, 500
+        );
+
+    })
+
+    
+    $('a.openNew').click(function(e){
+        e.preventDefault();
+        window.open($(this).attr('href'));
+    });
+
+});
+
+window.onload = function() {
+		
+	var ul = $( "<ul></ul>" );
+	
+	for (i = 0;i <= Parceiros.length - 1; i++){
+		
+		var
+			click = "https://web.archive.org/web/20130425002628/http://click.uol.com.br/?rf=shopping_parceiros&u=http://" + Parceiros[i] + ".shopping.uol.com.br",
+			image = "https://web.archive.org/web/20130425002628/http://shopp.img.uol.com.br/v2006/st/logos/" + Parceiros[i] + ".gif",
+			banner = $( '<li><a href="' + click + '" target="_blank"><img src="' + image + '" alt="" border="0" \/><\/a><\/li> ' );
+			
+		$( banner )
+			.mouseover( function() {
+				$( this ).css( 'border-color', '#FDD84B' );
+			} )
+			
+			.mouseout( function() {
+				$( this ).css( 'border-color', '#EEE' );
+			} );
+		
+		$( ul ).append( banner );
+		
+	}
+	
+	$( ul ).appendTo( '#par-lista' );
+	
+	var 
+		ulWidth = 151 * Parceiros.length,
+		size2Move = 906,
+		pagTotal = Math.ceil( ulWidth / size2Move ),
+		moveTotal = 1,
+		list = $( '#par-lista ul' ),
+		animated = false;
+		
+	$( '#par-lista ul' ).width( ulWidth );
+	
+	$( 'p.prev a' ).click( function( e ) {
+		
+		e.preventDefault();
+		
+		if( moveTotal <= 1 || animated )
+			return;
+		
+		animated = true;
+		
+		list.animate( {
+			
+			marginLeft: parseInt( list.css( 'margin-left' ) ) + size2Move
+			
+		}, 'fast', function() {
+			
+			animated = false;
+			
+		} );
+		
+		moveTotal --;
+		
+	} );
+	
+	$( 'p.next a' ).click( function( e ) {
+		
+		e.preventDefault();
+		
+		if( moveTotal >= pagTotal || animated )
+			return;
+		
+		animated = true;
+		
+		list.animate( {
+			
+			marginLeft: parseInt( list.css( 'margin-left' ) ) - size2Move
+			
+		}, 'fast', function() {
+			
+			animated = false;
+			
+		} );
+		
+		moveTotal ++;
+		
+	} );
+
+	$( '#flogin' ).submit( function( e ) {
+		
+		if( $( 'input[name=user]' ).val() == '' || $( 'input[name=pass]' ).val() == '' ) {
+			
+			$( 'p.messages' ).show();
+			
+			e.preventDefault();
+			
+		}
+	
+	} );
+
+};
+
+}
+/*
+     FILE ARCHIVED ON 00:26:28 Apr 25, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:18:51 Oct 11, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 58.913
+  exclusion.robots: 0.12
+  exclusion.robots.policy: 0.107
+  cdx.remote: 0.087
+  esindex: 0.013
+  LoadShardBlock: 33.188 (3)
+  PetaboxLoader3.datanode: 52.444 (5)
+  load_resource: 127.04 (2)
+  PetaboxLoader3.resolve: 72.243 (2)
+*/

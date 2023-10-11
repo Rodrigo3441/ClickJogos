@@ -1,0 +1,193 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+function uolbarCombo()
+{
+var uolEst = new Array('fotos.uol.com.br/','&Aacute;lbum de Fotos',
+'seguranca.uol.com.br/','Antiv&iacute;rus e Firewall',
+'ferramentas.uol.com.br/','Aplicativos',
+'assistenciatecnica.uol.com.br/','Assist&ecirc;ncia T&eacute;cnica',
+'backup.uol.com.br/','Backup',
+'diversao.uol.com.br/bandalarga/','Banda Larga',
+'batepapo.uol.com.br/','Bate-papo UOL',
+'televisao.uol.com.br/bbb/','BBB 11',
+	'bolao.televisao.uol.com.br/web/home.do?competition=100#bolao.publicBets','&nbsp;&nbsp;- Big Bolão',
+'estilo.uol.com.br/beleza/','Beleza',
+'biblioteca.uol.com.br/','Biblioteca',
+'bichos.uol.com.br/','Bichos',
+'blog.uol.com.br/','Blogosfera',
+'busca.uol.com.br/','Busca',
+'carnaval.uol.com.br/','Carnaval',
+'carros.uol.com.br/','Carros',
+	'carros.uol.com.br/motos/ultnot/','&nbsp;&nbsp;- Motos',
+	'carros.uol.com.br/fipe/','&nbsp;&nbsp;- Tabela Fipe',
+'cartoes.uol.com.br/','Cart&otilde;es',
+'casaeimoveis.uol.com.br/','Casa e Im&oacute;veis',
+'celebridades.uol.com.br/','Celebridades',
+'celular.uol.com.br/','Celular',
+'cienciaesaude.uol.com.br/','Ci&ecirc;ncia e Sa&uacute;de',
+'cinema.uol.com.br/','Cinema e Filmes',
+	'cinema.uol.com.br/especiais/festival-de-berlim-2011.jhtm','&nbsp;&nbsp;- Festival de Berlim',
+	'cinema.uol.com.br/oscar/','&nbsp;&nbsp;- Oscar',
+'clube.uol.com.br/','Clube UOL',
+'shopping.uol.com.br/?&rtrk=src:13;size:18;chn:0;creative:link_fixo;thm:shopping_menu;','Comparar Pre&ccedil;os',
+'criancas.uol.com.br/','Crian&ccedil;as',
+'downloads.uol.com.br/','Downloads',
+'economia.uol.com.br/','Economia',
+	'economia.uol.com.br/cotacoes/','&nbsp;&nbsp;- Cota&ccedil;&otilde;es',
+	'uolinvest.economia.uol.com.br/','&nbsp;&nbsp;- UOL Invest',
+'educacao.uol.com.br/','Educa&ccedil;&atilde;o',
+	'educacao.uol.com.br/dicionarios/','&nbsp;&nbsp;- Dicion&aacute;rios',
+	'vestibular.uol.com.br/','&nbsp;&nbsp;- Vestibular',
+'email.uol.com.br/','E-Mail',
+'noticias.uol.com.br/empregos/','Empregos',
+	'empregocerto.uol.com.br/','&nbsp;&nbsp;- Enviar curr&iacute;culo',
+'entretenimento.uol.com.br/','Entretenimento',
+	'guia.uol.com.br/','&nbsp;&nbsp;- Guia Cultural SP',
+'esporte.uol.com.br/','Esporte',
+	'esporte.uol.com.br/futebol/copa-2014/','&nbsp;&nbsp;- Copa 2014',
+	'esporte.uol.com.br/f1/','&nbsp;&nbsp;- F&oacute;rmula 1',
+	'esporte.uol.com.br/futebol/','&nbsp;&nbsp;- Futebol',
+'estilo.uol.com.br/','Estilo',
+	'estilo.uol.com.br/moda/','&nbsp;&nbsp;- Moda',
+'www.folha.uol.com.br/','Folha.com',
+'fotoblog.uol.com.br/','Fotoblog',
+'gay.uol.com.br/','Gay',
+	'clicklogger.rm.uol.com.br/?prd=29&grp=src:28;chn:0;creative:menu-home-gay&msr=Cliques%20de%20Origem:1&oper=11&redir=http://mig.uol.com.br/?skin=mig','&nbsp;&nbsp;- Namoro gay',
+'horoscopo.uol.com.br/','Hor&oacute;scopo',
+'humor.uol.com.br/','Humor',
+'indice.uol.com.br/','&Iacute;ndice',
+'jogos.uol.com.br','Jogos',
+	'jogos.uol.com.br/jogosonline/','&nbsp;&nbsp;- Jogos Online',
+	'jogos.uol.com.br/loja/','&nbsp;&nbsp;- Loja de jogos',
+'noticias.uol.com.br/jornais/','Jornais',
+	'noticias.uol.com.br/internacional/','&nbsp;&nbsp;- Internacionais',
+'jovem.uol.com.br','Jovem',
+'mapas.uol.com.br/','Mapas',
+'musica.uol.com.br/','M&uacute;sica',
+	'musica.uol.com.br/artistas/','&nbsp;&nbsp;- Artistas',
+'namoro.uol.com.br/','Namoro',
+'noticias.uol.com.br/','Not&iacute;cias',
+	'noticias.uol.com.br/especiais/chuvas-pelo-pais-em-2011.jhtm','&nbsp;&nbsp;- Chuvas',
+	'noticias.uol.com.br/cotidiano/','&nbsp;&nbsp;- Cotidiano',
+	'noticias.uol.com.br/internacional/','&nbsp;&nbsp;- Internacional',
+	'noticias.uol.com.br/jornais/','&nbsp;&nbsp;- Jornais',
+	'noticias.uol.com.br/politica/','&nbsp;&nbsp;- Pol&iacute;tica',
+	'noticias.uol.com.br/ultnot/noticias.jhtm','&nbsp;&nbsp;- &Uacute;ltimas Not&iacute;cias',
+'www.radio.uol.com.br/','R&aacute;dio UOL',
+'receitas.uol.com.br/','Receitas',
+'noticias.uol.com.br/retrospectiva-uol/2010/','Retrospectiva',
+	'noticias.uol.com.br/especiais/8-anos-de-lula/','&nbsp;&nbsp;- Oito anos de Lula',
+'noticias.uol.com.br/revistas/','Revistas',
+'sac.uol.com.br/','SAC',
+'servicos.uol.com.br/','Servi&ccedil;os',
+'sexo.uol.com.br/','Sexo',
+'sites.uol.com.br/','Sites Pessoais',
+'tecnologia.uol.com.br/','Tecnologia',
+'televisao.uol.com.br/','Televis&atilde;o',
+	'televisao.uol.com.br/novelas.jhtm','&nbsp;&nbsp;- Novelas',
+	'televisao.uol.com.br/programacao/','&nbsp;&nbsp;- Programa&ccedil;&atilde;o',
+'www3.uol.com.br/tempo/','Tempo e Tr&acirc;nsito',
+'tvuol.uol.com.br/','TV UOL',
+'uolk.uol.com.br/','UOL K',
+'mais.uol.com.br/','UOL Mais',
+'viagem.uol.com.br/','Viagem',
+'tvuol.uol.com.br/','V&iacute;deos',
+'voip.uol.com.br/','Voip',
+'wifi.uol.com.br/','Wi-Fi');
+
+var printer='<option value="0">&Iacute;NDICE PRINCIPAL</option>';
+for(var i=0;i<uolEst.length;i+=2) printer+='<option value="'+uolEst[i]+'">'+uolEst[(i+1)]+'</option>';
+return printer;
+}
+
+getParseJSURL = function(src){
+  window['_REQUEST'] = [];
+  var obj=_REQUEST;
+  src.replace(/([^=&?]+)=([^&]+)/g,function(match,key,value,a){obj[key]=unescape(value).replace(/\+/g,'%20').replace(/</g,'&lt;').replace(/>/g,'&gt;')});
+}
+
+getParseJSURL(document.getElementsByTagName('script')[document.getElementsByTagName('script').length - 1].src);
+var refbusca = (typeof _REQUEST['refbusca'] == "undefined") ? "barrauol" : _REQUEST['refbusca'];
+
+document.write('<style>'
++'#barrauol, #barrauol1 { background-image:url(https://simg.uol.com.br/barra/b/uol10anosbg.gif);background-color:#0A3B6C; }'
++'.buol { width:76em;height:2.4em; font-family:arial,sans-serif;line-height:2.4em; }'
++'.buol img { border:0; width:5.2em; height:1.7em;margin-top:3px }'
++'.buol form { float:left;margin:0.3em 0 0 0.3em; }'
++'.buol select { font:1em arial,sans-serif;width:98.9%; }'
++'.buol form>select { width:14.5em; }'
++'.buol a { height:2.4em;color:white;text-decoration:none;display:block;float:left;text-align:center; }'
++'.buol a:visited { color:white; }'
++'.buol a:hover { text-decoration:underline; }'
++'#ib2, #ib4, #ib6, #ib3, #ib5, #ib7, #ib1 { border-right:1px solid #02264B; }'
++'a#ib1 { padding:0;width:7.1em;height:2.4em; }'
++'#ib2 { width:8.3em; }'
++'#ib3 { width:10.5em; }'
++'#ib4 { width:8.2em; }'
++'#ib5 { width:6.4em; }'
++'#ib6 { width:8.3em; }'
++'#ib7 { width:11.4em; }'
++'#copyright { width:76em;color:black;text-align:center;margin:0.5em; }'
++'</style>');
+
+var form_name_seed;
+
+function writeUOLBar()
+{
+form_name_seed = (form_name_seed) ? 2 : 1 ;
+document.write('<style>'
++'</style><div id="barrauol'+( form_name_seed==2 ? 1 : '' )+'" class="buol">'
++'<a href="https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral&u=http://www.uol.com.br/" target="_top" id="ib1"><img src="https://web.archive.org/web/20130425051029/https://simg.uol.com.br/barra/b/uol.gif" alt="UOL" title="UOL"></a>'
++'<a href="https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral&u=http://clicklogger.rm.uol.com.br/?prd=11&grp=src:10;chn:37;creative:barracashopping&msr=Cliques%20de%20Origem:1&oper=11&redir=http://assine.uol.com.br/index.htm" id="ib2" target="_top">ASSINE</a>'
++'<a href="https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral&u=http://batepapo.uol.com.br/" id="ib3" target="_top">BATE-PAPO</a>'
++'<a href="https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral&u=http://busca.uol.com.br/" id="ib4" target="_top">BUSCA</a>'
++'<a href="https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral&u=http://email.uol.com.br/" id="ib6" target="_top">E-MAIL</a>'
++'<a href="https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral&u=https://sac.uol.com.br/" id="ib5" target="_top">SAC</a>'
++'<a href="https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral&u=http://clicklogger.rm.uol.com.br/shopping/?prd=239&msr=Cliques%20de%20Origem:1&oper=11&nortrk=1&grp=src:13;size:18;chn:103;creative:link_fixo;thm:barra_navegacao'+form_name_seed+'&redir=http://shopping.uol.com.br/" id="ib7" target=_top>SHOPPING UOL</a>'
++'<form name=fm_uol'+form_name_seed+' target="_top"><select name="sel_uol0" onchange="openEs('+form_name_seed+')">'+ uolbarCombo() +'</select></form>'
++'</div>');
+}
+
+function openEs(form_name_seed)
+{
+eval('op = document.fm_uol'+form_name_seed+'.sel_uol0[document.fm_uol'+form_name_seed+'.sel_uol0.selectedIndex].value');
+if(op!=0) parent.top.location = 'https://web.archive.org/web/20130425051029/http://click.uol.com.br/?rf=barrageral-drop&u=http://'+op;
+}
+
+function writeCopyright()
+{
+document.write('<div id="copyright">&copy; 1996-2013 UOL - O melhor conte&uacute;do. Todos os direitos reservados.</div>');
+}
+
+
+}
+/*
+     FILE ARCHIVED ON 05:10:29 Apr 25, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:18:51 Oct 11, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 107.457
+  exclusion.robots: 0.085
+  exclusion.robots.policy: 0.075
+  cdx.remote: 0.07
+  esindex: 0.012
+  LoadShardBlock: 83.577 (3)
+  PetaboxLoader3.datanode: 90.533 (5)
+  load_resource: 245.235 (2)
+  PetaboxLoader3.resolve: 120.736 (2)
+*/
