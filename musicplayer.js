@@ -14,6 +14,8 @@ var durationDisplay = document.getElementById("duration");
     "wildwood.wav",
 	"jambali.mp3",
     "window_of_the_soul.mp3",
+	"113.wav",
+	"catmidi.wav",
 	
     // Adicione mais músicas à lista
   ];
