@@ -4,12 +4,6 @@ document.getElementById("contact_name").oninvalid = function(e) {
     e.target.setCustomValidity("Digite seu nome");
   }
 };
-document.getElementById("contact_email").oninvalid = function(e) {
-  e.target.setCustomValidity("");
-  if (!e.target.validity.valid) {
-    e.target.setCustomValidity("Preencha o seu e-mail");
-  }
-};
 document.getElementById("contact_subject").oninvalid = function(e) {
   e.target.setCustomValidity("");
   if (!e.target.validity.valid) {
