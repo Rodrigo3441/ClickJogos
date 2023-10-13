@@ -1,0 +1,50 @@
+/* Estilos gerais para o formulário */
+form.new_contact {
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 11px;
+    background: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para as entradas de texto e áreas de texto */
+input.indexform[type='text'],
+textarea {
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    outline: none;
+    padding: 8px 10px;
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    vertical-align: top;
+}
+
+textarea {
+    height: 118px;
+    padding-top: 12px;
+}
+
+/* Estilos para os rótulos e legendas */
+label,
+dt {
+    vertical-align: top;
+    color: #fff;
+    cursor: text;
+    font-size: 13px;
+    font-style: italic;
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para as mensagens de erro/validação */
+input[type='text'].invalid,
+textarea.invalid {
+    border: 1px solid #f7bec0;
+}
+
+input[type='text'].valid,
+textarea.valid {
+    border: 1px solid #007441;
+}

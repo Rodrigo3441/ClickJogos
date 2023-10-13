@@ -11,11 +11,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 <link href="cssindexpage.css" rel="stylesheet">
 <link href="musicplayer.css" rel="stylesheet">
+<link href="indexform.css" rel="stylesheet">
 </head>
 <body>
 <!--Scriptzone-->
+<script src="helpform.js"></script>
 <script src="slidercontext.js"></script>
 <script src="musicplayer.js"></script>
+<script>new Contact()</script>
+
 
 
 
@@ -270,6 +274,7 @@ Nostalgia pura!
 <!--Coluna 2-->
 <div style="flex-basis: 36%;border-right: 1px solid #555555;padding:10px;">
 
+
 </div>
 
 <!--Coluna 3-->
@@ -280,7 +285,22 @@ Nostalgia pura!
 receba ofertas especiais
 semanalmente.</h5>
 <br>
-<a href="contato.html" title="Converse conosco"><img alt="error" style="float:right;" src="oldimages/email2.png"></a>
+<form accept-charset='UTF-8' action='#' class='new_contact' id='new_contact' method='post' netlify>
+    <input type='hidden' name='form-name' value='new_contact' />
+    <dl class='form'>
+        <div class='name'>
+            <dt><label for="contact_name">Seu nome</label></dt>
+            <dd><input class="indexform" id="contact_name" name="contact[name]" size="30" type="text"></dd>
+        </div>
+        <div class='message'>
+            <dt><label for="contact_message">Mensagem</label></dt>
+            <dd>
+                <textarea width="30" style="resize: none;" id="contact_message" name="contact[message]" rows="8"></textarea>
+            </dd>
+        </div>
+    </dl>
+    <input class="entrar2" name="commit" type="submit" value="enviar">
+</form>
 </div>
 </div>
 </div>
