@@ -15,12 +15,8 @@
 </head>
 <body>
 <!--Scriptzone-->
-<script src="helpform.js"></script>
 <script src="slidercontext.js"></script>
 <script src="musicplayer.js"></script>
-<script>new Contact()</script>
-
-
 
 
 
@@ -272,34 +268,33 @@ Nostalgia pura!
 </div>
 
 <!--Coluna 2-->
-<div style="flex-basis: 36%;border-right: 1px solid #555555;padding:10px;">
+<div style="flex-basis:64%;padding:10px;">
 
 
-</div>
-
-<!--Coluna 3-->
-<div style="flex-basis: 28%;padding:10px;">
 <h1>Receba nossas</h1>
 <h4 class="another"><b>Ofertas Especiais</b></h4>
 <h5><img alt="error" src="oldimages/mail.png" style="float:right;">Cadastre-se no boletim e
 receba ofertas especiais
 semanalmente.</h5>
 <br>
-<form accept-charset='UTF-8' action='#' class='new_contact' id='new_contact' method='post' netlify>
-    <input type='hidden' name='form-name' value='new_contact' />
-    <dl class='form'>
-        <div class='name'>
-            <dt><label for="contact_name">Seu nome</label></dt>
-            <dd><input class="indexform" id="contact_name" name="contact[name]" size="30" type="text"></dd>
-        </div>
-        <div class='message'>
-            <dt><label for="contact_message">Mensagem</label></dt>
-            <dd>
-                <textarea width="30" style="resize: none;" id="contact_message" name="contact[message]" rows="8"></textarea>
-            </dd>
-        </div>
-    </dl>
-    <input class="entrar2" name="commit" type="submit" value="enviar">
+<!--parte formulário-->
+<form accept-charset="UTF-8" action="#" class="new_contact" id="new_contact" method="post" netlify>
+<dl class='form'>
+<div class='name'>
+<dd><input class="indexform" id="contact_name" placeholder="Seu nome" name="contact[name]" size="30" type="text" required ></dd>
+</div>
+<div class='email' style="margin-top:12px;">
+<dd><input class="indexform" id="contact_email" placeholder="Seu e-mail"name="contact[email]" size="30" type="text" required></dd>
+</div>
+<div class='subject' style="margin-top:12px;">
+<dd><input class="indexform" id="contact_subject" placeholder="Assunto"name="contact[subject]" size="30" type="text" required></dd>
+</div>
+<div class='message' style="margin-top:12px;">
+<dd><textarea id="contact_message" name="contact[message]" placeholder="Mensagem" style="resize:none;" rows="8" required>
+</textarea></dd>
+</div>
+</dl>
+<input class="entrar2" name="commit" type="submit" value="enviar">
 </form>
 </div>
 </div>
@@ -313,4 +308,9 @@ semanalmente.</h5>
 <div class="centro smalltxt" style="padding:10px;background-color:#101010;border-top:1px solid #ffffff;">
 © 2022-2023 <a style="color:#1dbcf1;text-decoration:none;" href="https://github.com/Oozaru341">RODRIGO</a> - O melhor conteúdo. Todos os direitos reservados.
 </body>
+
+<!--script relacionado ao formulário-->
+<script src="formindextexts.js"></script>
+
+
 </html>
