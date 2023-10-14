@@ -94,10 +94,14 @@ h1 {
   color:#ffffff;
 }
 h5 {
-	color: #1dbcf1;
+	color: #ffffff;
 	font-size: 11px;
 	line-height: 14px;
 }
 .smalltxt {
 font-size: 11px;
 }	
+h3.bottompart {
+	font-size: 20px;
+	color: #1dbcf1;
+}
