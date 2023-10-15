@@ -10,12 +10,12 @@ var durationDisplay = document.getElementById("duration");
     
 
   var tracks = [
-    "yel-rose.wav",
-    "wildwood.wav",
+    "yel-rose.mp3",
+    "wildwood.mp3",
 	"jambali.mp3",
     "window_of_the_soul.mp3",
-	"113.wav",
-	"catmidi.wav",
+	"113.mp3",
+	"catmidi.mp3",
 	
     // Adicione mais músicas à lista
   ];
