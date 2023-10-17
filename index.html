@@ -167,17 +167,17 @@ Mas eu não vou desistir, mesmo que isso demore anos, eu irei terminar esse proj
             const extensao = ".html";
             let xhr = new XMLHttpRequest();
             xhr.open("GET", pasta, true);
-            xhr.send();
-
+            
             xhr.onload = function () {
-                if (xhr.status == 200) {
-                    const paginas = xhr.responseText.split("\n");
-                    const paginasHTML = paginas.filter((pagina) => pagina.endsWith(extensao));
+                if (xhr.status === 200) {
+                    const paginasHTML = xhr.responseText.split("\n").filter(pagina => pagina.trim().endsWith(extensao));
                     document.getElementById("numero").textContent = paginasHTML.length;
                 } else {
                     document.getElementById("numero").textContent = "Erro na leitura da pasta";
                 }
             };
+
+            xhr.send();
         }
 
         contarPaginas(); // Chama a função para contar as páginas
