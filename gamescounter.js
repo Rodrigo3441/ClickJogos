@@ -1,5 +1,5 @@
  // Token de acesso pessoal
-const token = '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';
+const token = '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';
 
 // Nome do usuário e nome do repositório
 const username = 'Oozaru341';
