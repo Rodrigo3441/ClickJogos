@@ -1,0 +1,7 @@
+[[redirects]]
+  from = "gamescounter.js"
+  to = "403.html"
+  status = 403
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["pt"], Country = ["BR"], Role = ["admin"]}
