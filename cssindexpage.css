@@ -105,3 +105,11 @@ h3.bottompart {
 	font-size: 20px;
 	color: #1dbcf1;
 }
+.gamenumber {
+	color: #1dbcf1;
+	font-weight: bold;
+}
+#contador {
+		font-size: 20px;
+		border: 2px solid #ffffff;
+}

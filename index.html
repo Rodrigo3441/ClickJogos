@@ -16,6 +16,7 @@
 <!--Scriptzone-->
 <script src="slidercontext.js"></script>
 <script src="musicplayer.js"></script>
+<script src="gamescounter.js"></script>
 
 
 
@@ -159,29 +160,11 @@ Mas eu não vou desistir, mesmo que isso demore anos, eu irei terminar esse proj
 <p>Jogos Inseridos<progress value="1" max="100"></progress> &nbsp;< 1%</p>
 <p>Restauração do estilo do Site<progress value="100" max="100"></progress> &nbsp;100%</p>
 <p>Implantação do Modo Escuro<progress value="95" max="100"></progress> &nbsp;95%</p>
-<p id="contador">Total de páginas HTML na pasta: <span id="numero">Aguarde...</span></p>
-    <script>
-        // Função para contar as páginas HTML
-        function contarPaginas() {
-            const pasta = "jogos"; // Substitua pelo caminho da pasta
-            const extensao = ".html";
-            let xhr = new XMLHttpRequest();
-            xhr.open("GET", pasta, true);
-            
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    const paginasHTML = xhr.responseText.split("\n").filter(pagina => pagina.trim().endsWith(extensao));
-                    document.getElementById("numero").textContent = paginasHTML.length;
-                } else {
-                    document.getElementById("numero").textContent = "Erro na leitura da pasta";
-                }
-            };
-
-            xhr.send();
-        }
-
-        contarPaginas(); // Chama a função para contar as páginas
-    </script>
+<br>
+<!--contador de páginas-->
+<blink><p id="contador">Número de jogos inseridos até agora: <span class="gamenumber" id="numero">Aguarde...</span></p></blink>
+    
+	
 </div>
 <br>
 A Versão do ClickJogos que estou usando como base para fazer essa recriação <a href="https://web.archive.org/web/20130114224012/http://clickjogos.uol.com.br/" style="text-decoration:none;color:#1dbcf1">é essa aqui<img alt="error" src="pageelements/link.png"></a>.
