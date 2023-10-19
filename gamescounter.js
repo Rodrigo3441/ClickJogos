@@ -1,5 +1,5 @@
  // Token de acesso pessoal
-const token = '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';
+const token = 'cuzao';
 
 // Nome do usuário e nome do repositório
 const username = 'Oozaru341';
