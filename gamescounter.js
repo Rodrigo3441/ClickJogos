@@ -1,16 +1,10 @@
- // Token de acesso pessoal
-const token = 'cuzao';
-
-// Nome do usuário e nome do repositório
 const username = 'Oozaru341';
-const repo = 'ClickJogos';
-const subpasta = 'jogos';
+        const repo = 'Clickjogos-Pagegames-counter';
 
- // Função para contar as páginas HTML na subpasta
+        // Função para contar as páginas HTML
         function contarPaginas() {
-            fetch(`https://api.github.com/repos/${username}/${repo}/contents/${subpasta}`, {
+            fetch(`https://api.github.com/repos/${username}/${repo}/contents/`, {
                 headers: {
-                    Authorization: `Bearer ${token}`, // Inclua o token no cabeçalho
                     Accept: 'application/vnd.github.v3+json'
                 }
             })
