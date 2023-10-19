@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{REQUEST_URI} ^gamescounter.js
-RewriteRule ^ 403.html [R=302,L]
