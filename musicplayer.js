@@ -16,6 +16,8 @@ var durationDisplay = document.getElementById("duration");
     "window_of_the_soul.mp3",
 	"113.mp3",
 	"catmidi.mp3",
+	"3am.mp3",
+	"gambler2.mp3",
 	
     // Adicione mais músicas à lista
   ];
