@@ -113,3 +113,17 @@ h3.bottompart {
 		font-size: 20px;
 		border: 2px solid #ffffff;
 }
+body {
+    background-image: url('background.png');
+    background-size: 800px; 400px;
+    animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
