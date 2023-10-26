@@ -20,17 +20,3 @@ document.getElementById("contact_message").oninvalid = function(e) {
 function mostrarAlerta(){
 	window.alert("Mensagem enviada com sucesso!");
 }
-
-document.getElementById("Nova_mensagem").addEventListener("submit", function(event) {
-       
-            event.preventDefault();
-
-           
-            if (document.getElementById("Nova_mensagem").checkValidity()) {
-                mostrarAlerta();
-				document.getElementById("Nova_mensagem").style.display = "none";
-				document.getElementById("completed").style.display = "block";
-            } else {
-                window.alert("Preencha todos os campos corretamente antes de enviar.");
-            }
-        });
