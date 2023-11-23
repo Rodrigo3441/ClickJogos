@@ -302,13 +302,16 @@ receba ofertas especiais
 semanalmente.</h5>
 <br>
 <!--parte formulário-->
-<form accept-charset="UTF-8" action="#" class="new_contact" id="Nova_mensagem" method="post" netlify>
+<form onsubmit="return validarEmail();" accept-charset="UTF-8" action="#" class="new_contact" id="Nova_mensagem" method="post" netlify>
 <dl class='form'>
 <div class='name'>
 <dd><input class="indexform" id="contact_name" placeholder="Seu nome" name="Nome" size="30" type="text" required minlength="3"></dd>
 </div>
 <div class='subject' style="margin-top:12px;">
 <dd><input class="indexform" id="contact_subject" placeholder="Assunto" name="Assunto" size="30" type="text" required></dd>
+</div>
+<div class='email' style="margin-top:12px;">
+<dd><input class="indexform" id="email" placeholder="E-mail" name="E-mail" size="30" type="text" required></dd>
 </div>
 <div class='message' style="margin-top:12px;">
 <dd><textarea id="contact_message" name="Mensagem" placeholder="Mensagem" style="resize:none;" rows="8" required>
