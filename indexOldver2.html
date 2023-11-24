@@ -5,7 +5,6 @@
 <meta name="keywords" content="click jogos antigo,click jogos antigo recriação, click jogos recriação, jogos retrô, jogos clássicos, jogos vintage, jogos antigos, click jogos">
 <meta name="description" content="A recriação do Click Jogos no estilo de 2013! confira os melhores jogos da época porém restaurados à um estilo novo de página, totalmente renovado e testado!">
 <title>Jogos Online Grátis - Jogue no Click Jogos</title>
-<link href="static.css" media="screen" rel="stylesheet" type="text/css">
 <link href="buttonstyle.css" rel="stylesheet">
 <link href="bootstrap(gamepages).css" rel="stylesheet" type="text/css" media="all">
 <link href="cssfromhomepage.css" rel="stylesheet">
@@ -13,7 +12,6 @@
 <link href="musicplayer.css" rel="stylesheet">
 <link href="indexform.css" rel="stylesheet">
 <link rel="icon" href="pageelements/cjlogo.jpg">
-
 </head>
 <body>
 <!--Scriptzone-->
@@ -44,7 +42,7 @@
 
 <div class="input-with-image inline-form">
 <form action="https://www.google.com/search" method="get">
-<input type="text" name="q" placeholder="pesquisar no google" style="width:114px; height:19px; padding:2px 0px 0px 20px;font-size:11px;"><img alt="error" src="pageelements/google.png" style="margin-right:2px;" class="image-icon" width="16" height="16"><button type="submit" style="height:23px;font-size:11px;padding:0 6px 0 6px;">BUSCAR</button>
+<input type="text" name="q" placeholder="pesquisar no google" style="width:113px; height:19px;"><img alt="error" src="pageelements/google.png" class="image-icon" width="16" height="16"><button type="submit" style="height:23px;">BUSCAR</button>
 </form>
 </div>
 
@@ -58,7 +56,7 @@
 <!--começo do cabeçário-->
 <div class="principal">
 <div class="centro">Seja bem vindo à recriação do click jogos!<img style="float: left;" alt="error" src="oldimages/opensign.gif"><br></div>
-<img style="margin-top: 20px; margin-left:40px;float:left;" title="Click Jogos - Versão do Rodrigo" alt="error" src="oldimages/clickjogoslogo.png"><br><br>.netlify.app<br><span style="margin-left:120px;color:#ffffff;">No ar desde 10/01/2023!</span><br><br>
+<img style="margin-top: 20px; margin-left:40px;float:left;" title="Click Jogos - Versão do Rodrigo" alt="error" src="oldimages/clickjogoslogo.png"><br><br>.netlify.app<br><span style="margin-left:120px;">No ar desde 10/01/2023!</span><br><br>
 
 <div class="centro">
 <img style="margin-right:30px;" alt="error" src="oldimages/acesseagora.png">
@@ -236,7 +234,7 @@ Acesse a Área Secreta!<br>
     <button style="margin-left:100px;" class="prev-btn" onclick="prevTrack()">&#9664;</button>
 	<button class="play-pause-btn" onclick="togglePlay()">
       <i id="playIcon" class="fa fa-pause"></i>
-      <span style="color:#ffffff;" id="playText">Pausado</span>
+      <span id="playText">Pausado</span>
     </button>
     <button class="next-btn" onclick="nextTrack()">&#9654;</button>
 	<input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
@@ -304,53 +302,25 @@ receba ofertas especiais
 semanalmente.</h5>
 <br>
 <!--parte formulário-->
-
-<div style="background-image:url(pageelements/orangebarhelp.png); background-repeat:repeat-x;width:auto;">
-<div id='content'><h1>Fale Conosco</h1>
-<div id='contact'>
-<div class='alert' style="background-color:#ffffff;">
-<strong>Atenção:</strong>
-antes de entrar em contato conosco verifique se sua dúvida já não foi respondida na nossa página de <a href="ajuda.html" style="color:#000000;text-decoration:none;"><i><b>ajuda</b></i></a>.
-</div>
-<div class='alert' style="background-color:#ffffff;">
-<strong>Game developers / Desenvolvedores de jogos:</strong>
-please <a href="notfound" style="color:#000000;text-decoration:none;"><i><b>submit your games here</b></i></a>. Thank you! /
-por favor <a href="notfound" style="color:#000000;text-decoration:none;"><b><i>enviem seus jogos aqui</i></b></a>. Obrigado!
-</div>
-<form accept-charset="UTF-8" action="#" class="new_contact" id="new_contact" method="post" netlify>
+<form accept-charset="UTF-8" action="#" class="new_contact" id="Nova_mensagem" method="post" netlify>
 <dl class='form'>
 <div class='name'>
-<dt><label for="contact_name">Seu nome</label></dt>
-<dd><input id="contact_name" name="contact[name]" size="30" type="text"></dd>
+<dd><input class="indexform" id="contact_name" placeholder="Seu nome" name="Nome" size="30" type="text" required minlength="3"></dd>
 </div>
-<div class='email'>
-<dt><label for="contact_email">Seu e-mail</label></dt>
-<dd><input id="contact_email" name="contact[email]" size="30" type="text"></dd>
+<div class='subject' style="margin-top:12px;">
+<dd><input class="indexform" id="contact_subject" placeholder="Assunto" name="Assunto" size="30" type="text" required></dd>
 </div>
-<div class='subject'>
-<dt><label for="contact_subject">Assunto</label></dt>
-<dd><input id="contact_subject" name="contact[subject]" size="30" type="text"></dd>
+<div class='email' style="margin-top:12px;">
+<dd><input class="indexform" id="email" placeholder="E-mail" name="E-mail" size="30" type="text" required></dd>
 </div>
-<div class='message'>
-<dt><label for="contact_message">Mensagem</label></dt>
-<dd><textarea cols="120" id="contact_message" name="contact[message]" rows="8">
+<div class='message' style="margin-top:12px;">
+<dd><textarea id="contact_message" name="Mensagem" placeholder="Mensagem" style="resize:none;" rows="8" required>
 </textarea></dd>
 </div>
 </dl>
-<input class="submit" name="commit" type="submit" value="enviar">
+<input id="mostrarmsg" class="entrar2" name="commit" type="submit" value="enviar">
 </form>
-</div>
-</div>
-</div>
-
-<div id='js_includes'>
-<script src="helpform.js"></script>
-<script>
-  //<![CDATA[
-    new Contact()
-  //]]>
-</script>
-</div>
+<span id="completed" style="display:none;">Obrigado por enviar sua resposta! <img alt="error" src="pageelements/good.png"></span>
 </div>
 </div>
 </div>
@@ -380,6 +350,7 @@ por favor <a href="notfound" style="color:#000000;text-decoration:none;"><b><i>e
 <img alt="error" src="banners/css.png">
 <a href="https://notepad-plus-plus.org/" title="Notepad++"><img alt="error" src="banners/notepad++.gif"></a>
 </div>
+
 
 
 <!--Rodapé-->
