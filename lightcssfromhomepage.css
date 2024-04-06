@@ -13,7 +13,7 @@ audio:not([controls]) {
 }
 
 hr {
-border-color: #878787;
+border-color: #dddddd;
 }
 h2 {
 font-size: 15px; color: #b5b5b5; text-align: right;
