@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Lucida grande';
+  src: url('LucidaGrande.ttf') format('truetype');
+}
+body {
+  font-family: 'Lucida grande'; font-size: 11px; color: #3d3d3d; background-color: #ffffff;
+}
+  h1 {
+  color: #1effff; font-size: 18px;
+}
+audio:not([controls]) {
+  display: none;
+}
+
+hr {
+border-color: #878787;
+}
+h2 {
+font-size: 15px; color: #b5b5b5; text-align: right;
+}
+h3 {
+font-size: 13px; color: #e10000; font-family: 'Trebuchet MS';
+  src: url('trebuc.ttf') format('truetype');
+}
+h4 {
+font-size: 14px; color: #ffffff; font-family: arial;
+}
+h6 {
+font-size: 10px; color: #cccccc
+}
+#uolnavbar {
+	width: 100%; text-align: center; border-spacing: 10px;
+	}
+.uolnavbarspace {
+	padding-top: 4px; 
+}
+.cinza {
+	color: #cccccc; text-decoration: none;
+	}
+.cinza:hover {
+	color: #cccccc;
+	}
+.cinza:focus {
+	color: #cccccc;
+	}
+input {
+	border-radius: 3px; border: none; color: #4a4a4a;
+	}
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+button {
+	border-color: #353535; border-width: 1px; border-style: solid;
+	}
+.searchb {
+		font-size: 11px; color: #ffffff;
+		}
+.orangebar {
+		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
+		}
+.orangebar:hover {
+		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
+		}
+.orangebar:focus {
+		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
+		}
+.cinza2 {
+	color: #3d3d3d; text-decoration: none;
+	}
+.cinza2:hover {
+	color: #3d3d3d;
+	}
+.cinza2:focus {
+	color: #3d3d3d;
+	}
+	.disabled {
+    pointer-events: none;
+}
+#reset-zoom.disabled {
+    display: none; /* esconde somente o botão reset zoom */
+}
+h5 {
+font-family: arial; color: #4a4a4a; font-size: 15px;
+font-family: 'Trebuchet MS';
+  src: url('trebuc.ttf') format('truetype');
+}
+h3 a:hover {
+color: #4a4a4a;
+}
+h3 a:focus {
+color: #4a4a4a;
+}
+a {
+color: #e10000;
+}
+.games {
+ padding-top:12px;
+ }
+.imggames {
+border: 1px solid #878787; padding:3px;
+}
+.imggames:hover {
+border-color:#ff4500;
+}
+
+.direita {
+text-align: right;
+}
+.centro {
+text-align: center;
+}
+p {
+	line-height: 1.72;
+}
+
+/*slider part*/
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-content {
+  flex-shrink: 0;
+  width: 100%;
+  transition: transform 1s ease;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-nav a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-nav a:hover {
+  background-color: #ddd;
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.next {
+  margin-left: 10px;
+}
+#anterior:hover, #proximo:hover {
+  cursor: pointer;
+}
+
+/*musicplayer part*/
+.audio-player {
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: #252525;
+      padding: 10px;
+      width: 300px;
+    }
+
+    .audio-player audio {
+      flex-grow: 1;
+    }
+
+    .audio-player .play-pause-btn {
+      background-color: #f66901;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      font-size: 16px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .audio-player .play-pause-btn:hover {
+      background-color: #cf5702;
+    }
+
+    .audio-player .play-pause-btn i {
+      margin-right: 5px;
+    }
+
+    .audio-player .volume-slider {
+      width: 100px;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 8px;
+      border-radius: 4px;
+      background-color: #b5b5b5;
+      outline: none;
+      margin-left: 10px;
+    }
+
+    .audio-player .volume-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #f66901;
+      cursor: pointer;
+    }
+
+    .audio-player .volume-slider::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #f66901;
+      cursor: pointer;
+    }
+/*barra do internet explorer*/
+.textblack {
+	color: #000000;
+	font-family: arial regular;
+	font-size: 12.4px;
+}
+#internetexplorer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /*css do input da barra de pesquisa do google*/
+.input-with-image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-with-image input {
+    padding-left: 25px; /* espaço para a imagem */
+  }
+
+  .input-with-image .image-icon {
+    position: absolute;
+    top: 4px; /* ajuste a posição verticalmente conforme necessário */
+    left: 4px; /* ajuste a posição horizontalmente conforme necessário */
+  }
+  .inline-form form {
+    display: inline;
+  }
+  
+  .categorydiv hr {
+        border: none; /* Remove a borda padrão do <hr> */
+        border-top: 1px solid #dddddd; /* Adicione uma borda personalizada com a altura desejada */
+        margin: 0; /* Remove a margem padrão do <hr> */
+        padding: 0; /* Remove o preenchimento padrão do <hr> */
+    }
+	
+/*more button*/
+
+.more {
+  border-radius: 2px;
+  font-family: Trebuchet MS;
+  border-style: solid;
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom right, #eaeaea, #fefefe); /* Cores invertidas */
+  border: 1px solid #cfcfcf; /* Cor invertida */
+  float: right;
+  font-size: 12px;
+}
+
+.more a {
+  color: #555; /* Cor invertida */
+  font-size: 12.4px;
+  padding: 5px 4px 5px 8px;
+  text-decoration: none !important;
+}
+
+.more span {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(pageelements/images.png) no-repeat 3px -5279px transparent;
+  border-right: 1px solid #cfcfcf; /* Cor invertida */
+  height: 24px;
+  width: 24px;
+}
+
+.more:hover {
+  background: #f7f7f7; /* Cor invertida */
+}
+
+.more:hover a {
+  color: #333; /* Cor invertida */
+}
+
+.more:active,
+.more.selected {
+  background-image: linear-gradient(to bottom right, #dadada, #f8f8f8); /* Cores invertidas */
+}
+
+.more:active a,
+.more.selected a {
+  color: #666; /* Cor invertida */
+}
