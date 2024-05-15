@@ -18,6 +18,8 @@ var durationDisplay = document.getElementById("duration");
 	"catmidi.mp3",
 	"3am.mp3",
 	"gambler2.mp3",
+	"desprado.mp3",
+	"dont-let.mp3",
 	
     // Adicione mais músicas à lista
   ];

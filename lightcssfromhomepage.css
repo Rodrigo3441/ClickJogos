@@ -13,7 +13,7 @@ audio:not([controls]) {
 }
 
 hr {
-border-color: #dddddd;
+border-color: #cccccc;
 }
 h2 {
 font-size: 15px; color: #b5b5b5; text-align: right;
@@ -98,7 +98,7 @@ color: #e10000;
  padding-top:12px;
  }
 .imggames {
-border: 1px solid #878787; padding:3px;
+border: 1px solid #cccccc; padding:3px;
 }
 .imggames:hover {
 border-color:#ff4500;
