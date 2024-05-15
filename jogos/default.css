@@ -3,10 +3,10 @@
   src: url('../LucidaGrande.ttf') format('truetype');
 }
 body {
-  font-family: 'Lucida grande'; font-size: 11px; color: #c2c2c2; background-color: #000000;
+  font-family: 'Lucida grande'; font-size: 11px; color: #3d3d3d; background-color: #ffffff;
 }
   h1 {
-  color: #f04821; font-size: 18px;
+  color: #e10000; font-size: 18px;
   font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
@@ -15,15 +15,15 @@ audio:not([controls]) {
 }
 
 hr {
-border-color: #787878;
+border-color: #cccccc;
 }
 h2 {
-font-size: 15px; color: #c2c2c2; text-align: right;
+font-size: 15px; color: #4a4a4a; text-align: right;
 font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
 h3 {
-font-size: 13px; color: #f04821; font-family: arial;
+font-size: 13px; color: #e10000; font-family: arial;
 font-family: 'Trebuchet MS';
   src: url('../trebuc.ttf') format('truetype');
 }
@@ -71,13 +71,13 @@ button {
 		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
 		}
 .cinza2 {
-	color: #c2c2c2; text-decoration: none;
+	color: #3d3d3d; text-decoration: none;
 	}
 .cinza2:hover {
-	color: #c2c2c2;
+	color: #3d3d3d;
 	}
 .cinza2:focus {
-	color: #c2c2c2;
+	color: #3d3d3d;
 	}
 	.disabled {
     pointer-events: none;
@@ -92,10 +92,10 @@ button {
 	text-align: right;
 }
 .imggames {
-border: 1px solid #787878; padding:3px;
+border: 1px solid #cccccc; padding:3px;
 }
 .imggames:hover {
-border-color:#ff9c00;
+border-color:#ff4500;
 }
 .descrition {
 	line-height: 18px;
@@ -117,12 +117,12 @@ color: #c2c2c2;
 }
 /*para descrições*/
 .avisovermelho {
-	color: #f04821;
+	color: #e10000;
 	font-family: arial;
 	font-size: 12px;
 }
 .avisocinza {
-	color: #c2c2c2;
+	color: #3d3d3d;
 	font-family: arial;
 	font-size: 12px;
 }
@@ -130,10 +130,10 @@ p {
 	line-height: 1.73;
 }
 .bodybackgroundconfig {
-	width:1000px;margin: 0 auto;padding:10px;height:auto;background-color:#121212;
+	width:1000px;margin: 0 auto;padding:10px;height:auto;background-color:#ffffff;
 }
 .windowgamepart {
-	margin-top:2px;margin-bottom:5px;height:620px;border-width:1px;border-style:solid;border-color:#787878;
+	margin-top:2px;margin-bottom:5px;height:620px;border-width:1px;border-style:solid;border-color:#cccccc;
 }
 .error {
 	color:#f04821; text-decoration: none;
@@ -171,16 +171,16 @@ p {
   font-family: Trebuchet MS;
   border-style: solid;
   cursor: pointer;
-  margin-right: 13px;
+  margin: 0;
   text-decoration: none;
-  background-image: linear-gradient(to bottom right, #151515, #010101);
-  border: 1px solid #303030;
+  background-image: linear-gradient(to bottom right, #eaeaea, #fefefe); /* Cores invertidas */
+  border: 1px solid #cfcfcf; /* Cor invertida */
   float: right;
   font-size: 12px;
 }
 
 .morer a {
-  color: #aaa;
+  color: #555; /* Cor invertida */
   font-size: 12.4px;
   padding: 5px 4px 5px 8px;
   text-decoration: none !important;
@@ -190,27 +190,27 @@ p {
   display: inline-block;
   vertical-align: middle;
   background: url(../pageelements/images.png) no-repeat 3px -5279px transparent;
-  border-right: 1px solid #303030;
+  border-right: 1px solid #cfcfcf; /* Cor invertida */
   height: 24px;
   width: 24px;
 }
 
 .morer:hover {
-  background: #080808;
+  background: #f7f7f7; /* Cor invertida */
 }
 
 .morer:hover a {
-  color: #ccc;
+  color: #333; /* Cor invertida */
 }
 
 .morer:active,
 .morer.selected {
-  background-image: linear-gradient(to bottom right, #252525, #070707);
+  background-image: linear-gradient(to bottom right, #dadada, #f8f8f8); /* Cores invertidas */
 }
 
 .morer:active a,
 .morer.selected a {
-  color: #999;
+  color: #666; /* Cor invertida */
 }
 	
 	
@@ -221,16 +221,16 @@ p {
   font-family: Trebuchet MS;
   border-style: solid;
   cursor: pointer;
-  margin-left: 28px;
+  margin: 0;
   text-decoration: none;
-  background-image: linear-gradient(to bottom right, #151515, #010101);
-  border: 1px solid #303030;
+  background-image: linear-gradient(to bottom right, #eaeaea, #fefefe); /* Cores invertidas */
+  border: 1px solid #cfcfcf; /* Cor invertida */
   float: left;
   font-size: 12px;
 }
 
 .morel a {
-  color: #aaa;
+  color: #555; /* Cor invertida */
   font-size: 12.4px;
   padding: 5px 4px 5px 8px;
   text-decoration: none !important;
@@ -240,26 +240,26 @@ p {
   display: inline-block;
   vertical-align: middle;
   background: url(../pageelements/images.png) no-repeat 3px -5279px transparent;
-  border-right: 1px solid #303030;
+  border-right: 1px solid #cfcfcf; /* Cor invertida */
   height: 24px;
   width: 24px;
 }
 
 .morel:hover {
-  background: #080808;
+  background: #f7f7f7; /* Cor invertida */
 }
 
 .morel:hover a {
-  color: #ccc;
+  color: #333; /* Cor invertida */
 }
 
 .morel:active,
 .morel.selected {
-  background-image: linear-gradient(to bottom right, #252525, #070707);
+  background-image: linear-gradient(to bottom right, #dadada, #f8f8f8); /* Cores invertidas */
 }
 
 .morel:active a,
 .morel.selected a {
-  color: #999;
+  color: #666; /* Cor invertida */
 }
 	
