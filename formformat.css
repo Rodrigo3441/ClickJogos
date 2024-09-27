@@ -1,0 +1,23 @@
+input::placeholder{
+    color: #acacac;
+    font-style: italic;
+}
+
+textarea::placeholder{
+    color: #acacac;
+    font-style: italic;
+}
+
+.error-box {
+    border: 1px solid red;
+    background-color: #ffffff;
+
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    width: fit-content;
+    align-items: right;
+    display:inline-block;
+    line-height: 21px;
+  }
+  

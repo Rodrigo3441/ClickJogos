@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Contato</title>
 <link href="static.css" media="screen" rel="stylesheet" type="text/css">
+<link href="formformat.css" rel="stylesheet">
 <link rel="icon" href="pageelements/cjlogo.jpg">
 </head>
 <body>
@@ -23,19 +24,19 @@ por favor <a href="#">enviem seus jogos aqui</a>. Obrigado!
 <dl class='form'>
 <div class='name'>
 <dt><label for="contact_name">Seu nome</label></dt>
-<dd><input id="contact_name" name="contact[name]" size="30" type="text"></dd>
+<dd><input id="contact_name" name="contact[name]" size="30" type="text" placeholder="seu nome"></dd>
 </div>
 <div class='email'>
 <dt><label for="contact_email">Seu e-mail</label></dt>
-<dd><input id="contact_email" name="contact[email]" size="30" type="text"></dd>
+<dd><input id="contact_email" name="contact[email]" size="30" type="text" placeholder="seu e-mail"></dd>
 </div>
 <div class='subject'>
 <dt><label for="contact_subject">Assunto</label></dt>
-<dd><input id="contact_subject" name="contact[subject]" size="30" type="text"></dd>
+<dd><input id="contact_subject" name="contact[subject]" size="30" type="text" placeholder="assunto"></dd>
 </div>
 <div class='message'>
 <dt><label for="contact_message">Mensagem</label></dt>
-<dd><textarea cols="120" id="contact_message" name="contact[message]" rows="8">
+<dd><textarea cols="120" id="contact_message" name="contact[message]" rows="8" placeholder="mensagem">
 </textarea></dd>
 </div>
 </dl>
@@ -46,8 +47,71 @@ por favor <a href="#">enviem seus jogos aqui</a>. Obrigado!
 </div>
 </body>
 <div id='js_includes'>
-<script src="helpform.js"></script>
-<script>
+  <script>
+     document.getElementById('new_contact').addEventListener('submit', function(event) {
+    let valid = true;
+    const name = document.getElementById('contact_name').value.trim();
+    const email = document.getElementById('contact_email').value.trim();
+    const subject = document.getElementById('contact_subject').value.trim();
+    const message = document.getElementById('contact_message').value.trim();
+
+    // Limpar mensagens de erro anteriores
+    clearErrors();
+
+    // Validação do campo de nome
+    if (!name) {
+      valid = false;
+      displayError('contact_name', 'Digite seu nome');
+    }
+
+    // Validação do campo de email
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email) {
+      valid = false;
+      displayError('contact_email', 'Preencha o seu e-mail');
+    } else if (!emailPattern.test(email)) {
+      valid = false;
+      displayError('contact_email', 'Por favor, insira um e-mail válido.');
+    }
+
+    // Validação do campo de assunto
+    if (!subject) {
+      valid = false;
+      displayError('contact_subject', 'Digite seu número');
+    }
+
+    // Validação do campo de mensagem
+    if (!message) {
+      valid = false;
+      displayError('contact_message', 'Coloque sua mensagem');
+    }
+
+    if (!valid) {
+      event.preventDefault();  // Impede o envio do formulário se houver erros
+    }
+  });
+
+  // Função para exibir mensagens de erro dentro de um quadrinho
+  function displayError(elementId, errorMessage) {
+    const element = document.getElementById(elementId);
+
+    // Verifica se já existe uma mensagem de erro e, se existir, remove-a
+    const existingError = element.parentNode.querySelector('.error-box');
+    if (existingError) {
+      existingError.remove();
+    }
+
+    const errorBox = document.createElement('div');
+    errorBox.className = 'error-box';
+    errorBox.innerText = errorMessage;
+    element.parentNode.appendChild(errorBox);
+  }
+
+  // Função para limpar todas as mensagens de erro
+  function clearErrors() {
+    document.querySelectorAll('.error-box').forEach(el => el.remove());
+  }
+  </script>
   //<![CDATA[
     new Contact()
   //]]>
