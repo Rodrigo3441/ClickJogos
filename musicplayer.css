@@ -1,101 +1,61 @@
-/*musicplayer part*/
-.audio-player {
-      display: flex;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      padding: 10px;
-      width: 500px;
-    }
-
-    .audio-player audio {
-      flex-grow: 1;
-    }
-
-    .audio-player .play-pause-btn {
-      background-color: #f66901;
-      color: #fff;
-      border: none;
-      padding: 8px 12px;
-      font-size: 16px;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    .audio-player .play-pause-btn:hover {
-      background-color: #cf5702;
-    }
-
-    .audio-player .play-pause-btn i {
-      margin-right: 5px;
-    }
-
-    .audio-player .volume-slider {
-      width: 100px;
-      -webkit-appearance: none;
-      appearance: none;
-      height: 8px;
-      border-radius: 4px;
-      background-color: #b5b5b5;
-      outline: none;
-      margin-left: 10px;
-    }
-
-    .audio-player .volume-slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #f66901;
-      cursor: pointer;
-    }
-
-    .audio-player .volume-slider::-moz-range-thumb {
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #f66901;
-      cursor: pointer;
-    }
-	.audio-player .controls button {
-  background-color: #f66901;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  font-size: 16px;
-  border-radius: 3px;
-  cursor: pointer;
-  margin: 0 5px;
+body {
+    text-align: center;
 }
 
-.audio-player .controls button:hover {
-  background-color: #cf5702;
+.buttonpanel {
+    background-image: url('images/buttonpanel.png');
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 51px;
+    display: flex;
+    flex-direction: column; /* Organiza os itens na vertical */
+    justify-content: center; /* Alinha os itens verticalmente */
+    vertical-align: middle;
 }
-/*progress bar reprodutor*/
-/* Estilo para a barra de progresso (trilho) */
-.progress-bar {
-  width: 100%;
-  height: 8px;
-  background-color: #b5b5b5;
-  border-radius: 4px;
-  margin-top: 10px;
-  position: relative;
+.item {
+    margin-top: 3px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+#butbar {
+    height: 36px;
+    background-image: url('images/blackbar.png');
+    background-repeat: repeat-x;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    color: #ffffff;
+    padding-left: 10px;
 }
 
-/* Estilo para o indicador de progresso */
-.progress-bar-filled {
-  height: 100%;
-  background-color: #f66901;
-  border-radius: 4px;
-  width: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+#butbar img {
+    margin-right: 10px;
 }
-.time-display {
-  text-align: center;
-  font-size: 12px;
-  color: #b5b5b5;
-  margin-top: 5px;
+
+#playerarea {
+    display: flex;
+    height: 100%;
+}
+#videosec{
+    width: 70%;
+    height: 355px;
+    background-color: #000000;
+    vertical-align: middle;
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+}
+
+#playlistsec {
+    width: 30%;
+    height: 300px;
+}
+#playlistsec img {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+#playlistList {
+    height: 191px;;
 }

@@ -10,6 +10,7 @@
 <link href="bootstrap(gamepages).css" rel="stylesheet" type="text/css" media="all">
 <link href="cssfromhomepage.css" rel="stylesheet">
 <link href="cssindexpage.css" rel="stylesheet">
+<link href="musicplayer.css" rel="stylesheet">
 <link href="indexform.css" rel="stylesheet">
 <link rel="icon" href="pageelements/cjlogo.jpg">
 <style>
@@ -258,18 +259,38 @@ Acesse a Área Secreta!<br>
   </div>
 </div>
 
-<!--Reprodutor de música-->
-<div class="musicplayersection">
-<iframe src="musicplayer.html" width="650" height="520" frameborder="0">
-  Seu navegador não suporta iframes.
-</iframe>
-</div>
+
 <!--Terceira Parte-->
 <div style="width:820px;display:flex;margin:0 auto;padding:10px;">
 
-
+<!--Reprodutor de música-->
 <div class="threecol" style="flex-basis: 60%;padding:10px;margin-right:10px;">
+<div class="banner-scroll">
+  <div class="banner-content" id="currentTrackName">Atualmente tocando:</div>
+  </div>
+<div class="progress-bar">
+  <div class="progress-bar-filled"></div>
+</div>
+<div class="time-display">
+  <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+</div>
+<br>
+<div class="centro">
+<img src="oldimages/piano.gif" alt="error"><img src="oldimages/piano.gif" alt="error"><img src="oldimages/piano.gif" alt="error">
+</div>
+<div class="audio-player">
+  <audio id="myAudio" ></audio>
+  <div class="controls">
+    <button style="margin-left:100px;" class="prev-btn" onclick="prevTrack()">&#9664;</button>
+	<button class="play-pause-btn" onclick="togglePlay()">
+      <i id="playIcon" class="fa fa-pause"></i>
+      <span style="color:#ffffff;" id="playText">Pausado</span>
+    </button>
+    <button class="next-btn" onclick="nextTrack()">&#9654;</button>
+	<input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+  </div>  
 
+</div><br>
 <!--conteúdo abaixo do player-->
 <img alt="error" src="oldimages/minisaul.gif" style="float:left;margin:2px;">Quis fazer esse player com algumas músicas que eu curto ouvir/escutar. Fique à vontade para usar esse modelo/template de Player de música com a finalidade que você quiser! basta ver a parte dele no código HTML, e os códigos CSS e JavaScript. Apenas peço para que deixe os créditos para mim.<br>
 <div class="centro"><a href="musicplayer.css" style="text-decoration:none;">CSS do Player</a><br><a href="musicplayer.js" style="text-decoration:none;">JavaScript do Player</a></div><br><br>

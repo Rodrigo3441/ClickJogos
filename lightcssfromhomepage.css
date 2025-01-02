@@ -302,3 +302,7 @@ p {
 .more.selected a {
   color: #666; /* Cor invertida */
 }
+.musicplayersec {
+  margin: 0 auto;
+  text-align: center;
+}

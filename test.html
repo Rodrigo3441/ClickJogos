@@ -1,0 +1,55 @@
+<!--Reprodutor de música-->
+<div class="threecol" style="flex-basis: 60%;padding:10px;margin-right:10px;">
+<marquee behavior="scroll" direction="left" id="currentTrackName">Atualmente tocando:</marquee>
+<div class="progress-bar">
+  <div class="progress-bar-filled"></div>
+</div>
+<div class="time-display">
+  <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+</div>
+<br>
+<div class="centro">
+<img src="oldimages/piano.gif" alt="error"><img src="oldimages/piano.gif" alt="error"><img src="oldimages/piano.gif" alt="error">
+</div>
+<div class="audio-player">
+  <audio id="myAudio" ></audio>
+  <div class="controls">
+    <button style="margin-left:100px;" class="prev-btn" onclick="prevTrack()">&#9664;</button>
+	<button class="play-pause-btn" onclick="togglePlay()">
+      <i id="playIcon" class="fa fa-pause"></i>
+      <span style="color:#ffffff;" id="playText">Pausado</span>
+    </button>
+    <button class="next-btn" onclick="nextTrack()">&#9654;</button>
+	<input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1" oninput="changeVolume(this.value)">
+  </div>  
+
+</div><br>
+<!--conteúdo abaixo do player-->
+<img alt="error" src="oldimages/minisaul.gif" style="float:left;margin:2px;">Quis fazer esse player com algumas músicas que eu curto ouvir/escutar. Fique à vontade para usar esse modelo/template de Player de música com a finalidade que você quiser! basta ver a parte dele no código HTML, e os códigos CSS e JavaScript. Apenas peço para que deixe os créditos para mim.<br>
+<div class="centro"><a href="musicplayer.css" style="text-decoration:none;">CSS do Player</a><br><a href="musicplayer.js" style="text-decoration:none;">JavaScript do Player</a></div><br><br>
+<hr class="dashed"><br>
+
+<img alt="error" src="oldimages/minisaul.gif" style="float:left;margin:2px;">Caso você queira, poderá contribuir com este site doando um pequeno valor que partir de você, mas fica a seu critério, claro.<br><br>
+<div class="centro">
+Aceitamos todos esses tipos de cartões.
+<img alt="error" src="oldimages/donate1.gif"><br><br>
+<hr class="dashed">
+</div>
+<a href="central-anunciante.html" title="Central do Anúnciante"><img alt="error" src="oldimages/ca-skin.png" style="float:right;margin-top:8px;"></a>Por favor, não clique nos Banners do site se não tiver interesse!<br>
+<div style="text-align:right;">
+<img alt="error" src="oldimages/sign.png"></div>
+</div>
+
+<!--Segunda coluna do Perfil-->
+<div class="threecol" style="flex-basis: 40%;padding:10px;">
+<div class="centro"><h3>Sobre Mim</h3>
+<img alt="error" width="150px;" style="border: 1px solid #ffff00; padding: 7px;" src="oldimages/profile.png"><br><br></div>
+<h3>Nome:</h3>Rodrigo de Souza Galvão
+<h3>Nascimento:</h3>06/12/2006
+<h3>Perfil no Github:</h3><a href="https://github.com/Oozaru341" style="color:#1dbcf1;text-decoration:none;" title="Rodrigo">https://github.com/Oozaru341</a>
+<h3>Canal do Youtube:</h3><a href="https://www.youtube.com/@rodrigozone" style="color:#1dbcf1;text-decoration:none;" title="Rodrigo Zone">https://www.youtube.com/@rodrigozone</a>
+<h3>Escolaridade:</h3>Atualmente no 2º Ano do Ensino Médio
+<h3>Pretensões para o futuro:</h3>Pretendo me formar em Ciência da Computação
+<h3>Habilidades:</h3>Atualmente tenho habilidades em World, Excel, Powerpoint, Adobe Photoshop e Adobe Illustrator.<br>Também tenho habilidades em <span class="redtext">HTML e CSS.</a>
+</div>
+</div>

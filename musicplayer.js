@@ -1,108 +1,341 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var audio = document.getElementById("myAudio");
-  var playIcon = document.getElementById("playIcon");
-  var playText = document.getElementById("playText");
-  var currentIndex = 0;
-  var isPlaying = false; // Variável para controlar o estado de reprodução
-  var progressBarFilled = document.querySelector(".progress-bar-filled");
-  var currentTimeDisplay = document.getElementById("currentTime");
-var durationDisplay = document.getElementById("duration");
-    
+let playpause = document.getElementById("playpausebtn");
+let audio = document.getElementById("myaudio");
+let isPlaying = false;
+let barra = document.getElementById("audioprogress")
+let tempoatual = document.getElementById("timeduration");
+let tempototal = document.getElementById("timetotal");
+let forward = document.getElementById("nextbtn");
+let before = document.getElementById("backbtn");
+let volumecontrol = document.getElementById("vlmcontrol");
+let volumebar = document.getElementById("vlmbar");
+let stopbtn = document.getElementById("stop");
+let loopbtn = document.getElementById("loop");
 
-  var tracks = [
-    "yel-rose.mp3",
+// Lista de músicas
+let playlist = [
+    "3am.mp3",
+    "113.mp3",
+    "Banjo_Race_2.mp3",
+    "Banjo_Race_3.mp3",
+    "Banjo_Race_4.mp3",
+    "fifties_dance_party_2.mp3",
+    "fifties_dance_party_4.mp3",
+    "fifties_dance_party_6.mp3",
+    "dance_1.mp3",
+    "Dos1.mp3",
+    "Dos2.mp3",
+    "i_found_a_Great_Friend.mp3",
+    "Comptine_D'un_Autre_ete.mp3",
+    "catmidi.mp3",
+    "desprado.mp3",
+    "dont-let.mp3",
+    "gambler2.mp3",
+    "jambali.mp3",
     "wildwood.mp3",
-	"jambali.mp3",
     "window_of_the_soul.mp3",
-	"113.mp3",
-	"catmidi.mp3",
-	"3am.mp3",
-	"gambler2.mp3",
-	"desprado.mp3",
-	"dont-let.mp3",
-	
-    // Adicione mais músicas à lista
-  ];
-
-  function togglePlay() {
-    if (isPlaying) {
-      audio.pause();
-      playIcon.classList.remove("fa-play");
-      playIcon.classList.add("fa-pause");
-      playText.textContent = "Pausado";
-    } else {
-      audio.play();
-      playIcon.classList.remove("fa-pause");
-      playIcon.classList.add("fa-play");
-      playText.textContent = "Tocando";
-    }
-    isPlaying = !isPlaying; // Inverte o estado de reprodução
-  }
-
-  function changeVolume(volume) {
-    audio.volume = volume;
-  }
-
-  function loadTrack(trackIndex) {
-    currentIndex = parseInt(trackIndex);
-    audio.src = tracks[currentIndex];
-    audio.load();
-
-    // Atualizar o nome da música no elemento marquee
-    var currentTrackName = document.getElementById("currentTrackName");
-    currentTrackName.textContent = "Atualmente tocando: " + tracks[currentIndex];
+    "windows_xp.mp3",
+    "yel-rose.mp3",
+    "yel-rose-2.mp3",
+    "1959_Prom.mp3",
+"Dreams.mp3",
+"Hip_Hop.mp3",
+"Huey_Dewey.mp3",
+"New_Age.mp3",
+"Ragtime.mp3",
+"Techno_Rave.mp3",
+"Tuna_Loaf.mp3",
+"Unplugged.mp3",
+    "120_battle!.mp3",
+    "deal_em_out_yellow.mp3",
+    "decibat_yellow.mp3",
+    "dunes_cave.mp3",
+    "genobattle_yellow.mp3",
+    "quietstray.mp3",
+    "trial_by_fury.mp3",
+    "battle_gym_leader_pkmn_journeys.mp3",
+    "best_song_2.mp3",
+    "pkmn_journeys_end_battle.mp3"
     
+]; 
+
+
+let currentTrackIndex = 0; // Índice da faixa atual
+
+audio.src = playlist[currentTrackIndex];
+
+//precisam ser carregadas no incio
+changefowardbtn();
+updatebuttonloop();
+changebackbtn();
+changevlmbutton();
+changemusicname();
+updatePlaylistDisplay();
+
+
+
+//mudar entre play e pause
+playpause.addEventListener("click", toggleplaypause);
+function toggleplaypause(){
     if (isPlaying) {
-      audio.play(); // Retoma a reprodução se o áudio estava tocando antes de mudar de faixa
-    }
-  }
-
-  function prevTrack() {
-    currentIndex = (currentIndex - 1 + tracks.length) % tracks.length;
-    loadTrack(currentIndex);
-  }
-
-  function nextTrack() {
-    currentIndex = (currentIndex + 1) % tracks.length;
-    loadTrack(currentIndex);
-  }
-
-  // Adicionar um evento para reiniciar a reprodução quando a música terminar
-  audio.addEventListener("ended", function() {
-    nextTrack();
-  });
-
-  // Carregar a primeira música
-  loadTrack(currentIndex);
-
-  window.togglePlay = togglePlay;
-  window.changeVolume = changeVolume;
-  window.prevTrack = prevTrack;
-  window.nextTrack = nextTrack;
-  
-audio.addEventListener("timeupdate", function() {
-  var currentTime = audio.currentTime;
-  var duration = audio.duration;
-  var progressPercentage = (currentTime / duration) * 100;
-  progressBarFilled.style.width = progressPercentage + "%";
-
-  // Formatando o tempo atual e a duração em minutos e segundos
-  var formattedCurrentTime = formatTime(currentTime);
-  var formattedDuration = formatTime(duration);
-
-  // Atualizando os elementos de texto
-  currentTimeDisplay.textContent = formattedCurrentTime;
-  durationDisplay.textContent = formattedDuration;
-});
-
-// Função para formatar o tempo em minutos e segundos
-function formatTime(time) {
-  var minutes = Math.floor(time / 60);
-  var seconds = Math.floor(time % 60);
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-  return minutes + ":" + seconds;
+        audio.pause()        
+        setupButtonEvents(playpause, {
+            normal: "images/play.png",
+            hover: "images/playover.png",
+            pressed: "images/playpressed.png"
+        });
+        playpause.src = "images/play.png";
+    } else {
+        audio.play()
+        changemusicname();
+        updatePlaylistDisplay();
+        setupButtonEvents(playpause, {
+            normal: "images/pause.png",
+            hover: "images/pauseover.png",
+            pressed: "images/pausepressed.png"
+        });
+        playpause.src = "images/pause.png";        
+            }
+    isPlaying = !isPlaying;
 }
+
+//mudancas relacionadas ao tempo do audio
+audio.addEventListener("timeupdate", function(){
+    let duration = audio.duration;
+    let currenttime = audio.currentTime;
+    const progress = (currenttime / duration) * 100;
+    barra.value = progress;
+
+    //formatar tempo
+
+    let formattedcurrenttime = formattime(currenttime);
+    let formattedduration = formattime(duration);
+
+    timeduration.textContent = formattedcurrenttime;
+    timetotal.textContent = formattedduration;
+
+})
+
+function formattime(time){
+    let minute = Math.floor(time / 60);
+    minute = minute < 10 ? "0" + minute : minute;
+    let second = Math.floor(time % 60);
+    second = second < 10 ? "0" + second : second;
+    return minute + ":" + second;
+}
+
+//avançar para próxima (controle automatico)
+audio.addEventListener("ended", function(){
+    currentTrackIndex++;
+    if (currentTrackIndex >= playlist.length) {
+        currentTrackIndex = 0;
+    }
+    audio.src = playlist[currentTrackIndex];
+    changemusicname();
+    updatePlaylistDisplay();
+    audio.play();
+    isPlaying = true;
+    
+})
+
+//avançar button
+
+forward.addEventListener("click", function(){
+    currentTrackIndex++;
+    if (currentTrackIndex >= playlist.length) {
+        currentTrackIndex = 0;
+    }
+    playpause.src = "images/pause.png"
+    changefowardbtn();
+    audio.src = playlist[currentTrackIndex];
+    changemusicname();
+    updatePlaylistDisplay();
+    audio.play();
+    isPlaying = true;
+    setupButtonEvents(playpause, {
+        normal: "images/pause.png",
+        hover: "images/pauseover.png",
+        pressed: "images/pausepressed.png"
+    });
+})
+
+function changefowardbtn(){
+    setupButtonEvents(forward, {
+        normal: "images/avancar.png",
+        hover: "images/avancarover.png",
+        pressed: "images/avancarpressed.png"
+    });
+}
+
+
+
+//voltar button
+before.addEventListener("click", function(){
+    currentTrackIndex--;
+    if (currentTrackIndex < 0){
+        currentTrackIndex = playlist.length - 1;
+    }
+    playpause.src = "images/pause.png"
+    audio.src = playlist[currentTrackIndex];
+    changemusicname();
+    updatePlaylistDisplay();
+    audio.play();
+    isPlaying = true;
+    setupButtonEvents(playpause, {
+        normal: "images/pause.png",
+        hover: "images/pauseover.png",
+        pressed: "images/pausepressed.png"
+    });
+})
+
+function changebackbtn(){
+    setupButtonEvents(before, {
+        normal: "images/voltar.png",
+        hover: "images/voltarover.png",
+        pressed: "images/voltarpressed.png"
+    });
+}
+
+//mute button
+volumecontrol.addEventListener("click", function(){
+    if (audio.muted){
+        audio.muted = false;
+        changevlmbutton();        
+    } else {
+        audio.muted = true;
+        changevlmbutton();        
+    }
+    }
+)
+
+function changevlmbutton(){
+    if (audio.muted){
+        setupButtonEvents(volumecontrol, {
+            normal: "images/muteon.png",
+            hover: "images/muteonover.png",
+            pressed: "images/muteonpressed.png"
+        });
+    } else {
+        setupButtonEvents(volumecontrol, {
+            normal: "images/muteoff.png",
+            hover: "images/muteoffover.png",
+            pressed: "images/muteoffpressed.png"
+        });
+    }
+}
+
+
+
+//volume bar
+audio.volume = volumebar.value / 100;
+
+volumebar.addEventListener("input", function(){
+    let volume = volumebar.value / 100;
+    audio.volume = volume;
+})
+
+//stop button
+stopbtn.addEventListener("click", function(){
+    audio.pause();
+    audio.currentTime = 0;
+    playpause.src = "images/play.png";
+    isPlaying = false;
+    setupButtonEvents(playpause, {
+        normal: "images/play.png",
+        hover: "images/playover.png",
+        pressed: "images/playpressed.png"
+    });
+})
+
+//loop button
+
+loopbtn.addEventListener("click", function(){
+    audio.loop = !audio.loop;
+    updatebuttonloop();
+})
+function updatebuttonloop(){
+if (audio.loop === true){
+    setupButtonEvents(loopbtn, {
+        normal: "images/loopon.png",
+        hover: "images/looponover.png",
+        pressed: "images/looponpressed.png"
+    });
+} else {
+    setupButtonEvents(loopbtn, {
+        normal: "images/loopoff.png",
+        hover: "images/loopoffover.png",
+        pressed: "images/loopoffpressed.png"
+    });
+}
+}
+//random button
+
+
+
+//modifica os botões
+function setupButtonEvents(button, images) {
+    button.addEventListener("mouseover", function() {
+        button.src = images.hover;
+    });
+
+    button.addEventListener("mouseout", function() {
+        button.src = images.normal;
+    });
+
+    button.addEventListener("mousedown", function() {
+        button.src = images.pressed;
+    });
+
+    button.addEventListener("mouseup", function() {
+        button.src = images.normal;
+    });
+}
+setupButtonEvents(stopbtn, {
+    normal: "images/stop.png",
+    hover: "images/stopover.png",
+    pressed: "images/stoppressed.png"
 });
 
+setupButtonEvents(playpause, {
+    normal: "images/play.png",
+    hover: "images/playover.png",
+    pressed: "images/playpressed.png"
+});
+
+//colocar o nome no marquee
+
+function changemusicname(){
+    const currentTrackDisplay = document.getElementById("musictitle");
+    const currentTrackName = playlist[currentTrackIndex];
+
+    currentTrackDisplay.textContent = `Now's playing: ${currentTrackName}`;
+}
+
+//parte do nome da playlist
+
+function updatePlaylistDisplay() {
+    const playlistList = document.getElementById("playlistList");
+
+    // Limpa a lista para evitar duplicações
+    playlistList.innerHTML = "";
+
+    // Itera sobre o array de músicas
+    playlist.forEach((track, index) => {
+        // Cria o elemento <li> para cada música
+        const li = document.createElement("li");
+        li.setAttribute("role", "option");
+
+        // Define o nome da música (removendo extensões e underscores, se necessário)
+        const trackName = track;
+        li.textContent = trackName;
+
+        // Adiciona aria-selected="true" para a música atual
+        if (index === currentTrackIndex) {
+            li.setAttribute("aria-selected", "true");
+        }
+
+        // Adiciona o <li> à <ul>
+        playlistList.appendChild(li);
+    });
+}
 
 
