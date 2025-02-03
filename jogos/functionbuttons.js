@@ -1,47 +1,53 @@
-var zoom = 100;
-var minZoom = 90;
-var maxZoom = 190;
-var originalZoom = 100;
+document.addEventListener("DOMContentLoaded", function () {
+    const flashObject = document.getElementById("flash-object");
+    const zoomInBtn = document.getElementById("zoom-in");
+    const zoomOutBtn = document.getElementById("zoom-out");
+    const resetZoomBtn = document.getElementById("reset-zoom");
+    const scaleFactor = 1.2;
 
-document.getElementById("zoom-in").addEventListener("click", function(){
-    zoom += 10;
-    document.body.style.zoom = zoom + "%";
-    if (zoom >= maxZoom) {
-        document.getElementById("zoom-in").classList.add("disabled");
-    } else {
-        document.getElementById("zoom-in").classList.remove("disabled");
-        document.getElementById("zoom-out").classList.remove("disabled");
+    // Pegar os valores iniciais REAIS do tamanho do objeto
+    const initialWidth = flashObject.getAttribute("width");
+    const initialHeight = flashObject.getAttribute("height");
+
+    function resizeObject(scale) {
+        let currentWidth = flashObject.offsetWidth;
+        let currentHeight = flashObject.offsetHeight;
+
+        flashObject.style.width = Math.round(currentWidth * scale) + "px";
+        flashObject.style.height = Math.round(currentHeight * scale) + "px";
+
+        checkResetButton();
     }
-    if(zoom !== originalZoom) {
-        document.getElementById("reset-zoom").classList.remove("disabled");
-    } else {
-        document.getElementById("reset-zoom").classList.add("disabled");
+
+    function resetSize() {
+        flashObject.style.width = initialWidth + "px";
+        flashObject.style.height = initialHeight + "px";
+        checkResetButton();
     }
+
+    function checkResetButton() {
+        if (flashObject.offsetWidth == initialWidth && flashObject.offsetHeight == initialHeight) {
+            resetZoomBtn.style.display = "none";
+        } else {
+            resetZoomBtn.style.display = "inline";
+        }
+    }
+
+    zoomInBtn.addEventListener("click", function () {
+        resizeObject(scaleFactor);
+    });
+
+    zoomOutBtn.addEventListener("click", function () {
+        resizeObject(1 / scaleFactor);
+    });
+
+    resetZoomBtn.addEventListener("click", function () {
+        resetSize();
+    });
+
+    resetZoomBtn.style.display = "none"; // Esconder o botão no início
 });
 
-document.getElementById("zoom-out").addEventListener("click", function(){
-    zoom -= 10;
-    document.body.style.zoom = zoom + "%";
-    if (zoom <= minZoom) {
-        document.getElementById("zoom-out").classList.add("disabled");
-    } else {
-        document.getElementById("zoom-in").classList.remove("disabled");
-        document.getElementById("zoom-out").classList.remove("disabled");
-    }
-    if(zoom !== originalZoom) {
-        document.getElementById("reset-zoom").classList.remove("disabled");
-    } else {
-        document.getElementById("reset-zoom").classList.add("disabled");
-    }
-});
-
-document.getElementById("reset-zoom").addEventListener("click", function(){
-    zoom = originalZoom;
-    document.body.style.zoom = zoom + "%";
-    document.getElementById("zoom-in").classList.remove("disabled");
-    document.getElementById("zoom-out").classList.remove("disabled");
-    document.getElementById("reset-zoom").classList.add("disabled");
-});
 
 var fullscreenBtn = document.getElementById("fullscreen-btn");
 fullscreenBtn.addEventListener("click", toggleFullscreen);
