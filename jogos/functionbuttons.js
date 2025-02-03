@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const zoomInBtn = document.getElementById("zoom-in");
     const zoomOutBtn = document.getElementById("zoom-out");
     const resetZoomBtn = document.getElementById("reset-zoom");
-    const scaleFactor = 1.2;
+    const scaleFactor = 1.1;
 
     // Pegar os valores iniciais REAIS do tamanho do objeto
     const initialWidth = flashObject.getAttribute("width");
