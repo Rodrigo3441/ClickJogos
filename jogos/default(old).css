@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'Lucida grande';
+  src: url('../LucidaGrande.ttf') format('truetype');
+}
+body {
+  font-family: 'Lucida grande'; font-size: 11px; color: #3d3d3d; background-color: #ffffff;
+}
+  h1 {
+  color: #e10000; font-size: 18px;
+  font-family: 'Trebuchet MS';
+  src: url('../trebuc.ttf') format('truetype');
+}
+audio:not([controls]) {
+  display: none;
+}
+
+hr {
+border-color: #cccccc;
+}
+h2 {
+font-size: 15px; color: #4a4a4a; text-align: right;
+font-family: 'Trebuchet MS';
+  src: url('../trebuc.ttf') format('truetype');
+}
+h3 {
+font-size: 13px; color: #e10000; font-family: arial;
+font-family: 'Trebuchet MS';
+  src: url('../trebuc.ttf') format('truetype');
+}
+h4 {
+font-size: 14px; color: #ffffff; font-family: arial;
+}
+h6 {
+font-size: 10px; color: #cccccc
+}
+#uolnavbar {
+	width: 100%; text-align: center; border-spacing: 10px;
+	}
+.uolnavbarspace {
+	padding-top: 4px; 
+}
+.cinza {
+	color: #cccccc; text-decoration: none;
+	}
+.cinza:hover {
+	color: #cccccc;
+	}
+.cinza:focus {
+	color: #cccccc;
+	}
+input {
+	border-radius: 3px; border: none; color: #4a4a4a;
+	}
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+button {
+	border-color: #353535; border-width: 1px; border-style: solid;
+	}
+.searchb {
+		font-size: 11px; color: #ffffff;
+		}
+.orangebar {
+		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
+		}
+.orangebar:hover {
+		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
+		}
+.orangebar:focus {
+		font-size: 13px; color: #ffffff; font-family: arial; text-decoration: none;
+		}
+.cinza2 {
+	color: #3d3d3d; text-decoration: none;
+	}
+.cinza2:hover {
+	color: #3d3d3d;
+	}
+.cinza2:focus {
+	color: #3d3d3d;
+	}
+	.disabled {
+    pointer-events: none;
+}
+#reset-zoom.disabled {
+    display: none; /* esconde somente o botão reset zoom */
+}
+.centro {
+	text-align: center;
+}
+.direita {
+	text-align: right;
+}
+.imggames {
+border: 1px solid #cccccc; padding:3px;
+}
+.imggames:hover {
+border-color:#ff4500;
+}
+.descrition {
+	line-height: 18px;
+}
+.half {
+	width: 50%;
+}
+.all {
+	width: 100%;
+}
+a {
+color: #e10000;
+}
+a:hover {
+color: #3d3d3d;
+}
+a:focus {
+color: #3d3d3d;
+}
+/*para descrições*/
+.avisovermelho {
+	color: #e10000;
+	font-family: arial;
+	font-size: 12px;
+}
+.avisocinza {
+	color: #3d3d3d;
+	font-family: arial;
+	font-size: 12px;
+}
+p {
+	line-height: 1.73;
+}
+.bodybackgroundconfig {
+	width:1000px;
+	margin: 0 auto;
+	padding:10px;
+	height:auto;
+	background-color:#ffffff;
+}
+.windowgamepart {
+	height:auto;
+	min-width: 978px;
+	border:1px solid #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	display: inline-block;
+	background: repeating-linear-gradient(
+        -45deg, /* Ângulo das faixas */
+        #ffffff, /* Cor inicial */
+        #fcfcfc 10px, /* Tamanho da faixa */
+        #fcfcfc 10px, /* Cor seguinte */
+        #fcfcfc 5px /* Tamanho total da faixa */
+    );
+}
+.error {
+	color:#f04821; text-decoration: none;
+}
+.toolbargame {
+	width:100%;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	line-height: 45px;
+	border-left: 10px solid #f2f2f2;
+	border-right: 10px solid #f2f2f2;
+	margin-bottom: -10px;
+}
+/*css do input da barra de pesquisa do google*/
+.input-with-image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .input-with-image input {
+    padding-left: 25px; /* espaço para a imagem */
+  }
+
+  .input-with-image .image-icon {
+    position: absolute;
+    top: 4px; /* ajuste a posição verticalmente conforme necessário */
+    left: 4px; /* ajuste a posição horizontalmente conforme necessário */
+  }
+  .inline-form form {
+    display: inline;
+  }
+  ruffle-player, ruffle-embed, ruffle-object {
+            --preloader-background: url('../pageelements/getadobeflash.png') no-repeat center; 
+            --logo-display: none;
+        }
+		.smallline {
+			line-height: 1.3;
+		}
+		
+/*more button right*/
+
+.morer {
+  border-radius: 2px;
+  font-family: Trebuchet MS;
+  border-style: solid;
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom right, #eaeaea, #fefefe); /* Cores invertidas */
+  border: 1px solid #cfcfcf; /* Cor invertida */
+  float: right;
+  font-size: 12px;
+}
+
+.morer a {
+  color: #555; /* Cor invertida */
+  font-size: 12.4px;
+  padding: 5px 4px 5px 8px;
+  text-decoration: none !important;
+}
+
+.morer span {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../pageelements/images.png) no-repeat 3px -5279px transparent;
+  border-right: 1px solid #cfcfcf; /* Cor invertida */
+  height: 24px;
+  width: 24px;
+}
+
+.morer:hover {
+  background: #f7f7f7; /* Cor invertida */
+}
+
+.morer:hover a {
+  color: #333; /* Cor invertida */
+}
+
+.morer:active,
+.morer.selected {
+  background-image: linear-gradient(to bottom right, #dadada, #f8f8f8); /* Cores invertidas */
+}
+
+.morer:active a,
+.morer.selected a {
+  color: #666; /* Cor invertida */
+}
+	
+	
+	/*more button left*/
+
+.morel {
+  border-radius: 2px;
+  font-family: Trebuchet MS;
+  border-style: solid;
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom right, #eaeaea, #fefefe); /* Cores invertidas */
+  border: 1px solid #cfcfcf; /* Cor invertida */
+  float: left;
+  font-size: 12px;
+}
+
+.morel a {
+  color: #555; /* Cor invertida */
+  font-size: 12.4px;
+  padding: 5px 4px 5px 8px;
+  text-decoration: none !important;
+}
+
+.morel span {
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../pageelements/images.png) no-repeat 3px -5279px transparent;
+  border-right: 1px solid #cfcfcf; /* Cor invertida */
+  height: 24px;
+  width: 24px;
+}
+
+.morel:hover {
+  background: #f7f7f7; /* Cor invertida */
+}
+
+.morel:hover a {
+  color: #333; /* Cor invertida */
+}
+
+.morel:active,
+.morel.selected {
+  background-image: linear-gradient(to bottom right, #dadada, #f8f8f8); /* Cores invertidas */
+}
+
+.morel:active a,
+.morel.selected a {
+  color: #666; /* Cor invertida */
+}
+	
