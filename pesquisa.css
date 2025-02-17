@@ -1,0 +1,90 @@
+ul {
+    list-style: none; /* Remove os marcadores */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centraliza o texto */
+	height: 155px;
+}
+
+li {
+    display: block; /* Faz os itens ficarem um abaixo do outro */
+	text-align: center;
+}
+.games-container {
+	margin: 0 auto;
+    display: grid;
+	grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap; /* Permite quebrar linha quando necessário */
+    justify-content: left; /* Centraliza os itens na linha */
+    gap: 26px; /* Espaço entre os jogos */
+	
+}
+.description {
+	text-align: center;
+	width: 128px;
+}
+.description h3 {
+    white-space: nowrap;     /* Impede a quebra de linha */
+    overflow: hidden;     /* Oculta o texto que ultrapassar o limite */
+    text-overflow: ellipsis;/* Add reticências when o texto ultrapassar */
+    width: 128px;  
+	font-weight: bold;
+	justify-content: center;
+	text-align: center;
+}
+
+#no-results {
+	text-align: center;
+}
+h5 {
+font-family: arial; color: #3d3d3d; font-size: 17px;
+font-family: 'Trebuchet MS';
+  src: url('trebuc.ttf') format('truetype');
+}
+hr.dashed {
+        border-top: 2px dashed #cccccc;
+    }	
+#paginacao {
+	text-align: center;
+	margin-top: 50px;
+}
+/*botão da paginação ativo*/
+a.botaoon {
+  display: inline-block; padding: 3px 9px 3px 9px; border: 1px solid #CCCCCC; border-width:1px 1px 3px 1px; background-color: #FAFAFA; color: #000000; font-family: Trebuchet MS; font-size: 13px; text-decoration: none; border-radius: 2px; height: 17px; line-height: 17px; margin-right: 4px;
+}
+a.botaoon:hover {
+  background-color: #F4F4F4;
+  color: #555555;
+  text-decoration: none !important;
+}
+
+a.botaoon:active {
+  background-color: #F2F2F2;
+  color: #555555;
+  text-decoration: none;
+  border-width:1px 1px 2px 1px;
+  height: 18px; line-height: 17px;
+}
+a.botaoon:active span {
+  position: relative;
+  top: 1px;
+}
+
+/*botão da paginação inativo*/
+a.botaooff {
+  display: inline-block; padding: 3px 9px 3px 9px; border: 1px solid #DFDFDF; border-width:1px 1px 3px 1px; background-color: #F4F4F4; color: #AAAAAA; font-family: Trebuchet MS; font-size: 13px; text-decoration: none; border-radius: 2px; height: 17px; line-height: 17px; margin-right: 4px; cursor: default;
+}
+a.botaooff:hover {
+  background-color: #F2F2F2;
+  text-decoration: none !important;
+}
+
+a.botaooff:active {
+  text-decoration: none;
+  border-width:1px 1px 2px 1px;
+  height: 18px; line-height: 17px;
+}
+a.botaooff:active span {
+  position: relative;
+  top: 1px;
+}
